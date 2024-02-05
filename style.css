@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e2d8c9;
+    counter-reset: page question;
+}
+.MathJax {
+    font-size: 100% !important;
+}
+
+/* Page */
+section {
+    position: relative;
+    width: 794px; /* 210mm */
+    min-height: 1123px; /* 297mm */
+    margin: 32px auto;
+    padding: 72px 64px;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    box-shadow: #504d4b 6px 6px 10px;
+    background-color: #fffbf7;
+
+    /* Grid settings */
+    display: grid;
+    grid-template-rows: minmax(48px, auto) 1fr 48px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        " header header "
+        " col1 col2 "
+        " footer footer ";
+}
+
+/* Header */
+header {
+    grid-area: header;
+    border-bottom: 1px solid black;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+/* Page number */
+header::before {
+    counter-increment: page;
+    content: counter(page);
+
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 5px;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+section:nth-of-type(odd) header::before { right: 0; }
+section:nth-of-type(even) header::before { left: 0; }
+
+/* Title (first page) */
+h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* Title (all other pages) */
+h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* Subtitle (first page) */
+h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+}
+
+/* Question container */
+.col1, .col2 {
+    position: relative;
+    overflow: hidden;
+}
+.col1 {
+    grid-area: col1;
+    padding-right: 12px;
+}
+.col2 {
+    grid-area: col2;
+    border-left: 1px solid black;
+    padding-left: 12px;
+}
+
+/* Question */
+article {
+    min-height: 50%;
+    margin-top: 12px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    line-height: 20px;
+
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+article::before {
+    counter-increment: question;
+    content: counter(question) ". ";
+    margin-left: -12px;
+    margin-right: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Question Type */
+.question-type {
+    display: inline-block;
+    margin: 8px 0 0;
+    border: 1px solid black;
+    padding: 2px 16px;
+
+    font-size: 13px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+/* Offseting the question after .question-type */
+.question-type + article { margin-bottom: -33px; }
+
+
+/* Choices */
+article > ol {
+    margin: 16px 0;
+    padding: 0;
+    display: flex;
+    font-size: 13px;
+
+    justify-content: space-between;
+    align-items: baseline;
+    /* list-style-type: symbols(cyclic "①" "②" "③" "④" "⑤"); */
+    list-style-type: none;
+}
+article > ol.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+article > ol.col-3 > li { margin-bottom: 8px; }
+article > ol > li:nth-child(1)::before { content: "① "; }
+article > ol > li:nth-child(2)::before { content: "② "; }
+article > ol > li:nth-child(3)::before { content: "③ "; }
+article > ol > li:nth-child(4)::before { content: "④ "; }
+article > ol > li:nth-child(5)::before { content: "⑤ "; }
+article > ol::after { content: ""; }
+
+
+/* Various elements inside questions */
+/* "[N points]" element */
+article > small { margin-left: 4px; }
+article > small.right {
+    display: block;
+    text-align: right;
+}
+/* a paragraph tabbed in */
+.tab { margin-left: 32px; }
+/* a paragraph centered */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* a box with outline */
+.box, .box-list {
+    margin-right: 8px;
+    border: 1px solid black;
+    padding: 6px 10px;
+}
+/* the <List> box */
+.box-list { position: relative; }
+.box-list::before {
+    content: "< L i s t >";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-9px);
+    padding: 0 1px;
+    text-align: center;
+    background-color: #fffbf7;
+}
+.tab, .center, .box, .box-list {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/* inline box */
+.inline-box {
+    border: 1px solid black;
+    padding: 2px 8px;
+    font-size: 95%;
+}
+
+/* Lists */
+/* (A) (B) (C) - used in .box on its own */
+ol.upper {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+    /* Why is ::marker not supported on my phone? */
+}
+ol.upper > li { margin: 2px 0 2px 28px; }
+ol.upper > li::before {
+    display: inline-block;
+    letter-spacing: -0.5px;
+    width: 28px;
+    margin-left: -28px;
+    margin-right: -4px;
+}
+ol.upper > li:nth-child(1)::before { content: "(A)"; }
+ol.upper > li:nth-child(2)::before { content: "(B)"; }
+ol.upper > li:nth-child(3)::before { content: "(C)"; }
+
+/* (i) (ii) (iii) - used in .box between paragraphs */
+ol.roman {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+ol.roman > li { margin: 2px 0 2px 22px; }
+ol.roman > li::before {
+    display: inline-block;
+    letter-spacing: -0.7px;
+    width: 22px;
+    margin-left: -22px;
+    margin-right: -4px;
+}
+ol.roman > li:nth-child(1)::before { content: "(i)"; }
+ol.roman > li:nth-child(2)::before { content: "(ii)"; }
+ol.roman > li:nth-child(3)::before { content: "(iii)"; }
+ol.roman > li:nth-child(4)::before { content: "(iv)"; }
+ol.roman > li:nth-child(5)::before { content: "(v)"; }
+
+/* a. b. c. - used in .box-list */
+ol.alpha {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 14px;
+    list-style-type: lower-alpha;
+}
+ol.alpha > li { margin: 2px 0; }
+
+/* Images */
+img {
+    max-width: 100%;
+    mix-blend-mode: multiply; /* remove white background */
+}
+
+/* letter spacing */
+.shrink-1 {
+    letter-spacing: -0.2px;
+}
+.shrink-2 {
+    letter-spacing: -0.5px;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    justify-self: center;
+    align-self: center;
+    width: 48px;
+    height: 13px;
+    
+    border: 1px solid black;
+    padding: 11px 4px 0;
+    position: relative;
+
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: right;
+}
+footer::before {
+    float: left;
+    margin-top: -8px;
+    content: counter(page);
+}
+footer::after {
+    position:absolute;
+    bottom: -1px;
+    left: 0;
+    width:61px;
+    border-top:1px solid black;
+    transform: rotate(-23.2deg);
+    transform-origin: 0% 100%;
+    content: "";
+}
+
+
+/* Small Screen */
+@media screen and (max-width: 794px) {
+    
+}
+@media screen and (max-width: 680px) {
+    section {
+        width: 100%;
+        min-width: 360px;
+        margin: 0;
+        padding: 32px;
+        grid-template-rows: minmax(32px, auto) 1fr 1fr 60px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            " header "
+            " col1 "
+            " col2 "
+            " footer ";
+    }
+    .col1, .col2 {
+        width: 321px;
+        height: max-content;
+        border: none;
+        padding: 0;
+        justify-self: center;
+    }
+    article {
+        margin-bottom: 100px !important;
+    }
+    h1 { font-size: 25px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 15px; }
+    header::before { font-size: 25px; }
+}
+
+/* Print */
+@page {
+    size: 794px 1123px;
+    margin: 0px;
+}
+@media print {
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        width: 794px;
+        height: 1123px;
+        margin: 0;
+        overflow: hidden;
+        page-break-before: always;
+        box-shadow: none;
+        background-color: white;
+    }
+    img {
+        mix-blend-mode: normal;
+    }
+}
