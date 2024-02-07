@@ -22,6 +22,8 @@ An English translation of CSAT exams, mainly the mathematics exams.
 
 This is currently a personal passion project, and I am unsure how many exams will be translated.
 
+Translated exams: `2019`, `2024`
+
 ## Why am I making it?
 
 The infamy of CSAT has well spread beyond the boundaries of the country,

@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e2d8c9;
-    counter-reset: page question;
+    counter-reset: page-total page question;
 }
 .MathJax {
     font-size: 100% !important;
@@ -59,6 +59,10 @@ header::before {
 }
 section:nth-of-type(odd) header::before { right: 0; }
 section:nth-of-type(even) header::before { left: 0; }
+/* resetting page count */
+.question-reset-23 {
+    counter-reset: page 0 question 22;
+}
 
 /* Title (first page) */
 h1 {
@@ -169,7 +173,7 @@ article > small.right {
     text-align: right;
 }
 /* a paragraph tabbed in */
-.tab { margin-left: 32px; }
+.tab, .tab-short { margin-left: 32px; }
 /* a paragraph centered */
 .center {
     display: flex;
@@ -203,6 +207,16 @@ article > small.right {
     border: 1px solid black;
     padding: 2px 8px;
     font-size: 95%;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0 8px;
 }
 
 /* Lists */
@@ -268,6 +282,9 @@ img {
     letter-spacing: -0.5px;
 }
 
+/* vertical spacing */
+.space { margin-bottom: 8px;}
+
 /* Footer */
 footer {
     grid-area: footer;
@@ -288,7 +305,8 @@ footer {
 footer::before {
     float: left;
     margin-top: -8px;
-    content: counter(page);
+    counter-increment: page-total;
+    content: counter(page-total);
 }
 footer::after {
     position:absolute;
