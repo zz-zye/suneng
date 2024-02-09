@@ -1,9 +1,10 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
-    background-color: #e2d8c9;
-    counter-reset: page-total page question;
+    background-color: var(--color-beige);
+    color: var(--color-black);
 }
+body { counter-reset: page-total page question; }
 .MathJax {
     font-size: 100% !important;
 }
@@ -20,8 +21,8 @@ section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 
-    box-shadow: #504d4b 6px 6px 10px;
-    background-color: #fffbf7;
+    box-shadow: var(--color-shadow) 6px 6px 10px;
+    background-color: var(--color-paper);
 
     /* Grid settings */
     display: grid;
@@ -36,7 +37,7 @@ section {
 /* Header */
 header {
     grid-area: header;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-black);
     
     position: relative;
     display: flex;
@@ -99,7 +100,7 @@ h3 {
 }
 .col2 {
     grid-area: col2;
-    border-left: 1px solid black;
+    border-left: 1px solid var(--color-black);
     padding-left: 12px;
 }
 
@@ -129,7 +130,7 @@ article::before {
 .question-type {
     display: inline-block;
     margin: 8px 0 0;
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     padding: 2px 16px;
 
     font-size: 13px;
@@ -183,7 +184,7 @@ article > small.right {
 /* a box with outline */
 .box, .box-list {
     margin-right: 8px;
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     padding: 6px 10px;
 }
 /* the <List> box */
@@ -196,7 +197,7 @@ article > small.right {
     transform: translateX(-50%) translateY(-9px);
     padding: 0 1px;
     text-align: center;
-    background-color: #fffbf7;
+    background-color: var(--color-paper);
 }
 .tab, .center, .box, .box-list {
     margin-top: 1em;
@@ -204,7 +205,7 @@ article > small.right {
 }
 /* inline box */
 .inline-box {
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     padding: 2px 8px;
     font-size: 95%;
 }
@@ -214,7 +215,7 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     text-align: center;
     padding: 0 8px;
 }
@@ -293,7 +294,7 @@ footer {
     width: 48px;
     height: 13px;
     
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     padding: 11px 4px 0;
     position: relative;
 
@@ -313,7 +314,7 @@ footer::after {
     bottom: -1px;
     left: 0;
     width:61px;
-    border-top:1px solid black;
+    border-top:1px solid var(--color-black);
     transform: rotate(-23.2deg);
     transform-origin: 0% 100%;
     content: "";
@@ -360,6 +361,10 @@ footer::after {
     margin: 0px;
 }
 @media print {
+    :root {
+        --color-paper: white;
+        --color-black: black;
+    }
     html, body {
         margin: 0;
         padding: 0;
@@ -371,9 +376,6 @@ footer::after {
         overflow: hidden;
         page-break-before: always;
         box-shadow: none;
-        background-color: white;
     }
-    img {
-        mix-blend-mode: normal;
-    }
+    img { mix-blend-mode: normal; }
 }

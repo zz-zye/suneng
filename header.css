@@ -1,0 +1,119 @@
+#title {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-brown);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+}
+.title-size {
+    position: relative;
+    padding-top: 100%;
+}
+.title-size > div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.title-dots > div {
+    opacity: 0;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+    background-color: var(--color-beige);
+    transform: translate(-50%, -50%);
+}
+.title-dots div:nth-child(n + 1) { top: 0; }
+.title-dots div:nth-child(n + 4) { top: 50%; }
+.title-dots div:nth-child(n + 7) { top: 100%; }
+.title-dots div:nth-child(3n + 1) { left: 0; }
+.title-dots div:nth-child(3n + 2) { left: 50%; }
+.title-dots div:nth-child(3n + 3) { left: 100%; }
+
+
+/* Making lines with div */
+.line { position: absolute; }
+.line::before, .line::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-beige);
+    border-radius: 100px;
+}
+
+/* slope 0: horizontal line */
+.s-0 { width: 50%; height: 8%; }
+.s-0::before { transform: translate(-6%, -50%); }
+.s-0::after { transform: translate(6%, -50%); }
+/* slope infinity: vertical line */
+.s-inf { width: 8%; height: 50%; }
+.s-inf::before { transform: translate(-50%, -6%); }
+.s-inf::after { transform: translate(-50%, 6%); }
+
+.title-a, .title-t {
+    opacity: 0;
+}
+.title-a { left: 60%; }
+.title-t { left: 80%; }
+
+/* Animations */
+/* Animations that only play once in #title */
+@keyframes header-shrink {
+    0%, 15% { height: 100%; }
+    33%, 100% { height: 100px; }
+}
+#title:target {
+    animation: header-shrink 7s ease-in-out 0s forwards;
+}
+
+@keyframes disappear {
+    0%, 50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+#title:target .title-dots > div { animation: disappear 1s linear 0s forwards; }
+
+@keyframes title-move {
+    0%, 15% {
+        width: 35%;
+        min-width: 100px;
+        max-width: 200px;
+    }
+    30%, 100% {
+        width: 60px;
+        min-width: 60px;
+        max-width: 60px;
+    }
+}
+#title:target .title-container { animation: title-move 7s ease-in-out 0s forwards; }
+
+@keyframes thicken-width { 0%, 5% {width: 4%;} 20%, 100% {width: 8%;} }
+#title:target .s-inf { animation: thicken-width 7s ease-in-out 0s forwards; }
+
+@keyframes thicken-height { 0%, 5% {height: 4%;} 20%, 100% {height: 8%;} }
+#title:target .s-0 { animation: thicken-height 7s ease-in-out 0s forwards; }
+
+/* Animations that repeat */
+/* TODO: They need to reset their animation when going from default to #title... */
+@keyframes title-c { 0%, 15% { left: 0; } 30%, 100% { left: -80%; } }
+.title-c { animation: title-c 7s ease-in-out 0s infinite alternate; }
+
+@keyframes title-s { 0%, 15% { left: 0; } 30%, 100% {left: -60%; } }
+.title-s { animation: title-s 7s ease-in-out 0s infinite alternate; }
+
+@keyframes appear { 0%, 25% { opacity: 0; } 30%, 100% { opacity: 1; } }
+.title-a, .title-t { animation: appear 7s ease-in-out 0s infinite alternate; }
