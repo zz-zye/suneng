@@ -5,9 +5,7 @@ html, body {
     color: var(--color-black);
 }
 body { counter-reset: page-total page question; }
-.MathJax {
-    font-size: 100% !important;
-}
+.MathJax { font-size: 100% !important; }
 
 /* Page */
 section {
@@ -45,7 +43,8 @@ header {
     justify-content: end;
     align-items: center;
 }
-/* Page number */
+
+/* Controlling page number */
 header::before {
     counter-increment: page;
     content: counter(page);
@@ -60,9 +59,15 @@ header::before {
 }
 section:nth-of-type(odd) header::before { right: 0; }
 section:nth-of-type(even) header::before { left: 0; }
-/* resetting page count */
+
+/* Resetting question or page */
 .question-reset-23 {
+    /* used in 2021~ */
     counter-reset: page 0 question 22;
+}
+.question-reset-26 {
+    /* used in 2006~2013 */
+    counter-reset: question 25;
 }
 
 /* Title (first page) */
@@ -139,6 +144,18 @@ article::before {
 }
 /* Offseting the question after .question-type */
 .question-type + article { margin-bottom: -33px; }
+/* Elective subject type */
+.elective-type {
+    margin: 8px 0 16px;
+    padding: 4px;
+    background-color: var(--color-gray);
+    
+    text-align: center;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.elective-type + article { margin-bottom: -53px; }
 
 
 /* Choices */
@@ -157,7 +174,11 @@ article > ol.col-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-article > ol.col-3 > li { margin-bottom: 8px; }
+article > ol.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+article > ol > li { margin-bottom: 8px; }
 article > ol > li:nth-child(1)::before { content: "① "; }
 article > ol > li:nth-child(2)::before { content: "② "; }
 article > ol > li:nth-child(3)::before { content: "③ "; }
@@ -169,7 +190,7 @@ article > ol::after { content: ""; }
 /* Various elements inside questions */
 /* "[N points]" element */
 article > small { margin-left: 4px; }
-article > small.right {
+article small.right {
     display: block;
     text-align: right;
 }
