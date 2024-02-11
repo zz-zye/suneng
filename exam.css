@@ -130,6 +130,9 @@ article::before {
     font-size: 15px;
     font-weight: bold;
 }
+.article-3 > article {
+    min-height: 33%;
+}
 
 /* Question Type */
 .question-type {
@@ -238,7 +241,10 @@ table {
 th, td {
     border: 1px solid var(--color-black);
     text-align: center;
-    padding: 0 8px;
+    padding: 4px 8px;
+}
+.short th, .short td {
+    padding: 0px 8px;
 }
 
 /* Lists */
