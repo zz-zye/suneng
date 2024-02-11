@@ -1,39 +1,40 @@
-# `zz-zye/csat`
+# `zz-zye/suneng`
 
-## What is CSAT?
+## What is Suneung?
 
-**CSAT**(College Scholastic Ability Test) is a college entrance exam in South Korea.
-It is often called **Su-neung**(수능), an abbreviation of its Korean name(대학수학능력시험).
+**Su-neung**(**수능**, abbreviation of 대학**수**학**능**력시험) is a college entrance exam in South Korea.
+It is officially recognized as **CSAT**(College Scholastic Ability Test) in English.
 
-It is a test lasting 8-9 hours, consisting of subjects such as:
- - Language Arts
- - Mathematics
- - English
- - Korean History
- - Social Studies / Science
+Suneung is a test lasting 8-9 hours, consisting of the following subjects.
+ - Language Arts (80 minutes)
+ - Mathematics (100 minutes)
+ - English (70 minutes)
+ - Korean History (30 minutes)
+ - Social Studies / Science (2 elective subjects, 30 minutes each)
+ - Foreign Language / Classical Chinese (optional, 40 minutes)
 
 [KICE](https://www.kice.re.kr/sub/info.do?m=0205&s=english), the institute in charge of CSAT,
 introduces it as a 'reliable data for college admissions,'
 as well as a benchmark that 'impacts teaching and learning practices in high schools.'
 
-## What is this project?
+## What is SunEng?
 
-An English translation of CSAT exams, mainly the mathematics exams.
+An English translation of Suneung, mainly the mathematics exams.
 
-View the project live on [My Github IO Page](https://zz-zye.github.io/csat)
+View the project live on [My Github IO Page.](https://zz-zye.github.io/suneng)
 
 This is currently a personal passion project, and I am unsure how many exams will be translated.
 
-Translated exams: `2019`, `2023`, `2024`
+Translated exams: `2011`, `2019`, `2023`, `2024`
 
 ## Why am I making it?
 
-The infamy of CSAT has well spread beyond the boundaries of the country,
+The infamy of Suneung has well spread beyond the boundaries of the country,
 whether it be its difficulty or its affect on students' lives.
 [(a BBC article)](https://www.bbc.com/news/world-asia-46181240)
 
-I have seen English-speaking Youtubers try some hard English and Math questions from CSAT,
-but I couldn't find any good resource of a CSAT math exam translated as a whole.
+I have seen English-speaking Youtubers try some hard English and Math questions from Suneung,
+but I couldn't find any good resource of a Suneung math exam translated as a whole.
 
 I thought if someone who doesn't speak Korean wants to know how the CSAT is structured, what it tries to evaluate, etc.,
 being able to examine the full test would be quite helpful.

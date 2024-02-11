@@ -107,7 +107,8 @@
 #title:target .s-inf { animation: thicken-width 7s ease-in-out 0s forwards; }
 
 @keyframes thicken-height { 0%, 5% {height: 4%;} 20%, 100% {height: 8%;} }
-#title:target .s-0 { animation: thicken-height 7s ease-in-out 0s forwards; }
+#title:target .s-0,
+#title:target .s-1 { animation: thicken-height 7s ease-in-out 0s forwards; }
 
 /* Animations that repeat */
 /* TODO: They need to reset their animation when going from default to #title... */
