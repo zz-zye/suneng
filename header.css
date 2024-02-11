@@ -54,6 +54,7 @@
     height: 100%;
     background-color: var(--color-beige);
     border-radius: 100px;
+    transform-origin: center left;
 }
 
 /* slope 0: horizontal line */
@@ -64,12 +65,13 @@
 .s-inf { width: 8%; height: 50%; }
 .s-inf::before { transform: translate(-50%, -6%); }
 .s-inf::after { transform: translate(-50%, 6%); }
+/* slope 1 */
+.s-1 { width:70.7%; height: 8%; }
+.s-1::before { transform: translateY(-50%) rotate(-45deg) translate(0, 0); }
+.s-1::after { display: none; }
 
-.title-a, .title-t {
-    opacity: 0;
-}
-.title-a { left: 60%; }
-.title-t { left: 80%; }
+/*  */
+.title-other { opacity: 0; }
 
 /* Animations */
 /* Animations that only play once in #title */
@@ -109,11 +111,11 @@
 
 /* Animations that repeat */
 /* TODO: They need to reset their animation when going from default to #title... */
-@keyframes title-c { 0%, 15% { left: 0; } 30%, 100% { left: -80%; } }
-.title-c { animation: title-c 7s ease-in-out 0s infinite alternate; }
+@keyframes title-c { 0%, 15% { left: 0; } 30%, 100% { left: -150%; } }
+.title-s { animation: title-c 7s ease-in-out 0s infinite alternate; }
 
-@keyframes title-s { 0%, 15% { left: 0; } 30%, 100% {left: -60%; } }
-.title-s { animation: title-s 7s ease-in-out 0s infinite alternate; }
+@keyframes title-s { 0%, 15% { left: 0; } 30%, 100% {left: 10%; } }
+.title-e { animation: title-s 7s ease-in-out 0s infinite alternate; }
 
 @keyframes appear { 0%, 25% { opacity: 0; } 30%, 100% { opacity: 1; } }
-.title-a, .title-t { animation: appear 7s ease-in-out 0s infinite alternate; }
+.title-other { animation: appear 7s ease-in-out 0s infinite alternate; }
