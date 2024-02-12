@@ -563,12 +563,11 @@
                 <br/>
                 Given that \(\overline{x_1}-\overline{x_2}=1.34\) and \(a=c\),
                 what is the value of \(b-a\)?
-                <br/>
                 (※ The unit of mileage is \(\text{km}\), and
                 for a random variable \(Z\) that follows the standard normal distribution,
                 suppose \(\mathrm{P}(|Z| \leq 1.96) = 0.95\) and \(\mathrm{P}(|Z| \leq 2.58) = 0.99\).)
                 <small>[3 points]</small>
-                <ol>
+                <ol class="col-3">
                     <li>\(5.88\)</li>
                     <li>\(7.84\)</li>
                     <li>\(9.80\)</li>
@@ -579,21 +578,22 @@
         </div>
         <div class="col2">
             <article>
-                An absolutely continuous random variable \(X\) takes the value of \(0\leq X\leq a\).
-                The graph of the probability density function of \(X\) is as the figure shows.
-                <div class="center"><img src="img/math_s1_28.png" width="80%"/></div>
-                Given that \(\mathrm{P}(X\leq b) - \mathrm{P}(X\geq b) = \dfrac{1}{4}\)
-                and \(\mathrm{P}(X\leq \sqrt{5}) = \dfrac{1}{2}\),
-                what is the value of \(a+b+c\)?
-                <br/>
-                (※ \(a, b\) and \(c\) are constants.)
+                For sets \(X=\{1,2,3,4,5\}\) and \(Y=\{1,2,3,4\}\),
+                what is the number of functions \(f\) from \(X\) to \(Y\)
+                that satisfy the following?
                 <small>[4 points]</small>
+                <div class="box">
+                    <ol class="upper">
+                        <li>\(f(x)\geq \sqrt{x}\) for all elements \(x\) in set \(X\).</li>
+                        <li>The image of the function \(f\) has \(3\) elements.</li>
+                    </ol>
+                </div>
                 <ol>
-                    <li>\(\dfrac{11}{2}\)</li>
-                    <li>\(6\)</li>
-                    <li>\(\dfrac{13}{2}\)</li>
-                    <li>\(7\)</li>
-                    <li>\(\dfrac{15}{2}\)</li>
+                    <li>\(128\)</li>
+                    <li>\(138\)</li>
+                    <li>\(148\)</li>
+                    <li>\(158\)</li>
+                    <li>\(168\)</li>
                 </ol>
             </article>
         </div>
@@ -606,19 +606,16 @@
         <div class="col1">
             <div class="question-type">Short Answer Questions</div>
             <article>
-                There are \(6\) cards marked with integers from \(1\) to \(6\) on the front respectively,
-                and all marked with \(0\) on the back.
-                These cards are placed like the figure below,
-                where integer \(k\) can be seen in the \(k\)th place for positive integers \(k\leq 6\).
-                <div class="center"><img src="img/math_s1_29_edit.png" width="75%"/></div>
-                Let us perform the following trial with these \(6\) cards and a die.
-                <div class="box">
-                    Throw the die once, and let \(k\) be the number it lands on.
-                    Flip the card in the \(k\)th place and put it back in position.
-                </div>
-                After repeating the trial above \(3\) times,
-                suppose the sum of all numbers that can be seen on the \(6\) cards is even.
-                Given this, the probability that the die landed on \(1\) exactly once is \(\dfrac{q}{p}\).
+                Two absolutely continuous random variables \(X\) and \(Y\)
+                take the value of \(0\leq X\leq6\) and \(0\leq Y\leq6\).
+                The probability density function of \(X\) and \(Y\)
+                are \(f(x)\) and \(g(x)\) respectively.
+                The graph of \(f(x)\) is as the figure shows.
+                <div class="center"><img src="img/math_s1_29.png" width="80%"/></div>
+                For all \(x\) in \(0\leq x\leq 6\),
+                <div class="tab">\(f(x)+g(x)=k\) (\(k\) is a constant)</div>
+                is satisfied.
+                Given that \(\mathrm{P}(6k\leq Y\leq 15k)=\dfrac{q}{p}\),
                 Compute \(p+q\).
                 (※ \(p\) and \(q\) are positive integers that are coprime.)
                 <small>[4 points]</small>
@@ -626,19 +623,30 @@
         </div>
         <div class="col2">
             <article>
-                For the set \(X=\{x\,|\,x\) is a positive integer \(\leq 10\}\),
-                compute the number of functions \(f:X\to X\) that satisfy the following.
-                <small>[4 points]</small>
+                There is an empty sack and
+                a basket containing at least \(10\) white balls and black balls each.
+                Let us perform the following trial with a die.
                 <div class="box">
-                    <ol class="upper">
-                        <li>\(f(x)\leq f(x+1)\) for all positive integers \(x\leq 9\).</li>
-                        <li>
-                            \(f(x)\leq x\) for \(1\leq x \leq 5\),<br/>
-                            and \(f(x)\geq x\) for \(6\leq x \leq 10\).
-                        </li>
-                        <li>\(f(6)=f(5)+6\)</li>
-                    </ol>
+                    Throw the die once.
+                    <br/>
+                    If it lands on a number greater than or equal to \(5\),
+                    move \(2\) white balls from the basket to the sack.
+                    <br/>
+                    If it lands on a number less than or equal to \(4\),
+                    move \(1\) black ball from the basket to the sack.
                 </div>
+                Let us repeat the trial above \(5\) times.
+                Let \(a_n\) and \(b_n\) be the number of white balls and black balls,
+                respectively, in the sack after the \(n\)th trial \((1\leq n\leq5)\).
+                <br/>
+                Given that \(a_5+b_5\geq 7\),
+                the probability that there exists an integer \(k\) \((1\leq k\leq5)\)
+                such that \(a_k=b_k\),
+                <br/>
+                is equal to \(\dfrac{q}{p}\).
+                Compute \(p+q\).
+                (※ \(p\) and \(q\) are positive integers that are coprime.)
+                <small>[4 points]</small>
             </article>
         </div>
         <footer>20</footer>
@@ -651,7 +659,15 @@
         <div class="col1">
             <div class="question-type">Multiple Choice Questions</div>
             <article>
-                What is the value of \(\displaystyle\lim_{x\to 0}\dfrac{\ln(x+1)}{\sqrt{x+4}-2}\)?
+                What is the value of
+                \(
+                    \displaystyle\lim_{n\to\infty}
+                    \dfrac{
+                        \frac{5}{n}+\frac{3}{n^2}
+                    }{
+                        \frac{1}{n}-\frac{2}{n^3}
+                    }
+                \)?
                 <small>[2 points]</small>
                 <ol>
                     <li>\(1\)</li>
@@ -664,15 +680,17 @@
         </div>
         <div class="col2">
             <article>
-                What is the value of
-                \(\displaystyle\lim_{n\to\infty}\!\dfrac{1}{n}\sum_{k=1}^n \sqrt{1+\dfrac{3k}{n}}\)?
+                A function \(f(x)\) differentiable on the set of all real numbers satisfies
+                <div class="tab">\(f\big(x^3+x\big)=e^x\)</div>
+                for all real numbers \(x\).
+                What is the value of \(f'(2)\)?
                 <small class="right">[3 points]</small>
                 <ol>
-                    <li>\(\dfrac{4}{3}\)</li>
-                    <li>\(\dfrac{13}{9}\)</li>
-                    <li>\(\dfrac{14}{9}\)</li>
-                    <li>\(\dfrac{5}{3}\)</li>
-                    <li>\(\dfrac{16}{9}\)</li>
+                    <li>\(e\)</li>
+                    <li>\(\dfrac{e}{2}\)</li>
+                    <li>\(\dfrac{e}{3}\)</li>
+                    <li>\(\dfrac{e}{4}\)</li>
+                    <li>\(\dfrac{e}{5}\)</li>
                 </ol>
             </article>
         </div>
@@ -685,36 +703,35 @@
         <div class="col1">
             <article>
                 A geometric progression \(\{a_n\}\) satisfies
-                \(\displaystyle\lim_{n\to\infty}\dfrac{a_n+1}{3^n+2^{2n-1}}=3\).
-                What is the value of \(a_3\)?
-                <small class="right">[3 points]</small>
+                <div class="tab">
+                    \(\displaystyle\sum_{n=1}^\infty (a_{2n-1}-a_{2n})=3\:\)
+                    and \(\:\displaystyle\sum_{n=1}^\infty {a_n}^2=6\).
+                </div>
+                What is the value of \(\displaystyle\sum_{n=1}^\infty a_n\)?
+                <small>[3 points]</small>
                 <ol>
-                    <li>\(16\)</li>
-                    <li>\(18\)</li>
-                    <li>\(20\)</li>
-                    <li>\(22\)</li>
-                    <li>\(24\)</li>
+                    <li>\(1\)</li>
+                    <li>\(2\)</li>
+                    <li>\(3\)</li>
+                    <li>\(4\)</li>
+                    <li>\(5\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                As the figure shows, there is a \(3\)-dimensional solid where one of its faces is the region enclosed by
-                the curve \(y=\sqrt{\sec^2 x+\tan x}\) \(\left(\!0\leq x \leq \dfrac{\pi}{3}\!\right)\),
-                the \(x\)-axis, the \(y\)-axis, and the line \(x=\dfrac{\pi}{3}\).
-                Suppose a cross section of this solid and any plane perpendicular to the \(x\)-axis is always a square.
-                What is the volume of this solid?
-                <small>[3 points]</small>
-                <div class="center">
-                    <img src="img/math_s2_26_1.png" alt="Figure for question 26 (Calculus) (1)" width="85%"/>
-                    <img src="img/math_s2_26_2.png" alt="Figure for question 26 (Calculus) (2)" width="85%"/>
-                </div>
-                <ol class="col-3">
-                    <li>\(\dfrac{\sqrt{3}}{2}+\dfrac{\ln2}{2}\)</li>
-                    <li>\(\dfrac{\sqrt{3}}{2}+\ln2\)</li>
-                    <li>\(\sqrt{3}+\dfrac{\ln2}{2}\)</li>
-                    <li>\(\sqrt{3}+\ln2\)</li>
-                    <li>\(\sqrt{3}+2\ln2\)</li>
+                What is the value of
+                \(
+                    \displaystyle\lim_{n\to\infty}\sum_{k=1}^n
+                    \dfrac{k^2+2kn}{k^3+3k^2n+n^3}
+                \)?
+                <small class="right">[3 points]</small>
+                <ol>
+                    <li>\(\ln5\)</li>
+                    <li>\(\dfrac{\ln5}{2}\)</li>
+                    <li>\(\dfrac{\ln5}{3}\)</li>
+                    <li>\(\dfrac{\ln5}{4}\)</li>
+                    <li>\(\dfrac{\ln5}{5}\)</li>
                 </ol>
             </article>
         </div>
