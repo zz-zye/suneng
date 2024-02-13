@@ -14,7 +14,7 @@ h1, h2, .elective-type {
 }
 h3 { font-family: 'Asap Condensed', sans-serif; }
 article { font-family:'PT Serif', Times, serif; }
-header::before, article::before, footer {
+header::before, article::before, footer, article > small {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: normal;
 }
@@ -198,13 +198,17 @@ article > ol::after { content: ""; }
 
 /* Various elements inside questions */
 /* "[N points]" element */
-article > small { margin-left: 4px; }
+article > small {
+    margin-left: 4px;
+    letter-spacing: -0.2px;
+}
 article small.right {
     display: block;
     text-align: right;
 }
 /* a paragraph tabbed in */
 .tab, .tab-short { margin-left: 32px; }
+.box .tab, .box .tab-short { margin-left: 20px; }
 /* a paragraph centered */
 .center {
     display: flex;
@@ -236,7 +240,7 @@ article small.right {
 /* inline box */
 .inline-box {
     border: 1px solid var(--color-black);
-    padding: 2px 8px;
+    padding: 1px 8px;
     font-size: 95%;
 }
 
