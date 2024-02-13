@@ -401,121 +401,50 @@
         </header>
         <div class="col1">
             <article>
-                Consider the set \(X = \{1,2,3,4,5,6\}\) and a function \(f: X \to X\).
-                The following passage computes the number of functions \(f\) for which the image of the composite function \(f \circ f\) has \(5\) elements.
+                Suppose a point \(\mathrm{P}\) is on the origin of an \(xy\)-plane.
+                Let us perform the following trial using a die.
                 <div class="box">
-                    Let \(A\) and \(B\) be the image of \(f\) and \(f \circ f\) respectively.
+                    Throw the die once.
                     <br/>
-                    If \(n(A) = 6\) then \(f\) is bijective, and \(f \circ f\) is also bijective, so \(n(B) = 6\).
+                    If it lands on a number less than or equal to \(2\),
+                    move point \(\mathrm{P}\) by \(3\) towards
+                    
+                    the positive direction of the \(x\)-axis.
                     <br/>
-                    If \(n(A) \leq 4\) then \(n(B) \leq 4\) since \(B \subseteq A\).
+                    If it lands on a number greater than or equal to \(3\),
+                    move point \(\mathrm{P}\) by \(1\) towards
+                    the positive direction of the \(y\)-axis.
                     <br/>
-                    Therefore it should be that \(n(A) = 5\) and \(B = A\).
-                    <br/>
-                    <ol class="roman">
-                        <li>
-                            There are <span class="inline-box">\((\alpha)\)</span> ways to select a subset \(A\) of \(X\) where \(n(A) = 5\).
-                        </li>
-                        <li>
-                            For \(A\) selected in (i), let \(k\) be the element of \(X\) that is not an element of \(A\).
-                            Since \(n(A) = 5\), there are <span class="inline-box">\((\beta)\)</span> ways to select \(f(k)\) from \(A\).
-                        </li>
-                        <li>
-                            For \(A=\{a_1,a_2,a_3,a_4,a_5\}\) selected in (i) and \(f(k)\) selected in (ii),
-                            <br/>
-                            since \(f(k) \in A\) and \(A = B\), it should be that \(A=\{f(a_1),f(a_2),f(a_3),f(a_4),f(a_5)\}\).
-                            <br/>
-                            The number of cases where this holds is equal to the number of bijections from \(A\) to \(A\), which is <span class="inline-box">\((\gamma)\)</span>.
-                        </li>
-                    </ol>
-                    By (i), (ii) and (iii), the number of functions \(f\) to compute is
-                    <span class="inline-box">\((\alpha)\)</span> \(\times\) <span class="inline-box">\((\beta)\)</span> \(\times\) <span class="inline-box">\((\gamma)\)</span>.
                 </div>
-                Let \(p\), \(q\) and \(r\) be the correct number for \((\alpha)\), \((\beta)\) and \((\gamma)\) respectively.
-                What is the value of \(p + q + r\)?
+                Let a random variable \(X\) be the distance
+                between point \(\mathrm{P}\) and the line \(3x+4y=0\)
+                after the trial above was repeated \(15\) times.
+                What is the value of \(\mathrm{E}(X)\)?
                 <small class="right">[4 points]</small>
                 <ol>
-                    <li>\(131\)</li>
-                    <li>\(136\)</li>
-                    <li>\(141\)</li>
-                    <li>\(146\)</li>
-                    <li>\(151\)</li>
+                    <li>\(13\)</li>
+                    <li>\(15\)</li>
+                    <li>\(17\)</li>
+                    <li>\(19\)</li>
+                    <li>\(21\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                As the figure shows, a right triangle \(\mathrm{ABC}\) satisfies \(\overline{\mathrm{AB}} = 1\) and \(\angle \mathrm{B} = \dfrac{\pi}{2}\).
-                Let \(\mathrm{D}\) be the point where a line that bisects \(\angle \mathrm{C}\) meets the line segment \(\mathrm{AB}\).
-                Let \(\mathrm{E}\) be the point where a circle, with center \(\mathrm{A}\) and radius \(\overline{\mathrm{AD}}\), meets the line segment \(\mathrm{AC}\).
-                <br/>
-                For \(\angle \mathrm{A} = \theta\), let \(S(\theta)\) be the area of the circular sector \(\mathrm{ADE}\), and let \(T(\theta)\) be the area of the triangle \(\mathrm{BCE}\).
-                <br/>
-                What is the value of \(\displaystyle\lim_{\theta\to 0+} \!\! \dfrac{\{S(\theta)\}^2}{T(\theta)}\)?
-                <small>[4 points]</small>
-                <div class="center"><img src="img/math_ga_18.png" alt="Figure for question 18", width="55%"/></div>
-                <ol>
-                    <li>\(\dfrac{1}{4}\)</li>
-                    <li>\(\dfrac{1}{2}\)</li>
-                    <li>\(\dfrac{3}{4}\)</li>
-                    <li>\(1\)</li>
-                    <li>\(\dfrac{5}{4}\)</li>
-                </ol>
-            </article>
-        </div>
-        <footer>12</footer>
-    </section>
-    <section>
-        <header>
-            <h2>Mathematics <small>(Type Ga)</small></h2>
-        </header>
-        <div class="col1">
-            <article>
-                There is a tetrahedron \(\mathrm{ABCD}\) whose face \(\mathrm{BCD}\) is an equilateral triangle with side length \(12\).
-                Let \(\mathrm{H}\) be the perpendicular foot from point \(\mathrm{A}\) to plane \(\mathrm{BCD}\).
-                <br/>
-                It is given that \(\mathrm{H}\) lies inside the triangle \(\mathrm{BCD}\),
-                <br/>
-                the area of triangle \(\mathrm{CDH}\) is \(3\) times the triangle \(\mathrm{BCH}\),
-                <br/>
-                the area of triangle \(\mathrm{DBH}\) is \(2\) times the triangle \(\mathrm{BCH}\),
-                <br/>
-                and \(\overline{\mathrm{AH}} = 3\).
-                Let \(\mathrm{M}\) be the midpoint of the line segment \(\mathrm{BD}\),
-                and let \(\mathrm{Q}\) be the perpendicular foot from point \(\mathrm{A}\) to line \(\mathrm{CM}\).
-                What is the length of the line segment \(\mathrm{AQ}\)?
-                <small>[4 points]</small>
-                <ol>
-                    <li>\(\sqrt{11}\)</li>
-                    <li>\(2\sqrt{3}\)</li>
-                    <li>\(\sqrt{13}\)</li>
-                    <li>\(\sqrt{14}\)</li>
-                    <li>\(\sqrt{15}\)</li>
-                </ol>
-                <div class="center"><img src="img/math_ga_19.png" alt="Figure for question 19" width="80%"/></div>
-            </article>
-        </div>
-        <div class="col2">
-            <article>
-                Let us draw all tangent lines to the curve \(y=\sin x \, (x &gt; 0)\) which passes through the point \(\left(\!-\dfrac{\pi}{2}, 0\!\right)\),
-                and list all of the \(x\)-coordinates of the points of tangency in ascending order.
-                <br/>
-                Let \(a_n\) be the \(n\)th number in this list.
-                Which option only contains every statement in the &lt;List&gt; that is true for all positive integers \(n\)?
-                <small>[4 points]</small>
-                <div class="box-list">
-                    <ol class="alpha">
-                        <li>\(\tan a_n = a_n + \dfrac{\pi}{2}\)</li>
-                        <li>\(\tan a_{n+2} - \tan a_n &gt; 2\pi\)</li>
-                        <li>\(a_{n+1} + a_{n+2} &gt; a_n + a_{n+3}\)</li>
-                    </ol>
+                For a real number \(a\), define the function \(f(x)\) as
+                <div class="tab">
+                    \(\displaystyle f(x)=\lim_{n\to\infty}\dfrac{(a-2)x^{2n+1}+2x}{3x^{2n}+1}\).
                 </div>
-                <ol class="col-3">
-                    <li>a</li>
-                    <li>a, b</li>
-                    <li>a, c</li>
-                    <li>b, c</li>
-                    <li>a, b, c</li>
+                What is the sum of all values of \(a\) for which
+                \((f\circ f)(1)=\dfrac{5}{4}\)?
+                <small>[4 points]</small>
+                <ol>
+                    <li>\(\dfrac{11}{2}\)</li>
+                    <li>\(\dfrac{13}{2}\)</li>
+                    <li>\(\dfrac{15}{2}\)</li>
+                    <li>\(\dfrac{17}{2}\)</li>
+                    <li>\(\dfrac{19}{2}\)</li>
                 </ol>
             </article>
         </div>
@@ -527,21 +456,82 @@
         </header>
         <div class="col1">
             <article>
-                A function \(f(x)\) differentiable on the set of all real numbers satisfies the following.
-                What is the value of \(f(-1)\)?
+                There is a sack containing \(5\) balls marked with numbers
+                \(3,3,4,4\) and \(4\) respectively.
+                Let us perform the following trial and set a score using this sack and a die.
+                <div class="box">
+                    Randomly take out a ball from the sack.
+                    <br/>
+                    If the number marked on the ball taken out is \(3\),
+                    throw the die \(3\) times and set the score
+                    as the sum of the three numbers it lands on.
+                    <br/>
+                    If the number marked on the ball taken out is \(4\),
+                    throw the die \(4\) times and set the score
+                    as the sum of the four numbers it lands on.
+                </div>
+                What is the probability that the score set by performing
+                this trial once is \(10\)?
+                <small>[4 points]</small>
+                <ol>
+                    <li>\(\dfrac{13}{180}\)</li>
+                    <li>\(\dfrac{41}{540}\)</li>
+                    <li>\(\dfrac{43}{540}\)</li>
+                    <li>\(\dfrac{1}{12}\)</li>
+                    <li>\(\dfrac{47}{540}\)</li>
+                </ol>
+                <div class="center"><img src="img/math_ga_19.png" width="60%"/></div>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                Consider the function \(f(x)=\pi\sin2\pi x\).
+                A positive integer \(n\) and a function \(g(x)\)
+                defined on the set of all real numbers
+                whose image is the set \(\{0,1\}\) satisfy the following.
+                What is the value of \(n\)?
                 <small>[4 points]</small>
                 <div class="box">
-                    <ol class="upper">
-                        <li>\(2\left\{f(x)\right\}^2f'(x) = \left\{f(2x+1)\right\}^2f'(2x+1)\) for all \(x\).</li>
-                        <li>\(f\!\left(\!-\dfrac{1}{8}\!\right) = 1\) and \(f(6)=2\).</li>
-                    </ol>
+                    The function \(h(x)=f(nx)g(x)\) is continuous on the set of all real numbers,
+                    and
+                    <div class="tab" style="margin-left:16px;">
+                        \(\displaystyle\int_{-1}^1 h(x)dx=2\)
+                        and \(\displaystyle\int_{-1}^1 xh(x)dx=-\dfrac{1}{32}\).
+                    </div>
                 </div>
                 <ol>
-                    <li>\(\dfrac{\sqrt[3]{3}}{6}\)</li>
-                    <li>\(\dfrac{\sqrt[3]{3}}{3}\)</li>
-                    <li>\(\dfrac{\sqrt[3]{3}}{2}\)</li>
-                    <li>\(\dfrac{2\sqrt[3]{3}}{3}\)</li>
-                    <li>\(\dfrac{5\sqrt[3]{3}}{6}\)</li>
+                    <li>\(8\)</li>
+                    <li>\(10\)</li>
+                    <li>\(12\)</li>
+                    <li>\(14\)</li>
+                    <li>\(16\)</li>
+                </ol>
+            </article>
+        </div>
+        <footer>12</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                A sequence \(\{a_n\}\) satisfies \(0&lt;a_1&lt;1\),
+                and the following for all positive integers \(n\).
+                <div class="box">
+                    <ol class="upper">
+                        <li>\(a_{2n}=a_2\times a_n+1\)</li>
+                        <li>\(a_{2n+1}=a_2\times a_n-2\)</li>
+                    </ol>
+                </div>
+                If \(a_8-a_{15}=63\), what is the value of \(\dfrac{a_8}{a_1}\)?
+                <small>[4 points]</small>
+                <ol>
+                    <li>\(91\)</li>
+                    <li>\(92\)</li>
+                    <li>\(93\)</li>
+                    <li>\(94\)</li>
+                    <li>\(95\)</li>
                 </ol>
             </article>
         </div>
