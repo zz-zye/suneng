@@ -7,6 +7,23 @@ html, body {
 body { counter-reset: page-total page question; }
 .MathJax { font-size: 100% !important; }
 
+/* Fonts */
+h1, h2, .elective-type {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+}
+h3 { font-family: 'Asap Condensed', sans-serif; }
+article { font-family:'PT Serif', Times, serif; }
+header::before, article::before, footer {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: normal;
+}
+.question-type {
+    font-family: 'Roboto', sans-serif;
+    font-weight: medium;
+}
+
+
 /* Page */
 section {
     position: relative;
@@ -50,12 +67,15 @@ header::before {
     content: counter(page);
 
     position: absolute;
-    top: 0;
+    top: 8px;
     margin: 0;
-    padding: 5px;
-    font-size: 36px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-size: 34px;
+    line-height: 34px;
+}
+section:first-child > header::before,
+section.question-reset-23 > header::before
+{
+    top: -8px;
 }
 section:nth-of-type(odd) header::before { right: 0; }
 section:nth-of-type(even) header::before { left: 0; }
@@ -73,24 +93,17 @@ section:nth-of-type(even) header::before { left: 0; }
 /* Title (first page) */
 h1 {
     margin: 0;
-    padding-bottom: 10px;
     font-size: 40px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
 }
 /* Title (all other pages) */
 h2 {
-    margin: 0;
-    padding-bottom: 5px;
+    margin: 0 0 -4px;
     font-size: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
 }
 /* Subtitle (first page) */
 h3 {
-    margin: 0 0 10px;
+    margin: 0 0 -4px;
     font-size: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: normal;
 }
 
@@ -119,8 +132,7 @@ article {
     -webkit-box-sizing: border-box;
     line-height: 20px;
 
-    font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
 }
 article::before {
     counter-increment: question;
@@ -128,7 +140,6 @@ article::before {
     margin-left: -12px;
     margin-right: 4px;
     font-size: 15px;
-    font-weight: bold;
 }
 .article-3 > article {
     min-height: 33%;
@@ -142,21 +153,17 @@ article::before {
     padding: 2px 16px;
 
     font-size: 13px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
 }
 /* Offseting the question after .question-type */
 .question-type + article { margin-bottom: -33px; }
 /* Elective subject type */
 .elective-type {
     margin: 8px 0 16px;
-    padding: 4px;
     background-color: var(--color-gray);
     
     text-align: center;
-    font-size: 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+    font-size: 26px;
+    line-height: 40px;
 }
 .elective-type + article { margin-bottom: -53px; }
 
@@ -166,7 +173,6 @@ article > ol {
     margin: 16px 0;
     padding: 0;
     display: flex;
-    font-size: 13px;
 
     justify-content: space-between;
     align-items: baseline;
@@ -319,20 +325,18 @@ footer {
     justify-self: center;
     align-self: center;
     width: 48px;
-    height: 13px;
+    height: 15px;
     
     border: 1px solid var(--color-black);
-    padding: 11px 4px 0;
+    padding: 9px 4px 0;
     position: relative;
 
-    font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-size: 12px;
     text-align: right;
 }
 footer::before {
     float: left;
-    margin-top: -8px;
+    margin-top: -9px;
     counter-increment: page-total;
     content: counter(page-total);
 }
