@@ -337,18 +337,59 @@
         </div>
         <div class="col2">
             <article>
-                A continuous function \(f(x)\) defined on \(x &gt; 0\) satisfies
-                <div class="tab">\(2f(x) + \dfrac{1}{x^2} f\left(\dfrac{1}{x}\right) = \dfrac{1}{x} + \dfrac{1}{x^2}\)</div>
-                for all positive numbers \(x\).
-                <br/>
-                What is the value of \(\displaystyle\int_\frac{1}{2}^2 \! f(x)dx\)?
+                For a constant \(k\,(k&gt;1)\),
+                consider a sequence \(\{a_n\}\) that satisfies the following.
+                <div class="box">
+                    \(a_n&lt;a_{n+1}\) for all positive integers \(n\),
+                    <br/>
+                    and a line passing through points
+                    \(\mathrm{P}_n\big(a_n,2^{a_n}\big)\) and \(\mathrm{P}_{n+1}\big(a_{n+1},2^{a_{n+1}}\big)\)
+                    has a slope of \(k\times 2^{a_n}\).
+                </div>
+                <div style="display:flex; position:relative;">
+                    <div style="flex:2;">
+                        Let \(\mathrm{Q_n}\) be the point where
+                        a horizontal line through \(\mathrm{P}_n\) meets
+                        a vertical line through \(\mathrm{P}_{n+1}\).
+                        Let \(A_n\) be the area of the triangle \(\mathrm{P}_n\mathrm{Q}_n\mathrm{P}_{n+1}\).
+                        <div class="space"></div>
+                        Given that \(a_1=1\) and \(\dfrac{A_3}{A_1}=16\),
+                    </div>
+                    <div style="flex:1;">
+                        <img src="img/math_ga_16.png" style="width:100%;"/>
+                    </div>
+                </div>
+                the following is a process computing \(A_n\).
+                <div class="box">
+                    A line passing through points \(\mathrm{P}_n\) and \(\mathrm{P}_{n+1}\)
+                    has a slope of \(k\times 2^{a_n}\), so
+                    <div class="tab">\(2^{a_{n+1}-a_n}=k(a_{n+1}-a_n)+1\).</div>
+                    In other words, \(a_{n+1}-a_n\) is a solution to the equation
+                    \(2^x=kx+1\) for all positive integers \(n\).
+                    <br/>
+                    Since \(k&gt;1\), the equation \(2^x=kx+1\) only has one positive solution \(d\).
+                    Therefore \(a_{n+1}-a_n=d\) for all positve integers \(n\),
+                    so \(\{a_n\}\) is an arithmetic progression with a common difference of \(d\).
+                    <br/>
+                    Since point \(\mathrm{Q_n}\) has coordinates \(\big(a_n+1,2^{a_n}\big)\),
+                    <div class="tab">\(A_n=\dfrac{1}{2}(a_{n+1}-a_n)\big(2^{a_{n+1}}-2^{a_n}\big)\).</div>
+                    Since \(\dfrac{A_3}{A_1}=16\), \(d=\)<span class="inline-box">\((\alpha)\)</span>,
+                    <br/>
+                    and the general term of the sequence \(\{a_n\}\) is
+                    <div class="tab">\(a_n=\)<span class="inline-box">\((\beta)\)</span>.</div>
+                    Therefore \(A_n=\)<span class="inline-box">\((\gamma)\)</span> for all positive integers \(n\).
+                </div>
+                Let \(p\), be the correct number for \((\alpha)\),
+                and let \(f(n)\) and \(g(n)\) be the correct expression for
+                \((\beta)\) and \((\gamma)\) respectively.
+                What is the value of \(p+\dfrac{g(4)}{f(2)}\)?
                 <small>[4 points]</small>
-                <ol class="col-3">
-                    <li>\(\dfrac{\ln 2}{3} + \dfrac{1}{2}\)</li>
-                    <li>\(\dfrac{2\ln 2}{3} + \dfrac{1}{2}\)</li>
-                    <li>\(\dfrac{\ln 2}{3} + 1\)</li>
-                    <li>\(\dfrac{2\ln 2}{3} + 1\)</li>
-                    <li>\(\dfrac{2\ln 2}{3} + \dfrac{3}{2}\)</li>
+                <ol>
+                    <li>\(118\)</li>
+                    <li>\(121\)</li>
+                    <li>\(124\)</li>
+                    <li>\(127\)</li>
+                    <li>\(130\)</li>
                 </ol>
             </article>
         </div>
