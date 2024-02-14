@@ -14,7 +14,7 @@ h1, h2, .elective-type {
 }
 h3 { font-family: 'Asap Condensed', sans-serif; }
 article { font-family:'PT Serif', Times, serif; }
-header::before, article::before, footer, article > small {
+header::before, article::before, footer, article small {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: normal;
 }
