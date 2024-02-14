@@ -228,7 +228,7 @@ article small.right {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(-9px);
+    transform: translateX(-50%) translateY(-11px);
     padding: 0 1px;
     text-align: center;
     background-color: var(--color-paper);
@@ -365,8 +365,8 @@ footer::after {
         width: 100%;
         min-width: 360px;
         margin: 0;
-        padding: 32px;
-        grid-template-rows: minmax(32px, auto) 1fr 1fr 60px;
+        padding: 32px 0;
+        grid-template-rows: minmax(32px, auto) auto auto 60px;
         grid-template-columns: 1fr;
         grid-template-areas:
             " header "
@@ -382,12 +382,16 @@ footer::after {
         justify-self: center;
     }
     article {
-        margin-bottom: 100px !important;
+        min-height: 0 !important;
+        margin-bottom: 150px !important;
     }
     h1 { font-size: 25px; }
     h2 { font-size: 20px; }
     h3 { font-size: 15px; }
-    header::before { font-size: 25px; }
+    header::before {
+        font-size: 22px;
+        top:0px;
+    }
 }
 
 /* Print */
