@@ -51,6 +51,9 @@ section {
         " col1 col2 "
         " footer footer ";
 }
+.format-old section {
+    grid-template-rows: minmax(48px, auto) 1fr 0px;
+}
 
 /* Header */
 header {
@@ -390,6 +393,9 @@ footer::after {
             " col1 "
             " col2 "
             " footer ";
+    }
+    .format-old section {
+        grid-template-rows: minmax(32px, auto) auto auto 0px;
     }
     .col1, .col2 {
         width: 321px;
