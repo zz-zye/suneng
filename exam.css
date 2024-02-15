@@ -22,7 +22,10 @@ header::before, article::before, footer, article small {
     font-family: 'Roboto', sans-serif;
     font-weight: medium;
 }
-
+.format-old h1, .format-old h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+}
 
 /* Page */
 section {
@@ -95,10 +98,18 @@ h1 {
     margin: 0;
     font-size: 40px;
 }
+.format-old h1 {
+    margin: 0 0 4px;
+    font-size: 36px;
+}
 /* Title (all other pages) */
 h2 {
     margin: 0 0 -4px;
     font-size: 30px;
+}
+.format-old h2 {
+    margin: 0;
+    font-size: 28px;
 }
 /* Subtitle (first page) */
 h3 {
@@ -187,7 +198,11 @@ article > ol.col-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+article > ol.col-1 {
+    display: block;
+}
 article > ol > li { margin-bottom: 8px; }
+article > ol.col-1 > li { margin-bottom: 4px; }
 article > ol > li:nth-child(1)::before { content: "① "; }
 article > ol > li:nth-child(2)::before { content: "② "; }
 article > ol > li:nth-child(3)::before { content: "③ "; }
