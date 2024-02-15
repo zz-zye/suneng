@@ -75,9 +75,11 @@ header::before {
     font-size: 34px;
     line-height: 34px;
 }
+.format-old header::before {
+    top:12px;
+}
 section:first-child > header::before,
-section.question-reset-23 > header::before
-{
+section.question-reset-23 > header::before {
     top: -8px;
 }
 section:nth-of-type(odd) header::before { right: 0; }
@@ -108,7 +110,7 @@ h2 {
     font-size: 30px;
 }
 .format-old h2 {
-    margin: 0;
+    margin: 0 0 2px;
     font-size: 28px;
 }
 /* Subtitle (first page) */
