@@ -51,6 +51,9 @@ section {
         " col1 col2 "
         " footer footer ";
 }
+.format-old section {
+    grid-template-rows: minmax(48px, auto) 1fr 0px;
+}
 
 /* Header */
 header {
@@ -182,7 +185,7 @@ article::before {
 
 
 /* Choices */
-article > ol {
+article > ol, .select {
     margin: 16px 0;
     padding: 0;
     display: flex;
@@ -192,25 +195,32 @@ article > ol {
     /* list-style-type: symbols(cyclic "①" "②" "③" "④" "⑤"); */
     list-style-type: none;
 }
-article > ol.col-3 {
+ol.col-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-article > ol.col-2 {
+ol.col-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-article > ol.col-1 {
+ol.col-1 {
     display: block;
 }
-article > ol > li { margin-bottom: 8px; }
-article > ol.col-1 > li { margin-bottom: 4px; }
-article > ol > li:nth-child(1)::before { content: "① "; }
-article > ol > li:nth-child(2)::before { content: "② "; }
-article > ol > li:nth-child(3)::before { content: "③ "; }
-article > ol > li:nth-child(4)::before { content: "④ "; }
-article > ol > li:nth-child(5)::before { content: "⑤ "; }
-article > ol::after { content: ""; }
+:is(article > ol, .select) > li { margin-bottom: 8px; }
+ol.col-1 > li {
+    margin-bottom: 4px;
+    margin-left: 22px;
+    text-indent: -22px;
+}
+ol.col-1 > li::before {
+    margin-right: 6px;
+}
+:is(article > ol, .select) > li:nth-child(1)::before { content: "① "; }
+:is(article > ol, .select) > li:nth-child(2)::before { content: "② "; }
+:is(article > ol, .select) > li:nth-child(3)::before { content: "③ "; }
+:is(article > ol, .select) > li:nth-child(4)::before { content: "④ "; }
+:is(article > ol, .select) > li:nth-child(5)::before { content: "⑤ "; }
+:is(article > ol, .select)::after { content: ""; }
 
 
 /* Various elements inside questions */
@@ -383,13 +393,16 @@ footer::after {
         min-width: 360px;
         margin: 0;
         padding: 32px 0;
-        grid-template-rows: minmax(32px, auto) auto auto 60px;
+        grid-template-rows: minmax(32px, auto) max-content max-content 60px;
         grid-template-columns: 1fr;
         grid-template-areas:
             " header "
             " col1 "
             " col2 "
             " footer ";
+    }
+    .format-old section {
+        grid-template-rows: minmax(32px, auto) max-content max-content 0px;
     }
     .col1, .col2 {
         width: 321px;
@@ -399,13 +412,14 @@ footer::after {
         justify-self: center;
     }
     article {
+        height: max-content;
         min-height: 0 !important;
         margin-bottom: 150px !important;
     }
-    h1 { font-size: 25px; }
-    h2 { font-size: 20px; }
-    h3 { font-size: 15px; }
-    header::before {
+    h1, .format-old h1 { font-size: 25px; }
+    h2, .format-old h2 { font-size: 20px; }
+    h3, .format-old h3 { font-size: 15px; }
+    header::before, .format-old header::before {
         font-size: 22px;
         top:0px;
     }
