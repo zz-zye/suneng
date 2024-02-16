@@ -207,7 +207,11 @@ article > ol.col-1 {
     display: block;
 }
 article > ol > li { margin-bottom: 8px; }
-article > ol.col-1 > li { margin-bottom: 4px; }
+article > ol.col-1 > li {
+    margin-bottom: 4px;
+    margin-left: 16px;
+    text-indent: -16px;
+}
 article > ol > li:nth-child(1)::before { content: "① "; }
 article > ol > li:nth-child(2)::before { content: "② "; }
 article > ol > li:nth-child(3)::before { content: "③ "; }
@@ -408,10 +412,10 @@ footer::after {
         min-height: 0 !important;
         margin-bottom: 150px !important;
     }
-    h1 { font-size: 25px; }
-    h2 { font-size: 20px; }
-    h3 { font-size: 15px; }
-    header::before {
+    h1, .format-old h1 { font-size: 25px; }
+    h2, .format-old h2 { font-size: 20px; }
+    h3, .format-old h3 { font-size: 15px; }
+    header::before, .format-old header::before {
         font-size: 22px;
         top:0px;
     }
