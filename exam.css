@@ -207,10 +207,13 @@ ol.col-1 {
     display: block;
 }
 :is(article > ol, .select) > li { margin-bottom: 8px; }
-article > ol.col-1 > li {
+ol.col-1 > li {
     margin-bottom: 4px;
-    margin-left: 16px;
-    text-indent: -16px;
+    margin-left: 22px;
+    text-indent: -22px;
+}
+ol.col-1 > li::before {
+    margin-right: 6px;
 }
 :is(article > ol, .select) > li:nth-child(1)::before { content: "① "; }
 :is(article > ol, .select) > li:nth-child(2)::before { content: "② "; }
