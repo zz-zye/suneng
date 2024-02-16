@@ -239,62 +239,69 @@
         </header>
         <div class="col1">
             <article style="min-height: 70%;">
-                Set \(P\) is a subset of the set of all real numbers,
-                and has the following properties \((A)\) and \((B)\).
-                <div class="tab" style="margin-top: 4px;">
+                \(a\) and \(b\) are two distinct integers,
+                and a polynomial \(f(x)\) has the following properties \((A)\) and \((B)\).
+                <div class="tab">
                     <div style="text-indent: -20px; margin-bottom: 8px;">
-                        \((A)\:\) For all real numbers \(a\),
-                        among the statements
-                        <div class="center" style="margin: 4px;"><span>\(a\in P,\: a=0\:\) and \(\:-a\in P\),</span></div>
-                        at least one, but no more than one, is satisfied.
+                        \((A)\:\) All coefficients of \(f(x)\) are integers.
                     </div>
                     <div style="text-indent: -20px;">
-                        \((B)\:\) If \(a\in P\) and \(b\in P\), then \(ab\in P\).
+                        \((B)\:\) \(f(a)f(b)=-(a-b)^2\)
                     </div>
                 </div>
-                The following is a process proving
-                &lsquo;if \(a\in P\), then \(\dfrac{1}{a}\in P\,\)&rsquo;
-                using the properties above.
-                <div class="box" style="text-indent: -6px; margin-bottom: 4px;">
-                    (Proof) \(a\in P\) by the antedecent, so \(a\ne0\) by \((A)\).
-                    Therefore the real number \(\dfrac{1}{a}\) is not \(0\), so
-                    <br/>
-                    \(\dfrac{1}{a}\in P\:\) or \(\:-\dfrac{1}{a}\in P\:\) by the property
-                    <span class="inline-box">\((\alpha)\)</span>.
-                    <br/>
-                    Suppose \(-\dfrac{1}{a}\in P\).
-                    Then, by the property <span class="inline-box">\((\beta)\)</span>
-                    and the antedecent,
-                    \(-1=a\times\left(\!-\dfrac{1}{a}\!\right)\in P\).
-                    However, if \(-1\in P\:\) then
-                    \(\:1=(-1)\times(-1)\in P\) by \((B)\),
-                    thus contradicting the property <span class="inline-box">\((\gamma)\)</span>.
-                    <br/>
-                    Therefore, \(\dfrac{1}{a}\in P\:\).
+                The following is a process proving that
+                \(\dfrac{f(a)}{a-b}\) is an integer,
+                using the properties above and the theorem \((C)\) below.
+                <div class="tab">
+                    <div style="text-indent: -20px;">
+                        \((C)\:\) For integers \(m\) and \(n\),
+                        if a solution to the quadratic equation \(x^2+mx+n=0\) is a rational number,
+                        then that solution is an integer.
+                    </div>
                 </div>
-                In the process above, what is appropriate for
-                \((\alpha), (\beta)\) and \((\gamma)\) in this order?
-                <ol class="col-1" style="margin-top: 4px;">
-                    <li>\((A), (B)\) and \((A)\)</li>
-                    <li>\((A), (B)\) and \((B)\)</li>
-                    <li>\((B), (A)\) and \((A)\)</li>
-                    <li>\((A), (A)\) and \((B)\)</li>
-                    <li>\((B), (A)\) and \((B)\)</li>
-                </ol>
-            </article>
-            <article>
-                On the \(xy\)-plane,
-                there is a circle \((x-1)^2+(y-2)^2=r^2\)
-                and a point \(\mathrm{A}(5, 4)\) outside the circle.
-                Two tangent lines to the circle that passes through point \(\mathrm{A}\)
-                are perpendicular to each other.
-                What is the length of the radius \(r\)?
+                <div class="box" style="text-indent: -6px; margin-bottom: 4px;">
+                    (Proof) \(a^n-b^n\) is divisible by \(a-b\)
+                    for all positive integers \(n\),
+                    therefore \(f(a)-f(b)\) is divisible by \(a-b\)
+                    <span style="position: relative; border-bottom: 1px solid black;">
+                        using the property \((A)\)
+                        <div style="position:absolute; inset:18px 0 0; text-align:center;">ⓐ</div>
+                    </span>.                    
+                    <br/><br/>
+                    Therefore, \(\dfrac{f(a)-f(b)}{a-b}\) is an integer.
+                    <br/>
+                    A quadratic equation with two solutions \(\dfrac{f(a)}{a-b}\) and \(\dfrac{f(b)}{a-b}\),
+                    is \(x^2-\left(\!\dfrac{f(a)-f(b)}{a-b}\!\right)+1=0\),
+                    using the relation between solutions and coefficients,
+                    and
+                    <span style="position: relative; border-bottom: 1px solid black;">
+                        the property \((B)\)
+                        <div style="position:absolute; inset:18px 0 0; text-align:center;">ⓑ</div>
+                    </span>. 
+                    <br/><br/>
+                    \(\dfrac{f(a)}{a-b}\) is a rational number
+                    <span style="position: relative; border-bottom: 1px solid black;">
+                        by property \((A)\)
+                        <div style="position:absolute; inset:18px 0 0; text-align:center;">ⓒ</div>
+                    </span>, 
+                    <br/><br/>
+                    and \(\dfrac{f(a)-f(b)}{a-b}\) is an integer,
+                    <br/>
+                    so \(\dfrac{f(a)}{a-b}\) is an integer
+                    <span style="position: relative; border-bottom: 1px solid black;">
+                        by theorem \((C)\)
+                        <div style="position:absolute; inset:18px 0 0; text-align:center;">ⓓ</div>
+                    </span>.
+                    <br/><br/>
+                </div>
+                Among the underlined places in the proof above,
+                which place wrongly used either \((A), (B)\) or \((C)\)?
                 <ol class="col-1">
-                    <li>\(\sqrt{10}\)</li>
-                    <li>\(\sqrt{11}\)</li>
-                    <li>\(\sqrt{12}\)</li>
-                    <li>\(\sqrt{13}\)</li>
-                    <li>\(\sqrt{14}\)</li>
+                    <li>ⓐ</li>
+                    <li>ⓑ</li>
+                    <li>ⓒ</li>
+                    <li>ⓓ</li>
+                    <li>None of the above.</li>
                 </ol>
             </article>
         </div>
