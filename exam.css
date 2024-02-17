@@ -231,7 +231,7 @@ html, body {
     text-align: right;
 }
 /* a paragraph tabbed in */
-.exa .tab, .exam .tab-short { margin-left: 32px; }
+.exam .tab, .exam .tab-short { margin-left: 32px; }
 .exam .box .tab, .exam .box .tab-short { margin-left: 20px; }
 /* a paragraph centered */
 .exam .center {
