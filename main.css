@@ -1,0 +1,96 @@
+html { background-color: var(--color-brown); }
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'PT Serif', Times, serif;
+}
+
+/* Main */
+main { margin-top: 100px; }
+
+/* Header */
+#title {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-brown);
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+}
+.title-size {
+    position: relative;
+    padding-top: 100%;
+}
+.title-size > div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.title-dots > div {
+    opacity: 0;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+    background-color: var(--color-beige);
+    transform: translate(-50%, -50%);
+}
+.title-dots div:nth-child(n + 1) { top: 0; }
+.title-dots div:nth-child(n + 4) { top: 50%; }
+.title-dots div:nth-child(n + 7) { top: 100%; }
+.title-dots div:nth-child(3n + 1) { left: 0; }
+.title-dots div:nth-child(3n + 2) { left: 50%; }
+.title-dots div:nth-child(3n + 3) { left: 100%; }
+
+
+/* Making lines with div */
+.line { position: absolute; }
+.line::before, .line::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-beige);
+    border-radius: 100px;
+    transform-origin: center left;
+}
+
+/* slope 0: horizontal line */
+.s-0 { width: 50%; height: 8%; }
+.s-0::before { transform: translate(-6%, -50%); }
+.s-0::after { transform: translate(6%, -50%); }
+/* slope infinity: vertical line */
+.s-inf { width: 8%; height: 50%; }
+.s-inf::before { transform: translate(-50%, -6%); }
+.s-inf::after { transform: translate(-50%, 6%); }
+/* slope 1 */
+.s-1 { width:76%; height: 8%; }
+.s-1::before { transform: translateY(-50%) rotate(-45deg) translate(-4%, 4%); }
+.s-1::after { display: none; }
+
+/* other letters */
+.title-other { opacity: 0; }
+
+/* Animations */
+@keyframes title-s { 0%, 15% { left: 0; } 30%, 100% { left: -150%; } }
+.title-s { animation: title-s 7s ease-in-out 0s infinite alternate; }
+
+@keyframes title-e { 0%, 15% { left: 0; } 30%, 100% {left: 10%; } }
+.title-e { animation: title-e 7s ease-in-out 0s infinite alternate; }
+
+@keyframes appear { 0%, 25% { opacity: 0; } 30%, 100% { opacity: 1; } }
+.title-other { animation: appear 7s ease-in-out 0s infinite alternate; }
