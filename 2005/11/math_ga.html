@@ -365,6 +365,7 @@
                     &lt;Proof&gt;<br/>
                     Let \(a_n=\dfrac{1}{n+1}+\dfrac{1}{n+2}+\cdots+\dfrac{1}{3n+1}\),
                     and let us show \(a_n&gt;1\) for all positive integers \(n\).
+                    <div class="space"></div>
                     <div style="text-indent: -20px; margin-left: 20px; margin-bottom: 8px;">
                         \((1)\:\) For \(n=1\),
                         \(a_1=\dfrac{1}{2}+\dfrac{1}{3}+\dfrac{1}{4}&gt;1\) holds.
@@ -375,36 +376,65 @@
                         \(\begin{align}
                             a_{k+1} &= \dfrac{1}{k+2}+\dfrac{1}{k+3}+\cdots+\dfrac{1}{3k+4}\\
                             &= a_k+\left(\!\dfrac{1}{3k+2}+\dfrac{1}{3k+3}+\dfrac{1}{3k+4}\!\right)\\
+                            & \quad -\:\fbox{\(\;(\alpha)\;\)}.
                         \end{align}\)
-                        \(\qquad\quad-\)
-                        <span class="inline-box">\((\alpha)\)</span>.
-                        <br/>
-                        Observe that \((3k+2)(3k+4)\)
-                        <span class="inline-box">\((\beta)\)</span>
-                        \((3k+3)^2\), so
+                        Observe that
+                        \((3k+2)(3k+4)\:\fbox{\(\;(\beta)\;\)}\:(3k+3)^2\)
+                        therefore
                         <div class="center">
-                            <div>
-                                \(\dfrac{1}{3k+2}+\dfrac{1}{3k+4}\)&gt;
-                                <span class="inline-box">\((\gamma)\)</span>.
-                            </div>
+                            \(\dfrac{1}{3k+2}+\dfrac{1}{3k+4}&gt;\fbox{\(\;(\gamma)\;\)}.\)
                         </div>
                         Since \(a_k&gt;1\),
                         <br/>
-                        \(a_{k+1}&gt;a_k+\Big(\!\dfrac{1}{3k+3}+\)
-                        <span class="inline-box">\((\gamma)\)</span>
-                        \(\Big)-\)
-                        <span class="inline-box">\((\alpha)\)</span>
+                        \(a_{k+1}&gt;a_k+
+                        \left(\!\dfrac{1}{3k+3}+\fbox{\(\;(\gamma)\;\)}\right)
+                        -\fbox{\(\;(\alpha)\;\)}\)
                         \(&gt;1\)
-                        \(\fbox{\(\;(\alpha)\;\)}\)
                     </div>
+                    By \((1)\) and \((2)\),
+                    \(a_n&gt;1\) for all positive integers \(n\).
                 </div>
-                <ol class="col-2">
-                    <li>\(\dfrac{\sqrt{3}}{3}\pi+\dfrac{3}{8}\)</li>
-                    <li>\(\dfrac{2}{3}\pi+\dfrac{\sqrt{3}}{4}\)</li>
-                    <li>\(\dfrac{2\sqrt{3}}{3}\pi+\dfrac{1}{8}\)</li>
-                    <li>\(\dfrac{4}{3}\pi+\dfrac{\sqrt{3}}{16}\)</li>
-                    <li>\(\dfrac{2\sqrt{3}}{3}\pi+\dfrac{3}{4}\)</li>
-                </ol>
+                In the proof above, what is appropriate for
+                \((\alpha), (\beta)\) and \((\gamma)\)?
+                <small>[3 points]</small>
+                <table class="no-border">
+                    <tr>
+                        <td></td>
+                        <td style="width:50px;">\(\underline{(\alpha)}\)</td>
+                        <td style="width:50px;">\(\underline{(\beta)}\)</td>
+                        <td style="width:50px;">\(\underline{(\gamma)}\)</td>
+                    </tr>
+                    <tr>
+                        <td>①</td>
+                        <td>\(\dfrac{1}{k+1}\)</td>
+                        <td>\(&gt;\)</td>
+                        <td>\(\dfrac{2}{3k+3}\)</td>
+                    </tr>
+                    <tr>
+                        <td>②</td>
+                        <td>\(\dfrac{1}{k+1}\)</td>
+                        <td>\(&lt;\)</td>
+                        <td>\(\dfrac{2}{3k+3}\)</td>
+                    </tr>
+                    <tr>
+                        <td>③</td>
+                        <td>\(\dfrac{1}{k+1}\)</td>
+                        <td>\(&lt;\)</td>
+                        <td>\(\dfrac{4}{3k+3}\)</td>
+                    </tr>
+                    <tr>
+                        <td>④</td>
+                        <td>\(\dfrac{2}{k+1}\)</td>
+                        <td>\(&gt;\)</td>
+                        <td>\(\dfrac{4}{3k+3}\)</td>
+                    </tr>
+                    <tr>
+                        <td>⑤</td>
+                        <td>\(\dfrac{2}{k+1}\)</td>
+                        <td>\(&lt;\)</td>
+                        <td>\(\dfrac{1}{k+1}\)</td>
+                    </tr>
+                </table>
             </article>
         </div>
         <div class="col2">
