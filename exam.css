@@ -4,31 +4,31 @@ html, body {
     background-color: var(--color-beige);
     color: var(--color-black);
 }
-body { counter-reset: page-total page question; }
+.exam { counter-reset: page-total page question; }
 .MathJax { font-size: 100% !important; }
 
 /* Fonts */
-h1, h2, .elective-type {
+.exam h1, .exam h2, .elective-type {
     font-family: 'Catamaran', sans-serif;
     font-weight: bold;
 }
-h3 { font-family: 'Asap Condensed', sans-serif; }
-article { font-family:'PT Serif', Times, serif; }
-header::before, article::before, footer, article small {
+.exam h3 { font-family: 'Asap Condensed', sans-serif; }
+.exam article { font-family:'PT Serif', Times, serif; }
+.exam :is(header::before, article::before, footer, article small) {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: normal;
 }
-.question-type {
+.exam .question-type {
     font-family: 'Roboto', sans-serif;
     font-weight: medium;
 }
-.format-old h1, .format-old h2 {
+.exam.old h1, .exam.old h2 {
     font-family: 'Roboto Slab', serif;
     font-weight: normal;
 }
 
 /* Page */
-section {
+.exam section {
     position: relative;
     width: 794px; /* 210mm */
     min-height: 1123px; /* 297mm */
@@ -51,12 +51,12 @@ section {
         " col1 col2 "
         " footer footer ";
 }
-.format-old section {
+.exam.old section {
     grid-template-rows: minmax(48px, auto) 1fr 0px;
 }
 
 /* Header */
-header {
+.exam header {
     grid-area: header;
     border-bottom: 1px solid var(--color-black);
     
@@ -68,7 +68,7 @@ header {
 }
 
 /* Controlling page number */
-header::before {
+.exam header::before {
     counter-increment: page;
     content: counter(page);
 
@@ -78,46 +78,46 @@ header::before {
     font-size: 34px;
     line-height: 34px;
 }
-.format-old header::before {
+.exam.old header::before {
     top:12px;
 }
-section:first-child > header::before,
-section.question-reset-23 > header::before {
+.exam section:first-child > header::before,
+.exam section.question-reset-23 > header::before {
     top: -8px;
 }
-section:nth-of-type(odd) header::before { right: 0; }
-section:nth-of-type(even) header::before { left: 0; }
+.exam section:nth-of-type(odd) header::before { right: 0; }
+.exam section:nth-of-type(even) header::before { left: 0; }
 
 /* Resetting question or page */
-.question-reset-23 {
+.exam section.question-reset-23 {
     /* used in 2021~ */
     counter-reset: page 0 question 22;
 }
-.question-reset-26 {
+.exam section.question-reset-26 {
     /* used in 2006~2013 */
     counter-reset: question 25;
 }
 
 /* Title (first page) */
-h1 {
+.exam h1 {
     margin: 0;
     font-size: 40px;
 }
-.format-old h1 {
+.exam.old h1 {
     margin: 0 0 4px;
     font-size: 36px;
 }
 /* Title (all other pages) */
-h2 {
+.exam h2 {
     margin: 0 0 -4px;
     font-size: 30px;
 }
-.format-old h2 {
+.exam.old h2 {
     margin: 0 0 2px;
     font-size: 28px;
 }
 /* Subtitle (first page) */
-h3 {
+.exam h3 {
     margin: 0 0 -4px;
     font-size: 20px;
     font-weight: normal;
@@ -139,7 +139,7 @@ h3 {
 }
 
 /* Question */
-article {
+.exam article {
     min-height: 50%;
     margin-top: 12px;
     padding-left: 12px;
@@ -150,19 +150,16 @@ article {
 
     font-size: 13px;
 }
-article::before {
+.exam article::before {
     counter-increment: question;
     content: counter(question) ". ";
     margin-left: -12px;
     margin-right: 4px;
     font-size: 15px;
 }
-.article-3 > article {
-    min-height: 33%;
-}
 
 /* Question Type */
-.question-type {
+.exam .question-type {
     display: inline-block;
     margin: 8px 0 0;
     border: 1px solid var(--color-black);
@@ -171,9 +168,9 @@ article::before {
     font-size: 13px;
 }
 /* Offseting the question after .question-type */
-.question-type + article { margin-bottom: -33px; }
+.exam .question-type + article { margin-bottom: -33px; }
 /* Elective subject type */
-.elective-type {
+.exam .elective-type {
     margin: 8px 0 16px;
     background-color: var(--color-gray);
     
@@ -181,11 +178,11 @@ article::before {
     font-size: 26px;
     line-height: 40px;
 }
-.elective-type + article { margin-bottom: -53px; }
+.exam .elective-type + article { margin-bottom: -53px; }
 
 
 /* Choices */
-article > ol, .select {
+.exam article > ol, .select {
     margin: 16px 0;
     padding: 0;
     display: flex;
@@ -195,62 +192,62 @@ article > ol, .select {
     /* list-style-type: symbols(cyclic "①" "②" "③" "④" "⑤"); */
     list-style-type: none;
 }
-ol.col-3 {
+.exam ol.col-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-ol.col-2 {
+.exam ol.col-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-ol.col-1 {
+.exam ol.col-1 {
     display: block;
 }
-:is(article > ol, .select) > li { margin-bottom: 8px; }
-ol.col-1 > li {
+.exam :is(.math article > ol, .select) li { margin-bottom: 8px; }
+.exam ol.col-1 li {
     margin-bottom: 4px;
     margin-left: 22px;
     text-indent: -22px;
 }
-ol.col-1 > li::before {
+.exam ol.col-1 li::before {
     margin-right: 6px;
 }
-:is(article > ol, .select) > li:nth-child(1)::before { content: "① "; }
-:is(article > ol, .select) > li:nth-child(2)::before { content: "② "; }
-:is(article > ol, .select) > li:nth-child(3)::before { content: "③ "; }
-:is(article > ol, .select) > li:nth-child(4)::before { content: "④ "; }
-:is(article > ol, .select) > li:nth-child(5)::before { content: "⑤ "; }
-:is(article > ol, .select)::after { content: ""; }
+.exam :is(article > ol, .select) li:nth-child(1)::before { content: "① "; }
+.exam :is(article > ol, .select) li:nth-child(2)::before { content: "② "; }
+.exam :is(article > ol, .select) li:nth-child(3)::before { content: "③ "; }
+.exam :is(article > ol, .select) li:nth-child(4)::before { content: "④ "; }
+.exam :is(article > ol, .select) li:nth-child(5)::before { content: "⑤ "; }
+.exam :is(article > ol, .select)::after { content: ""; }
 
 
 /* Various elements inside questions */
 /* "[N points]" element */
-article > small {
+.exam article > small {
     margin-left: 4px;
     letter-spacing: -0.2px;
 }
-article small.right {
+.exam article small.right {
     display: block;
     text-align: right;
 }
 /* a paragraph tabbed in */
-.tab, .tab-short { margin-left: 32px; }
-.box .tab, .box .tab-short { margin-left: 20px; }
+.exa .tab, .exam .tab-short { margin-left: 32px; }
+.exam .box .tab, .exam .box .tab-short { margin-left: 20px; }
 /* a paragraph centered */
-.center {
+.exam .center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* a box with outline */
-.box, .box-list {
+.exam .box, .exam .box-list {
     margin-right: 8px;
     border: 1px solid var(--color-black);
     padding: 6px 10px;
 }
 /* the <List> box */
-.box-list { position: relative; }
-.box-list::before {
+.exam .box-list { position: relative; }
+.exam .box-list::before {
     content: "< L i s t >";
     position: absolute;
     top: 0;
@@ -260,98 +257,98 @@ article small.right {
     text-align: center;
     background-color: var(--color-paper);
 }
-.tab, .center, .box, .box-list {
+.exam .tab, .exam .center, .exam .box, .exam .box-list {
     margin-top: 1em;
     margin-bottom: 1em;
 }
 /* inline box */
-.inline-box {
+.exam .inline-box {
     border: 1px solid var(--color-black);
     padding: 1px 8px;
     font-size: 95%;
 }
 
 /* table */
-table {
+.exam table {
     border-collapse: collapse;
 }
-th, td {
+.exam th, .exam td {
     border: 1px solid var(--color-black);
     text-align: center;
     padding: 4px 8px;
 }
-.short th, .short td {
+.exam table.short th, .exam table.short td {
     padding: 0px 8px;
 }
 
 /* Lists */
 /* (A) (B) (C) - used in .box on its own */
-ol.upper {
+.exam ol.upper {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
     list-style-type: none;
     /* Why is ::marker not supported on my phone? */
 }
-ol.upper > li { margin: 2px 0 2px 28px; }
-ol.upper > li::before {
+.exam ol.upper > li { margin: 2px 0 2px 28px; }
+.exam ol.upper > li::before {
     display: inline-block;
     letter-spacing: -0.5px;
     width: 28px;
     margin-left: -28px;
     margin-right: -4px;
 }
-ol.upper > li:nth-child(1)::before { content: "(A)"; }
-ol.upper > li:nth-child(2)::before { content: "(B)"; }
-ol.upper > li:nth-child(3)::before { content: "(C)"; }
+.exam ol.upper > li:nth-child(1)::before { content: "(A)"; }
+.exam ol.upper > li:nth-child(2)::before { content: "(B)"; }
+.exam ol.upper > li:nth-child(3)::before { content: "(C)"; }
 
 /* (i) (ii) (iii) - used in .box between paragraphs */
-ol.roman {
+.exam ol.roman {
     padding-inline-start: 0;
     list-style-type: none;
 }
-ol.roman > li { margin: 2px 0 2px 22px; }
-ol.roman > li::before {
+.exam ol.roman > li { margin: 2px 0 2px 22px; }
+.exam ol.roman > li::before {
     display: inline-block;
     letter-spacing: -0.7px;
     width: 22px;
     margin-left: -22px;
     margin-right: -4px;
 }
-ol.roman > li:nth-child(1)::before { content: "(i)"; }
-ol.roman > li:nth-child(2)::before { content: "(ii)"; }
-ol.roman > li:nth-child(3)::before { content: "(iii)"; }
-ol.roman > li:nth-child(4)::before { content: "(iv)"; }
-ol.roman > li:nth-child(5)::before { content: "(v)"; }
+.exam ol.roman > li:nth-child(1)::before { content: "(i)"; }
+.exam ol.roman > li:nth-child(2)::before { content: "(ii)"; }
+.exam ol.roman > li:nth-child(3)::before { content: "(iii)"; }
+.exam ol.roman > li:nth-child(4)::before { content: "(iv)"; }
+.exam ol.roman > li:nth-child(5)::before { content: "(v)"; }
 
 /* a. b. c. - used in .box-list */
-ol.alpha {
+.exam ol.alpha {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 14px;
     list-style-type: lower-alpha;
 }
-ol.alpha > li { margin: 2px 0; }
+.exam ol.alpha > li { margin: 2px 0; }
 
 /* Images */
-img {
+.exam img {
     max-width: 100%;
     mix-blend-mode: multiply; /* remove white background */
 }
 
 /* letter spacing */
-.shrink-1 {
+.exam .shrink-1 {
     letter-spacing: -0.2px;
 }
-.shrink-2 {
+.exam .shrink-2 {
     letter-spacing: -0.5px;
 }
 
 /* vertical spacing */
-.space { margin-bottom: 8px;}
+.exam .space { margin-bottom: 8px;}
 
 /* Footer */
-footer {
+.exam footer {
     grid-area: footer;
     justify-self: center;
     align-self: center;
@@ -365,13 +362,13 @@ footer {
     font-size: 12px;
     text-align: right;
 }
-footer::before {
+.exam footer::before {
     float: left;
     margin-top: -9px;
     counter-increment: page-total;
     content: counter(page-total);
 }
-footer::after {
+.exam footer::after {
     position:absolute;
     bottom: -1px;
     left: 0;
@@ -388,7 +385,7 @@ footer::after {
     
 }
 @media screen and (max-width: 680px) {
-    section {
+    .exam section {
         width: 100%;
         min-width: 360px;
         margin: 0;
@@ -401,25 +398,25 @@ footer::after {
             " col2 "
             " footer ";
     }
-    .format-old section {
+    .exam.old section {
         grid-template-rows: minmax(32px, auto) max-content max-content 0px;
     }
-    .col1, .col2 {
+    .exam .col1, .exam .col2 {
         width: 321px;
         height: max-content;
         border: none;
         padding: 0;
         justify-self: center;
     }
-    article {
+    .exam article {
         height: max-content;
         min-height: 0 !important;
         margin-bottom: 150px !important;
     }
-    h1, .format-old h1 { font-size: 25px; }
-    h2, .format-old h2 { font-size: 20px; }
-    h3, .format-old h3 { font-size: 15px; }
-    header::before, .format-old header::before {
+    .exam h1 { font-size: 25px; }
+    .exam h2 { font-size: 20px; }
+    .exam h3 { font-size: 15px; }
+    .exam header::before {
         font-size: 22px;
         top:0px;
     }
@@ -439,7 +436,7 @@ footer::after {
         margin: 0;
         padding: 0;
     }
-    section {
+    .exam section {
         width: 794px;
         height: 1123px;
         margin: 0;
@@ -447,5 +444,5 @@ footer::after {
         page-break-before: always;
         box-shadow: none;
     }
-    img { mix-blend-mode: normal; }
+    .exam img { mix-blend-mode: normal; }
 }
