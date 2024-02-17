@@ -1,14 +1,4 @@
-html { background-color: var(--color-brown); }
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-brown);
-    font-family:'Times New Roman', Times, serif;
-}
-
 main {
-    margin-top: 100px;
-
     display: grid;
     grid-template-rows: 40px 1fr;
     grid-template-columns: minmax(80px, 20%) 1fr;
@@ -33,144 +23,56 @@ main {
     text-align: center;
 }
 
-/* Aside */
-aside {
-    grid-area: aside;
-    position: relative;
+/* Header */
+@keyframes header-shrink {
+    0%, 15% {
+        height: 100%;
+        top: 0;
+        transform: translateY(0px);
+    }
+    33%, 100% {
+        height: 150px;
+        top: 50%;
+        transform: translateY(-80px);
+    }
 }
-aside > h3 {
-    margin-top: 12px;
-    margin-bottom: 6px;
-    color: var(--color-beige);
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+#title {
+    animation: header-shrink 7s ease-in-out 0s forwards;
 }
-aside > ul {
-    margin: 0;
-    padding: 0;
-    padding-inline-start: 0;
-    list-style-type: none;
+
+@keyframes disappear {
+    0%, 50% { opacity: 1; }
+    100% { opacity: 0; }
 }
-aside li {
-    position: relative;
-    display: block;
-    height: 40px;
-    margin: 8px;
+#title .title-dots > div { animation: disappear 1s linear 0s forwards; }
+
+@keyframes title-move {
+    0%, 15% {
+        width: 35%;
+        min-width: 100px;
+        max-width: 200px;
+    }
+    30%, 100% {
+        width: 17.5%;
+        min-width: 60px;
+        max-width: 80px;
+    }
 }
-aside a {
-    display: block;
-    width: 100%;
-    height: 30px;
+#title .title-container { animation: title-move 7s ease-in-out 0s forwards; }
+
+@keyframes thicken-width { 0%, 5% {width: 4%;} 20%, 100% {width: 8%;} }
+#title .s-inf { animation: thicken-width 7s ease-in-out 0s forwards; }
+
+@keyframes thicken-height { 0%, 5% {height: 4%;} 20%, 100% {height: 8%;} }
+#title .s-0,
+#title .s-1 { animation: thicken-height 7s ease-in-out 0s forwards; }
+
+
+/* Header border */
+.header-border {
+    position: absolute;
+    inset: 50% 0 auto;
+    min-height: 180px;
+    transform: translateY(-50%);
     background-color: var(--color-beige);
-    border: 10px transparent;
-    border-radius: 10px;
-    padding-top: 10px;
-
-    color: var(--color-brown);
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-}
-aside a:hover {
-    background-color: var(--color-select);
-    box-shadow: var(--color-shadow) 3px 3px 5px;
-}
-aside::after {
-    content: '';
-    position: absolute;
-    inset: 10px -5px 0 100%;
-    border-right: 2px solid var(--color-beige);
-}
-
-/* Sections */
-.details {
-    grid-area: details;
-    position: relative;
-}
-section {
-    display: none;
-    position: relative;
-    z-index: 100;
-    min-width: 200px;
-    min-height: 200px;
-    margin: 10px;
-    margin-left: 16px;
-    padding: 10px;
-
-    color: var(--color-brown);
-    background-color: var(--color-beige);
-    box-shadow: var(--color-shadow) 6px 6px 10px;
-}
-section:target { display: block; }
-.default {
-    position: absolute;
-    z-index: 0;
-    inset: 0;
-    padding-top: 80px;
-
-    color: var(--color-beige);
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Elements in each section */
-/* Title */
-section > h2 {
-    margin: 0;
-    position: relative;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-}
-section > h2::before,
-section > h2::after {
-    content: "";
-    position: absolute;
-    top: 35%;
-    border-top: 4px dotted var(--color-brown);
-}
-section > h2::before { left: 10%; right: 77.5%; }
-section > h2::after { left: 77.5%; right: 10%; }
-
-/* Flavor text */
-section > h3 {
-    margin: 0.5em 0.5em 0;
-    padding: 0.5em 0;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: center;
-    
-    border: 1px solid var(--color-brown);
-    border-left: none;
-    border-right: none;
-}
-
-/* Links */
-.links {
-    margin-top: 2em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1em;
-}
-
-.links > a {
-    display: inline-block;
-    border: 10px transparent;
-    border-radius: 10px;
-    padding: 16px;
-
-    color: var(--color-black);
-    text-decoration: none;
-    background-color: var(--color-paper);
-    box-shadow: var(--color-shadow) 3px 3px 5px;
-}
-
-/* hr */
-section hr {
-    border: none;
-    border-top: 1px solid var(--color-brown);
 }
