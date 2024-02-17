@@ -261,22 +261,17 @@ html, body {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-/* inline box */
-.exam .inline-box {
-    border: 1px solid var(--color-black);
-    padding: 1px 8px;
-    font-size: 95%;
-}
 
 /* table */
 .exam table {
     border-collapse: collapse;
 }
-.exam th, .exam td {
+.exam td {
     border: 1px solid var(--color-black);
     text-align: center;
     padding: 4px 8px;
 }
+.exam table.no-border td { border: none; }
 .exam table.short th, .exam table.short td {
     padding: 0px 8px;
 }
