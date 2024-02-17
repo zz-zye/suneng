@@ -14,7 +14,7 @@ html, body {
 }
 .exam h3 { font-family: 'Asap Condensed', sans-serif; }
 .exam article { font-family:'PT Serif', Times, serif; }
-.exam :is(header::before, article::before, footer, article small) {
+.exam header::before, .exam article::before, .exam footer, .exam article small {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: normal;
 }
