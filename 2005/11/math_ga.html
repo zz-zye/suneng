@@ -869,67 +869,72 @@
         <div class="col1">
             <div class="elective-type">Probability & Statistics</div>
             <article>
-                The probability mass function of a discrete random variable \(X\) is given as
-                <div class="tab">\(\mathrm{P}(X=x)=\dfrac{ax+2}{10}\;\;(x=-1,0,1,2)\).</div>
-                What is the value of \(\mathrm{V}(3X+2)\), the variance of the random variable \(3X+2\)?
-                (※ \(a\) is a constant.)
-                <small class="right">[3 points]</small>
-                <ol>
-                    <li>\(9\)</li>
-                    <li>\(18\)</li>
-                    <li>\(27\)</li>
-                    <li>\(36\)</li>
-                    <li>\(45\)</li>
-                </ol>
-            </article>
-            <article>
-                \(4\) male players and \(4\) female players participate in a table tennis match.
-                If we randomly make \(4\) groups of \(2\) people,
-                what is the probability that there are exactly \(2\) groups
-                consisting of one male and one female?
+                <div style="float:right; margin-left:8px;">
+                    <div style="text-align:right">(Unit: push-ups)</div>
+                    <table>
+                        <tr>
+                            <td>Stem</td>
+                            <td>Leaf</td>
+                        </tr>
+                        <tr>
+                            <td>\(1\)</td>
+                            <td style="text-align:left;">\(\;5\;\;9\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(2\)</td>
+                            <td style="text-align:left;">\(\;3\;\;7\;\;8\;\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(3\)</td>
+                            <td style="text-align:left;">\(\;2\;\;6\;\;6\;\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(4\)</td>
+                            <td style="text-align:left;">\(\;1\;\;5\)</td>
+                        </tr>
+                    </table>
+                </div>
+                The following stem-and-leaf plot shows
+                the amount of push-ups done by \(10\) students of some high school
+                for \(3\) minutes.
+                Let \(m\) be the mean,
+                \(n\) be the median,
+                and \(f\) be the mode of the amount of push-ups.
+                Which option below is correct?
                 <small>[3 points]</small>
-                <ol>
-                    <li>\(\dfrac{3}{7}\)</li>
-                    <li>\(\dfrac{18}{35}\)</li>
-                    <li>\(\dfrac{3}{7}\)</li>
-                    <li>\(\dfrac{24}{35}\)</li>
-                    <li>\(\dfrac{27}{35}\)</li>
+                <ol class="col-3">
+                    <li>\(\:m&lt;n&lt;f\)</li>
+                    <li>\(\:m&lt;f&lt;n\)</li>
+                    <li>\(\:f&lt;m&lt;n\)</li>
+                    <li>\(\:n&lt;m&lt;f\)</li>
+                    <li>\(\:n&lt;f&lt;m\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                The daily output of employees of some company
-                depends on how long they have been employed.
-                The daily output of an employee who was employed for \(n\) months
-                \((1\leq n \leq 100)\) follows a normal distribution
-                with a mean of \(an+100\) (\(a\) is a constant) and
-                a standard deviation of \(12\).
-                The probability that an employee who was employed for \(16\) months
-                has a daily output less than or equal to \(84\) is \(0.0228\).
-                <br/>
-                What is the probability that an employee who was
-                <div style="display: flex;">
-                    <div>
-                        employed for \(36\) months
-                        has a daily output between \(100\) and \(142\),
-                        computed using the standard normal table to the right?
-                        <small>[3 points]</small>
-                    </div>
-                    <table class="short" style="margin-left: 8px; margin-top: 4px;">
-                        <tr><th>\(z\)</th><th>\(\mathrm{P}(0\!\leq\! Z \!\leq\!z)\)</th></tr>
-                        <tr><td>\(1.0\)</td><td>\(0.3413\)</td></tr>
-                        <tr><td>\(1.5\)</td><td>\(0.4332\)</td></tr>
-                        <tr><td>\(2.0\)</td><td>\(0.4772\)</td></tr>
-                        <tr><td>\(2.5\)</td><td>\(0.4938\)</td></tr>
-                    </table>
+                A discrete random variable \(X\) can take the values of
+                \(0,1,2,3,4,5,6\) and \(7\),
+                and the probability mass function of \(X\) is as follows.
+                <div class="tab">
+                    \(\mathrm{P}(X=x)=\begin{cases}
+                        c, & \!x=0,1,2\\\\
+                        2c, & \!x=3,4,5\\\\
+                        5c^2, \!& x=6,7
+                    \end{cases}\;\;\)
+                    (※ \(c\) is positive)
                 </div>
-                <ol class="col-3">
-                    <li>\(0.7745\)</li>
-                    <li>\(0.8185\)</li>
-                    <li>\(0.9104\)</li>
-                    <li>\(0.9270\)</li>
-                    <li>\(0.9710\)</li>
+                Let \(A\) be the event where the random variable \(X\) is equal to \(6\) or more,
+                and let \(B\) be the event where the random variable \(X\) is equal to \(3\) or more.
+                <br/>
+                What is the value of \(\mathrm{P}(A\,|\,B)\)?
+                <small>[3 points]</small>
+                <ol>
+                    <li>\(\dfrac{1}{5}\)</li>
+                    <li>\(\dfrac{1}{6}\)</li>
+                    <li>\(\dfrac{1}{7}\)</li>
+                    <li>\(\dfrac{1}{8}\)</li>
+                    <li>\(\dfrac{1}{9}\)</li>
                 </ol>
             </article>
         </div>
@@ -940,55 +945,102 @@
             <h2>Mathematics <small>(Type Ga)</small></h2>
         </header>
         <div class="col1">
+            <article style="min-height:45%">
+                There is a sack containing \(5\) red balls,
+                \(4\) yellow balls, \(2\) blue balls, and \(9\) white balls.
+                Let us take out a ball from this sack, check its color, and put it back in.
+                Suppose such trial is repeated \(3\) times.
+                What is the probability that the balls taken out are
+                one red, one yellow and one blue, ignoring the order?
+                <small>[3 points]</small>
+                <ol>
+                    <li>\(\dfrac{1}{200}\)</li>
+                    <li>\(\dfrac{3}{100}\)</li>
+                    <li>\(\dfrac{7}{100}\)</li>
+                    <li>\(\dfrac{11}{100}\)</li>
+                    <li>\(\dfrac{11}{20}\)</li>
+                </ol>
+            </article>
             <article>
-                There are two data \(\mathrm{A}\) and \(\mathrm{B}\).
-                Data \(\mathrm{A}\) consists of \(5\) distinct numbers,
-                with the mean and the median both being \(25\).
-                Data \(\mathrm{B}\) consists of \(7\) numbers,
-                \(5\) of which are the same as data \(\mathrm{A}\),
-                and the other two numbers being \(x\) and \(y\).
-                Which option only contains every correct statement in the &lt;List&gt;?
+                <table class="short" style="float: right; margin-left: 8px;">
+                    <tr><th>\(z\)</th><th>\(\mathrm{P}(0\!\leq\! Z \!\leq\!z)\)</th></tr>
+                    <tr><td>\(1.0\)</td><td>\(0.3413\)</td></tr>
+                    <tr><td>\(1.2\)</td><td>\(0.3849\)</td></tr>
+                    <tr><td>\(1.4\)</td><td>\(0.4192\)</td></tr>
+                    <tr><td>\(1.6\)</td><td>\(0.4452\)</td></tr>
+                </table>
+                A music club is preparing their annual concert.
+                From past experiences, it is known that
+                among the people who were invited, the proportion of people that actually attend is \(0.5\).
+                Suppose \(100\) people were randomly sampled from the people who were invited.
+                What is the probability that the proportion of people who actually attend in this sample
+                is between \(0.43\) and \(0.56\),
+                computed using the standard normal table to the right?
                 <small>[4 points]</small>
-                <div class="box-list">
-                    <ol class="alpha">
-                        <li>
-                            If the mean of \(\mathrm{B}\) is \(25\),
-                            the median of \(\mathrm{B}\) is \(25\).
-                        </li>
-                        <li>
-                            If the mean of \(\mathrm{B}\) is greater than or equal to
-                            <br/>\(27\), at least one number between \(x\) and \(y\) is greater than or equal to \(32\).
-                        </li>
-                        <li>
-                            If \(x\) and \(y\) are both \(25\),
-                            the standard deviation of \(\mathrm{B}\) is less than
-                            the standard deviation of \(\mathrm{A}\).
-                        </li>
-                    </ol>
-                </div>
                 <ol class="col-3">
-                    <li>a</li>
-                    <li>c</li>
-                    <li>a, b</li>
-                    <li>b, c</li>
-                    <li>a, b, c</li>
+                    <li>\(0.8041\)</li>
+                    <li>\(0.7698\)</li>
+                    <li>\(0.7605\)</li>
+                    <li>\(0.7262\)</li>
+                    <li>\(0.6826\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <div class="question-type">Short Answer Quesetions</div>
             <article>
-                Suppose we are researching the proportion of antibody holders among Korean adults
-                for some disease.
-                Let \(p\) be the proportion of antibody holders of the population,
-                and let \(\hat{p}\) be the proportion of antibody holders of a sample
-                of size \(n\) randomly sampled from the population.
-                Compute the minimum value of \(n\) for which the
-                probability that \(|\hat{p}-p|\leq0.16\sqrt{\hat{p}(1-\hat{p})}\)
-                is at least \(0.9544\).
-                (※ For a random variable \(Z\) that follows the standard normal distribution,
-                suppose \(\mathrm{P}(0\leq|Z|\leq 2) = 0.4772\).)
-                <small class="right">[4 points]</small>
+                The following is the probability distribution table
+                of some population.
+                <div class="center">
+                    <table style="width:100%">
+                        <tr>
+                            <td>\(X\)</td>
+                            <td>\(1\)</td>
+                            <td>\(2\)</td>
+                            <td>\(3\)</td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>\(\mathrm{P}(X)\)</td>
+                            <td>\(0.5\)</td>
+                            <td>\(0.3\)</td>
+                            <td>\(0.2\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                    </table>
+                </div>
+                Suppose a sample of size \(2\) is sampled with replacement from this population.
+                The probability distribution table of the sample mean \(\overline{X}\) is as follows.
+                <div class="center">
+                    <table style="width:100%">
+                        <tr>
+                            <td>\(\overline{X}\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1.5\)</td>
+                            <td>\(\;\;2\;\;\)</td>
+                            <td>\(2.5\)</td>
+                            <td>\(3\)</td>
+                        </tr>
+                        <tr>
+                            <td>Frequency</td>
+                            <td>\(1\)</td>
+                            <td>\(a\)</td>
+                            <td>\(b\)</td>
+                            <td>\(2\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(\mathrm{P}(\overline{X})\)</td>
+                            <td>\(0.25\)</td>
+                            <td>\(c\)</td>
+                            <td>\(d\)</td>
+                            <td>\(0.12\)</td>
+                            <td>\(0.04\)</td>
+                        </tr>
+                    </table>
+                </div>
+                Compute \(100(b+c)\).
+                <small>[4 points]</small>
             </article>
         </div>
         <footer>16</footer>
