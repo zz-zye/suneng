@@ -1,443 +1,1138 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-beige);
-    color: var(--color-black);
-}
-.exam { counter-reset: page-total page question; }
-.MathJax { font-size: 100% !important; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSAT 2005 Math(Ga)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Catamaran:wght@600&family=Frank+Ruhl+Libre:wght@500&family=PT+Serif&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="../../exam.css">
+</head>
+<body class="exam">
+    <section>
+        <header class="title">
+            <h3>2005 College Scholastic Ability Test</h3>
+            <h1>Mathematics <small>(Type Ga)</small></h1>
+        </header>
+        <div class="col1">
+            <article>
+                What is the value of
+                \(3^{^2/_3}\times9^{^3/_2}\div27^{^8/_9}\)?
+                <small>[2 points]</small>
+                <ol>
+                    <li>\(1\)</li>
+                    <li>\(\sqrt{3}\)</li>
+                    <li>\(3\)</li>
+                    <li>\(3\sqrt{3}\)</li>
+                    <li>\(9\)</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                For matrices
+                \(A=\begin{pmatrix*}[r]
+                    1 & 2 \\
+                    2 & 5
+                \end{pmatrix*}\) and
+                \(B=\begin{pmatrix*}[r]
+                    2 & -3 \\
+                    1 & -2
+                \end{pmatrix*}\),
+                what is the sum of all of the elements in a matrix \(X\)
+                that satisfies \(AX=B\)?
+                <small>[2 points]</small>
+                <ol>
+                    <li>\(-2\)</li>
+                    <li>\(-1\)</li>
+                    <li>\(0\)</li>
+                    <li>\(1\)</li>
+                    <li>\(2\)</li>
+                </ol>
+            </article>
+            <article>
+                What is the number of integers \(x\) for which
+                the system of inequalities
+                <div class="tab">
+                    \(\begin{cases}
+                        \dfrac{x+2}{x^2-4x+3}\geq 0\\
+                        \dfrac{9}{x-8}\leq -1
+                    \end{cases}\)
+                </div>
+                is satisfied?
+                <small>[2 points]</small>
+                <ol>
+                    <li>\(10\)</li>
+                    <li>\(9\)</li>
+                    <li>\(8\)</li>
+                    <li>\(7\)</li>
+                    <li>\(6\)</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                Three cars \(A, B\) and \(C\) move from position
+                &lsquo;\(\alpha\)&rsquo; to position &lsquo;\(\beta\)&rsquo; along a straight path.
+                The following graphs respectively show the velocity \(v\)
+                of three cars according to time \(t\).
+                <div class="center"><img src="img/math_ga_4.png" width="90%"/></div>
+                Which option contains every correct statement in the &lt;List&gt; about the cars
+                while they move from position
+                <br/>
+                &lsquo;\(\alpha\)&rsquo; to position &lsquo;\(\beta\)&rsquo;?
+                <small>[3 points]</small>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>The average velocity of \(A\) and \(C\) are equal.</li>
+                        <li>
+                            \(B\) and \(C\) both have at least one point in time
+                            where its acceleration becomes \(0\).
+                        </li>
+                        <li>
+                            The area of the region enclosed by the velocity graph
+                            and the \(t\)-axis is the same for \(A, B\) and \(C\).
+                        </li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>a</li>
+                    <li>c</li>
+                    <li>a, b</li>
+                    <li>b, c</li>
+                    <li>a, b, c</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                Which option contains every correct statement in the &lt;List&gt;?
+                <small>[3 points]</small>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>\(2^{\log_2 1\,+\,\log_2 2\,+\,\log_2 3\,+\,\cdots\,+\,\log_2 10}=10!\)</li>
+                        <li>\(\log_2(2^1\times 2^2\times 2^3\times\cdots\times 2^{10})^2=55^2\)</li>
+                        <li>\((\log_2 2^1)(\log_2 2^2)(\log_2 2^3)\cdots(\log_2 2^{10})=55\)</li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>a, c</li>
+                    <li>a, b, c</li>
+                </ol>
+            </article>
+            <article>
+                Let \(\alpha\) be a plane passing through point \(\mathrm{A}(1,2,3)\)
+                perpendicular to line \(l:x-1=\dfrac{y-2}{-2}=\dfrac{z-3}{3}\).
+                <br/>
+                Let \(\mathrm{B}\) be the intersection of plane \(\alpha\) and
+                the line \(m:x-2=y=\dfrac{z-6}{5}\).
+                What is the length of the line segment \(\mathrm{AB}\)?
+                <small>[3 points]</small>
+                <ol>
+                    <li>\(\sqrt{19}\)</li>
+                    <li>\(\sqrt{17}\)</li>
+                    <li>\(\sqrt{15}\)</li>
+                    <li>\(\sqrt{13}\)</li>
+                    <li>\(\sqrt{11}\)</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                <div style="float: right; width: 45%"><img src="img/math_ga_7.png" width="100%"/></div>
+                As the figure shows,
+                on the cube \(\mathrm{ABCD-EFGH}\) with side lengths \(3\),
+                there are three points \(\mathrm{P}, \mathrm{Q}\) and \(\mathrm{R}\)
+                on three edges \(\mathrm{AD}\), \(\mathrm{BC}\) and \(\mathrm{FG}\) respectively,
+                where \(\overline{\mathrm{DP}}=\overline{\mathrm{BQ}}=\overline{\mathrm{GR}}=1\).
+                <br/>
+                Let \(\theta\) be the angle between plane \(\mathrm{PQR}\)
+                and plane \(\mathrm{CGHD}\). What is the value of \(\cos\theta\)?
+                (※ \(0&lt;\theta&lt;\dfrac{\pi}{2}\))
+                <small>[3 points]</small>
+                <ol class="col-3">
+                    <li>\(\dfrac{\sqrt{10}}{5}\)</li>
+                    <li>\(\dfrac{\sqrt{10}}{10}\)</li>
+                    <li>\(\dfrac{\sqrt{11}}{11}\)</li>
+                    <li>\(\dfrac{2\sqrt{11}}{11}\)</li>
+                    <li>\(\dfrac{3\sqrt{11}}{11}\)</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <article style="min-height:60%">
+                The following shows the graph of a continuous function \(y=f(x)\),
+                and two distinct points \(\mathrm{P}(a,f(a))\) and \(\mathrm{Q}(b,f(b))\) on the graph.
+                <div class="center"><img src="img/math_ga_8.png" width="60%"/></div>
+                Given that a function \(F(x)\) satisfies \(F'(x)=f(x)\),
+                which option contains every correct statement in the &lt;List&gt;?
+                <small>[4 points]</small>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>Function \(F(x)\) increases on the interval \([a,b]\).</li>
+                        <li>\(\dfrac{F(b)-F(a)}{b-a}\) is equal to the slope of line \(\mathrm{PQ}\).</li>
+                        <li>
+                            \(\displaystyle\int_a^b\{f(x)-f(b)\}dx\leq\frac{(b-a)\{f(a)-f(b)\}}{2}\)
+                        </li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>a, c</li>
+                    <li>b, c</li>
+                    <li>a, b, c</li>
+                </ol>
+            </article>
+            <article>
+                There are four people with distinct heights.
+                If we randomly line them up,
+                what is the probability that the third person from the front
+                is shorter than the two people adjacent to that person?
+                <small>[3 points]</small>
+                <ol>
+                    <li>\(\dfrac{1}{3}\)</li>
+                    <li>\(\dfrac{1}{2}\)</li>
+                    <li>\(\dfrac{3}{5}\)</li>
+                    <li>\(\dfrac{2}{3}\)</li>
+                    <li>\(\dfrac{3}{4}\)</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                The following is the graph of a continuous function \(y=f(x)\).
+                <div class="center"><img src="img/math_ga_10.png" width="50%"/></div>
+                There exists a continuous function \(g(x)\)
+                which is an inverse of function \(f(x)\) on the interval \([0,1]\).
+                Which option is the value of
+                <div class="center">
+                    \(\displaystyle\lim_{n\to\infty}\sum_{k=1}^n
+                    \left\{
+                        g\left(\frac{k}{n}\right)-g\left(\frac{k-1}{n}\right)
+                    \right\}\frac{k}{n}\)
+                </div>
+                equal to?
+                <small>[4 points]</small>
+                <ol class="col-2">
+                    <li>\(\displaystyle\int_0^1g(x)dx\)</li>
+                    <li>\(\displaystyle\int_0^1xg(x)dx\)</li>
+                    <li>\(\displaystyle\int_0^1f(x)dx\)</li>
+                    <li>\(\displaystyle\int_0^1xf(x)dx\)</li>
+                    <li>\(\displaystyle\int_0^1\{f(x)-g(x)\}dx\)</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                As the figure shows,
+                for all positive integers \(n\),
+                there are \(n\) elements
+                <div class="center">
+                    \(\left[\dfrac{n}{1}\right],\left[\dfrac{n}{2}\right],
+                    \left[\dfrac{n}{3}\right],\cdots,\left[\dfrac{n}{n}\right]\)
+                </div>
+                listed in row \(n\), from column \(1\) to column \(n\) in order.
+                (※ \([x]\) is the greatest integer less than or equal to \(x\).)
+                <div class="center">
+                    <table class="question-11">
+                        <style>
+                            .question-11 td:not(:first-child){
+                                padding: 2px 0;
+                                min-width: 30px;
+                            }
+                        </style>
+                        <tr>
+                            <td style="border: none; padding: 0;" colspan="9">Columns</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;"></td>
+                            <td style="border: none;">\(1\)</td>
+                            <td style="border: none;">\(2\)</td>
+                            <td style="border: none;">\(3\)</td>
+                            <td style="border: none;">\(4\)</td>
+                            <td style="border: none;">\(5\)</td>
+                            <td style="border: none;">\(\cdots\)</td>
+                            <td style="border: none;">\(n\)</td>
+                            <td style="border: none;">\(\cdots\)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">Row \(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">Row \(2\)</td>
+                            <td>\(2\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">Row \(3\)</td>
+                            <td>\(3\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">Row \(4\)</td>
+                            <td>\(4\)</td>
+                            <td>\(2\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">Row \(5\)</td>
+                            <td>\(5\)</td>
+                            <td>\(2\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">\(\vdots\)</td>
+                            <td style="border: none;" colspan="5">\(\vdots\)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">Row \(n\)</td>
+                            <td>\(\left[\dfrac{n}{1}\right]\)</td>
+                            <td>\(\left[\dfrac{n}{2}\right]\)</td>
+                            <td>\(\left[\dfrac{n}{3}\right]\)</td>
+                            <td></td>
+                            <td>\(\cdots\)</td>
+                            <td></td>
+                            <td>\(\left[\dfrac{n}{n}\right]\)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">\(\vdots\)</td>
+                            <td style="border: none;" colspan="5">\(\vdots\)</td>
+                        </tr>
+                    </table>
+                </div>
+                Which option contains every correct statement in the &lt;List&gt;?
+                <small>[4 points]</small>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>In row \(n\), \(\left[\dfrac{n+1}{2}\right]\) elements have a value of \(1\).</li>
+                        <li>In row \(100\), \(8\) elements have a value of \(3\).</li>
+                        <li>In column \(3\), \(5\) elements have a value of \(5\).</li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>a, b</li>
+                    <li>a, b, c</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                The following is a proof by induction that
+                <div class="center">
+                    \(\displaystyle\sum_{i=1}^{2n+1}\frac{1}{n+i}=
+                    \frac{1}{n+1}+\frac{1}{n+2}+\cdots+\frac{1}{3n+1}&gt;1\)
+                </div>
+                for all positive integers \(n\).
+                <div class="box">
+                    &lt;Proof&gt;<br/>
+                    Let \(a_n=\dfrac{1}{n+1}+\dfrac{1}{n+2}+\cdots+\dfrac{1}{3n+1}\),
+                    and let us show \(a_n&gt;1\) for all positive integers \(n\).
+                    <div class="space"></div>
+                    <div style="text-indent: -20px; margin-left: 20px; margin-bottom: 8px;">
+                        \((1)\:\) For \(n=1\),
+                        \(a_1=\dfrac{1}{2}+\dfrac{1}{3}+\dfrac{1}{4}&gt;1\) holds.
+                    </div>
+                    <div style="text-indent: -20px; margin-left: 20px; margin-bottom: 8px;">
+                        \((2)\:\) Assume \(a_k&gt;1\) holds for \(n=k\).
+                        Then, for \(n=k+1\),
+                        \(\begin{align}
+                            a_{k+1} &= \dfrac{1}{k+2}+\dfrac{1}{k+3}+\cdots+\dfrac{1}{3k+4}\\
+                            &= a_k+\left(\!\dfrac{1}{3k+2}+\dfrac{1}{3k+3}+\dfrac{1}{3k+4}\!\right)\\
+                            & \quad -\:\fbox{\(\;(\alpha)\;\)}.
+                        \end{align}\)
+                        Observe that
+                        \((3k+2)(3k+4)\:\fbox{\(\;(\beta)\;\)}\:(3k+3)^2\)
+                        therefore
+                        <div class="center">
+                            \(\dfrac{1}{3k+2}+\dfrac{1}{3k+4}&gt;\fbox{\(\;(\gamma)\;\)}.\)
+                        </div>
+                        Since \(a_k&gt;1\),
+                        <br/>
+                        \(a_{k+1}&gt;a_k+
+                        \left(\!\dfrac{1}{3k+3}+\fbox{\(\;(\gamma)\;\)}\right)
+                        -\fbox{\(\;(\alpha)\;\)}\)
+                        \(&gt;1\)
+                    </div>
+                    By \((1)\) and \((2)\),
+                    \(a_n&gt;1\) for all positive integers \(n\).
+                </div>
+                In the proof above, what is appropriate for
+                \((\alpha), (\beta)\) and \((\gamma)\)?
+                <small>[3 points]</small>
+                <table class="no-border">
+                    <tr>
+                        <td></td>
+                        <td style="width:50px;">\(\underline{(\alpha)}\)</td>
+                        <td style="width:50px;">\(\underline{(\beta)}\)</td>
+                        <td style="width:50px;">\(\underline{(\gamma)}\)</td>
+                    </tr>
+                    <tr>
+                        <td>①</td>
+                        <td>\(\dfrac{1}{k+1}\)</td>
+                        <td>\(&gt;\)</td>
+                        <td>\(\dfrac{2}{3k+3}\)</td>
+                    </tr>
+                    <tr>
+                        <td>②</td>
+                        <td>\(\dfrac{1}{k+1}\)</td>
+                        <td>\(&lt;\)</td>
+                        <td>\(\dfrac{2}{3k+3}\)</td>
+                    </tr>
+                    <tr>
+                        <td>③</td>
+                        <td>\(\dfrac{1}{k+1}\)</td>
+                        <td>\(&lt;\)</td>
+                        <td>\(\dfrac{4}{3k+3}\)</td>
+                    </tr>
+                    <tr>
+                        <td>④</td>
+                        <td>\(\dfrac{2}{k+1}\)</td>
+                        <td>\(&gt;\)</td>
+                        <td>\(\dfrac{4}{3k+3}\)</td>
+                    </tr>
+                    <tr>
+                        <td>⑤</td>
+                        <td>\(\dfrac{2}{k+1}\)</td>
+                        <td>\(&lt;\)</td>
+                        <td>\(\dfrac{1}{k+1}\)</td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                For \(a&gt;1\), let \(f(x)=2x^3-3(a+1)x^2+6ax-4a+2\)
+                and let \(b\) be a real solution to the equation \(f(x)=0\).
+                The following is a process comparing the values of
+                \(a\) and \(b\).
+                <div class="box">
+                    \(f'(x)=\fbox{\(\qquad(\alpha)\qquad\)}\) and \(a&gt;1\),
+                    <br/>
+                    so \(f(x)\) has a \(\fbox{\(\qquad\quad(\beta)\qquad\quad\)}\) at \(x=1\).
+                    <br/>
+                    Since \(f(1)&lt;0\) and \(f(b)=0\),
+                    <br/>
+                    \(a\;\fbox{\(\;(\gamma)\;\)}\;b\).
+                </div>
+                In the process above, what is appropriate for
+                \((\alpha), (\beta)\) and \((\gamma)\)?
+                <small>[3 points]</small>
+                <table class="no-border">
+                    <tr>
+                        <td></td>
+                        <td style="width:80px;">\(\underline{(\alpha)}\)</td>
+                        <td style="width:100px;">\(\underline{(\beta)}\)</td>
+                        <td style="width:50px;">\(\underline{(\gamma)}\)</td>
+                    </tr>
+                    <tr>
+                        <td>①</td>
+                        <td>\(6(x+a)(x+1)\)</td>
+                        <td>local minimum</td>
+                        <td>\(&gt;\)</td>
+                    </tr>
+                    <tr>
+                        <td>②</td>
+                        <td>\(6(x+a)(x+1)\)</td>
+                        <td>local minimum</td>
+                        <td>\(&lt;\)</td>
+                    </tr>
+                    <tr>
+                        <td>③</td>
+                        <td>\(6(x-a)(x-1)\)</td>
+                        <td>local minimum</td>
+                        <td>\(&gt;\)</td>
+                    </tr>
+                    <tr>
+                        <td>④</td>
+                        <td>\(6(x-a)(x-1)\)</td>
+                        <td>local maximum</td>
+                        <td>\(&lt;\)</td>
+                    </tr>
+                    <tr>
+                        <td>⑤</td>
+                        <td>\(6(x-a)(x-1)\)</td>
+                        <td>local maximum</td>
+                        <td>\(&gt;\)</td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                Among the strings of length \(12\)
+                consisting of eight &lsquo;\(a\)&rsquo;s and
+                four &lsquo;\(b\)&rsquo;s,
+                what is the number of strings that satisfy all of the following conditions?
+                <small>[4 points]</small>
+                <div class="box">
+                    <ol class="upper">
+                        <li>There are no consecutive &lsquo;\(b\)&rsquo;s.</li>
+                        <li>If the first character is &lsquo;\(b\)&rsquo;,
+                            then the last character is &lsquo;\(a\)&rsquo;.
+                        </li>
+                    </ol>
+                </div>
+                <ol>
+                    <li>\(70\)</li>
+                    <li>\(105\)</li>
+                    <li>\(140\)</li>
+                    <li>\(175\)</li>
+                    <li>\(210\)</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                There are two points \(\mathrm{A}(3,1,1)\) and \(\mathrm{B}(1,-3,-1)\)
+                in \(3\)-dimensional space.
+                For a point \(\mathrm{P}\) on the plane \(x-y+z=0\),
+                what is the minimum value of
+                \(|\overrightarrow{\mathrm{PA}}+\overrightarrow{\mathrm{PB}}|\)?
+                <small>[4 points]</small>
+                <ol>
+                    <li>\(\dfrac{4\sqrt{3}}{3}\)</li>
+                    <li>\(\dfrac{5\sqrt{3}}{3}\)</li>
+                    <li>\(2\sqrt{3}\)</li>
+                    <li>\(\dfrac{7\sqrt{3}}{3}\)</li>
+                    <li>\(\dfrac{8\sqrt{3}}{3}\)</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                The following table shows the preference of customers by manufacturer
+                for hiking boots sold at some department store.
+                <div class="center">
+                    <table style="width:100%">
+                        <tr>
+                            <td>Manufacturer</td>
+                            <td>\(\mathrm{A}\)</td>
+                            <td>\(\mathrm{B}\)</td>
+                            <td>\(\mathrm{C}\)</td>
+                            <td>\(\mathrm{D}\)</td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>Preference(\(\%\))</td>
+                            <td>\(20\)</td>
+                            <td>\(28\)</td>
+                            <td>\(25\)</td>
+                            <td>\(27\)</td>
+                            <td>\(100\)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="display: flex;">
+                    <div style="flex:3;">
+                        Suppose \(192\) customers each buy a pair of hiking boots.
+                        What is the probability that at least \(42\) people
+                        select the ones produced by manufacturer \(\mathrm{C}\),
+                        computed using the standard normal table to the right?
+                        <small class="right">[3 points]</small>
+                        <ol class="select col-2">
+                            <li>\(0.6915\)</li>
+                            <li>\(0.7745\)</li>
+                            <li>\(0.8256\)</li>
+                            <li>\(0.8332\)</li>
+                            <li>\(0.8413\)</li>
+                        </ol>
+                    </div>
+                    <table style="flex:2; align-self: start; margin-left: 8px; margin-top: 8px;">
+                        <tr><td>\(z\)</td><td>\(\mathrm{P}(0\!\leq\! Z \!\leq\!z)\)</td></tr>
+                        <tr><td>\(0.5\)</td><td>\(0.1915\)</td></tr>
+                        <tr><td>\(1.0\)</td><td>\(0.3413\)</td></tr>
+                        <tr><td>\(1.5\)</td><td>\(0.4332\)</td></tr>
+                        <tr><td>\(2.0\)</td><td>\(0.4772\)</td></tr>
+                    </table>
+                </div>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                A &lsquo;super-aged society&rsquo; is a society in which
+                the proportion of the population aged \(65\) or older
+                is more than \(20\%\) of the total population.
+                Some country in the year \(2000\)
+                had a total population of \(10\) million and
+                \(500\) thousand people aged \(65\) or older.
+                Suppose the total population increases by \(0.3\%\) every year,
+                and the number of people aged \(65\) or older
+                increases by \(4\%\) every year.
+                What is the estimated time period in which this country
+                first becomes a &lsquo;super-aged society&rsquo;?
+                <br/>
+                (※ \(\log_{10}1.003=0.0013, \log_{10}1.04=0.0170,\)\(\log_{10}2=0.3010\))
+                <small>[4 points]</small>
+                <ol class="col-2">
+                    <li>Year \(2048\) ~ \(2050\)</li>
+                    <li>Year \(2038\) ~ \(2040\)</li>
+                    <li>Year \(2028\) ~ \(2030\)</li>
+                    <li>Year \(2018\) ~ \(2020\)</li>
+                    <li>Year \(2008\) ~ \(2010\)</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                Suppose a point \(\mathrm{P}\) starts from the origin and moves on the number line,
+                and its velocity \(v(t)\) at time \(t\,(0\leq t\leq5)\) is as follows.
+                <div class="tab">
+                    \(v(t)=\begin{cases}
+                        4t & \; (0\leq t&lt;1)\\
+                        -2t+6 & \; (1\leq t&lt;3)\\
+                        t-3 & \; (3\leq t\leq 5)\\
+                    \end{cases}\)
+                </div>
+                For a real number \(x\,(0&lt;x&lt;3)\), let \(f(x)\) be the minimum value among
+                <div class="tab">
+                    the distance from \(t=0\) to \(t=x\),
+                    <br/>
+                    the distance from \(t=x\) to \(t=x+2\), and
+                    <br/>
+                    the distance from \(t=x+2\) to \(t=5\)
+                </div>
+                that point \(\mathrm{P}\) travels.
+                Which option only contains every correct statement in the &lt;List&gt;?
+                <small>[4 points]</small>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>\(f(1)=2\)</li>
+                        <li>\(\displaystyle f(2)-f(1)=\int_1^2 v(t)dt\)</li>
+                        <li>\(f(x)\) is differentiable at \(x=1\).</li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>a, b</li>
+                    <li>a, c</li>
+                    <li>b, c</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <div class="question-type">Short Answer Questions</div>
+            <article>
+                The function \(f(x)=(x-1)^2(x-4)+a\) has a local minimum value of \(10\).
+                Compute the constant \(a\).
+                <small class="right">[3 points]</small>
+            </article>
+            <article>
+                Compute the value of the positive integer \(k\) for which
+                the number of integers \(x\) satisfying
+                <div class="tab">\(1+\dfrac{k}{x-k}\leq\dfrac{1}{x-1}\)</div>
+                is \(3\).
+                <small>[3 points]</small>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                Consider a region enclosed by two curves \(y=\sqrt{x}\) and \(y=\sqrt{-x+10}\), and the \(x\)-axis.
+                The solid formed by rotating this region about the \(x\)-axis has a volume of \(a\pi\).
+                Compute \(a\).
+                <small>[3 points]</small>
+            </article>
+            <article>
+                In \(3\)-dimensional space,
+                let \(\mathrm{A}\) be the point where the line \(\dfrac{x}{2}=y=z+3\)
+                meets the plane \(\alpha : x+2y+2z=6\).
+                The intersection of plane \(\alpha\) and
+                a sphere with center \((1,-1,5)\) passing through point \(\mathrm{A}\),
+                is a shape with an area of \(k\pi\).
+                Compute \(k\).
+                <small>[3 points]</small>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                As the figure shows, there is an equilateral triangle \(\mathrm{ABC}\)
+                and a circle \(\mathrm{O}\) with the line segment \(\mathrm{AC}\) as a diameter.
+                Let \(\mathrm{D}\) be a point on the line segment \(\mathrm{BC}\) such that
+                \(\angle\mathrm{DAB}=\dfrac{\pi}{15}\).
+                For a point \(\mathrm{X}\) moving on the circle \(\mathrm{O}\),
+                let \(\mathrm{P}\) be the point \(\mathrm{X}\) that minimizes
+                the inner product
+                \(\overrightarrow{\mathrm{AD}}\cdot\overrightarrow{\mathrm{CX}}\).
+                <br/>
+                Given that \(\angle\mathrm{ACP}=\dfrac{q}{p}\pi\),
+                compute \(p+q\).
+                (※ \(p\) and \(q\) are positive integers that are coprime.)
+                <small>[4 points]</small>
+                <div class="center"><img src="img/math_ga_22.png" width="45%"/></div>
+            </article>
+            <article>
+                For integers \(n\geq2\),
+                let \(S\) be the set of all products of two distinct elements in the set
+                <div class="tab">\(\big\{3^{2k-1} \,\big|\, k\) is an integer, \(1\leq k\leq n\big\}\).</div>
+                Let \(f(n)\) be the number of elements in \(S\).
+                For example, \(f(4)=5\).
+                Compute \(\displaystyle\sum_{n=2}^{11} f(n)\).
+                <small>[4 points]</small>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                Consider a quartic function \(f(x)\) with a leading coefficient of \(1\),
+                where \(f(0)=3\) and \(f'(3)&lt;0\).
+                For a real number \(t\), let \(S\) be the set
+                <div class="tab">\(\big\{a \,\big|\: |f(x)-t|\) is not differentiable at \(x=a \big\}\)</div>
+                and let \(g(t)\) be the number of elements in set \(S\).
+                Given that \(g(t)\) has a discontinuity only at \(t=3\) and \(t=19\),
+                compute \(f(-2)\).
+                <small>[4 points]</small>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                For a positive integer \(m\), consider
+                cube-shaped blocks of the same size that are stacked
+                \(1\) block high in column \(1\),
+                \(2\) blocks high in column \(2\),
+                \(3\) blocks high in column \(3\),
+                \(\cdots\),
+                \(m\) blocks high in column \(m\).
+                Let us perform the following trial repeatedly until there are no columns
+                with an even number of blocks.
+                <div class="box">
+                    For each column with an even number of blocks,
+                    remove \(\dfrac{1}{2}\) of the blocks in that column.
+                </div>
+                After all trials are done,
+                let \(f(m)\) be the sum of the number of blocks
+                from column \(1\) to column \(m\).
+                For example, \(f(2)=2, f(3)=5,\) and \(f(4)=6\).
+                Given that
+                <div class="tab">
+                    \(\displaystyle\lim_{n\to\infty}\dfrac{f(2^{n+1})-f(2^n)}{f(2^{n+2})}=\dfrac{q}{p}\),
+                </div>
+                compute \(p+q\).
+                (※ \(p\) and \(q\) are positive integers that are coprime.)
+                <small>[4 points]</small>
+                <div class="center"><img src="img/math_ga_25.png" width="50%"/></div>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section class="question-reset-26">
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <div class="elective-type">Calculus</div>
+            <article>
+                If \(\tan\dfrac{\theta}{2}=\dfrac{\sqrt{2}}{2}\),
+                what is the value of \(\sec\theta\)?
+                <br/>
+                (※ \(0&lt;\theta&lt;\dfrac{\pi}{2}\))
+                <small>[3 points]</small>
+                <ol>
+                    <li>\(3\)</li>
+                    <li>\(\dfrac{10}{3}\)</li>
+                    <li>\(\dfrac{11}{3}\)</li>
+                    <li>\(4\)</li>
+                    <li>\(\dfrac{13}{3}\)</li>
+                </ol>
+            </article>
+            <article>
+                On the \(xy\)-plane, what is the slope of the tangent line
+                to the curve \(y^3=\ln(5-x^2)+xy+4\) at point \((2,2)\)?
+                <small>[3 points]</small>
+                <ol>
+                    <li>\(-\dfrac{3}{5}\)</li>
+                    <li>\(-\dfrac{1}{2}\)</li>
+                    <li>\(-\dfrac{2}{5}\)</li>
+                    <li>\(-\dfrac{3}{10}\)</li>
+                    <li>\(-\dfrac{1}{5}\)</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                A function \(f(x)\) is differentiable on the set of all real numbers.
+                It is given that \(f(2x)=2f(x)f'(x)\) for all real numbers \(x\), and
+                <div class="tab">
+                    \(f(a)\!=\!0,\,
+                    \displaystyle\int_{2a}^{4a}\!\dfrac{f(x)}{x}dx=k\:(a\!&gt;\!0,\,0\!&lt;\!k\!&lt;\!1)\).
+                </div>
+                What is the value of \(\displaystyle\int_{a}^{2a}\!\dfrac{f(x)}{x}dx\) in terms of \(k\)?
+                <small class="right">[3 points]</small>
+                <ol class="col-3">
+                    <li>\(\dfrac{k^2}{4}\)</li>
+                    <li>\(\dfrac{k^2}{2}\)</li>
+                    <li>\(k^2\)</li>
+                    <li>\(k\)</li>
+                    <li>\(2k\)</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                For all functions \(f(x)\) differentiable on the set of all real numbers
+                that satisfies the following,
+                what is the minimum value of \(\displaystyle\int_0^2\!f(x)dx\)?
+                <small>[4 points]</small>
+                <div class="box">
+                    <ol class="upper">
+                        <li>\(f(0)=1\) and \(f'(0)=1\).</li>
+                        <li>If \(0&lt;a&lt;b&lt;2\), then \(f'(a)\leq f'(b)\).</li>
+                        <li>In the interval \((0, 1)\), \(f''(x)=e^x\).</li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>\(\dfrac{1}{2}e-1\)</li>
+                    <li>\(\dfrac{3}{2}e-1\)</li>
+                    <li>\(\dfrac{5}{2}e-1\)</li>
+                    <li>\(\dfrac{7}{2}e-2\)</li>
+                    <li>\(\dfrac{9}{2}e-2\)</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <div class="question-type">Short Answer Quesetions</div>
+            <article>
+                As the figure shows,
+                for a point \(\mathrm{P}\) on the circle \(x^2+y^2=1\) on the \(xy\)-plane,
+                let \(\theta\,(0&lt;\theta&lt;\dfrac{\pi}{4})\) be the angle between
+                the line segment \(\mathrm{OP}\) and the positive direction of the \(x\)-axis.
+                Let \(\mathrm{Q}\) be the point where a line,
+                passing through point \(\mathrm{P}\) parallel to the \(x\)-axis,
+                meets the curve \(y=e^x-1\).
+                Let \(\mathrm{R}\) be the perpendicular foot from point \(\mathrm{Q}\) to the \(x\)-axis.
+                Let \(\mathrm{T}\) be the intersection of line segments \(\mathrm{OP}\) and \(\mathrm{QR}\),
+                and let \(S(\theta)\) be the area of the triangle \(\mathrm{ORT}\).
+                Given that \(\displaystyle\lim_{\theta\to +0}\dfrac{S(\theta)}{\theta^3}=a\),
+                compute \(60a\).
+                <small>[4 points]</small>
+                <div class="center"><img src="img/math_ga_s1_30.png" width="50%"/></div>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section class="question-reset-26">
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <div class="elective-type">Probability & Statistics</div>
+            <article>
+                The probability mass function of a discrete random variable \(X\) is given as
+                <div class="tab">\(\mathrm{P}(X=x)=\dfrac{ax+2}{10}\;\;(x=-1,0,1,2)\).</div>
+                What is the value of \(\mathrm{V}(3X+2)\), the variance of the random variable \(3X+2\)?
+                (※ \(a\) is a constant.)
+                <small class="right">[3 points]</small>
+                <ol>
+                    <li>\(9\)</li>
+                    <li>\(18\)</li>
+                    <li>\(27\)</li>
+                    <li>\(36\)</li>
+                    <li>\(45\)</li>
+                </ol>
+            </article>
+            <article>
+                \(4\) male players and \(4\) female players participate in a table tennis match.
+                If we randomly make \(4\) groups of \(2\) people,
+                what is the probability that there are exactly \(2\) groups
+                consisting of one male and one female?
+                <small>[3 points]</small>
+                <ol>
+                    <li>\(\dfrac{3}{7}\)</li>
+                    <li>\(\dfrac{18}{35}\)</li>
+                    <li>\(\dfrac{3}{7}\)</li>
+                    <li>\(\dfrac{24}{35}\)</li>
+                    <li>\(\dfrac{27}{35}\)</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                The daily output of employees of some company
+                depends on how long they have been employed.
+                The daily output of an employee who was employed for \(n\) months
+                \((1\leq n \leq 100)\) follows a normal distribution
+                with a mean of \(an+100\) (\(a\) is a constant) and
+                a standard deviation of \(12\).
+                The probability that an employee who was employed for \(16\) months
+                has a daily output less than or equal to \(84\) is \(0.0228\).
+                <br/>
+                What is the probability that an employee who was
+                <div style="display: flex;">
+                    <div>
+                        employed for \(36\) months
+                        has a daily output between \(100\) and \(142\),
+                        computed using the standard normal table to the right?
+                        <small>[3 points]</small>
+                    </div>
+                    <table class="short" style="margin-left: 8px; margin-top: 4px;">
+                        <tr><th>\(z\)</th><th>\(\mathrm{P}(0\!\leq\! Z \!\leq\!z)\)</th></tr>
+                        <tr><td>\(1.0\)</td><td>\(0.3413\)</td></tr>
+                        <tr><td>\(1.5\)</td><td>\(0.4332\)</td></tr>
+                        <tr><td>\(2.0\)</td><td>\(0.4772\)</td></tr>
+                        <tr><td>\(2.5\)</td><td>\(0.4938\)</td></tr>
+                    </table>
+                </div>
+                <ol class="col-3">
+                    <li>\(0.7745\)</li>
+                    <li>\(0.8185\)</li>
+                    <li>\(0.9104\)</li>
+                    <li>\(0.9270\)</li>
+                    <li>\(0.9710\)</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                There are two data \(\mathrm{A}\) and \(\mathrm{B}\).
+                Data \(\mathrm{A}\) consists of \(5\) distinct numbers,
+                with the mean and the median both being \(25\).
+                Data \(\mathrm{B}\) consists of \(7\) numbers,
+                \(5\) of which are the same as data \(\mathrm{A}\),
+                and the other two numbers being \(x\) and \(y\).
+                Which option only contains every correct statement in the &lt;List&gt;?
+                <small>[4 points]</small>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>
+                            If the mean of \(\mathrm{B}\) is \(25\),
+                            the median of \(\mathrm{B}\) is \(25\).
+                        </li>
+                        <li>
+                            If the mean of \(\mathrm{B}\) is greater than or equal to
+                            <br/>\(27\), at least one number between \(x\) and \(y\) is greater than or equal to \(32\).
+                        </li>
+                        <li>
+                            If \(x\) and \(y\) are both \(25\),
+                            the standard deviation of \(\mathrm{B}\) is less than
+                            the standard deviation of \(\mathrm{A}\).
+                        </li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>a</li>
+                    <li>c</li>
+                    <li>a, b</li>
+                    <li>b, c</li>
+                    <li>a, b, c</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <div class="question-type">Short Answer Quesetions</div>
+            <article>
+                Suppose we are researching the proportion of antibody holders among Korean adults
+                for some disease.
+                Let \(p\) be the proportion of antibody holders of the population,
+                and let \(\hat{p}\) be the proportion of antibody holders of a sample
+                of size \(n\) randomly sampled from the population.
+                Compute the minimum value of \(n\) for which the
+                probability that \(|\hat{p}-p|\leq0.16\sqrt{\hat{p}(1-\hat{p})}\)
+                is at least \(0.9544\).
+                (※ For a random variable \(Z\) that follows the standard normal distribution,
+                suppose \(\mathrm{P}(0\leq|Z|\leq 2) = 0.4772\).)
+                <small class="right">[4 points]</small>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section class="question-reset-26">
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <div class="elective-type">Discrete Mathematics</div>
+            <article>
+                Among the integer partitions of \(7\),
+                what is the number of partitions where every part is
+                less than or equal to \(3\)?
+                <small>[3 points]</small>
+                <ol>
+                    <li>\(6\)</li>
+                    <li>\(7\)</li>
+                    <li>\(8\)</li>
+                    <li>\(9\)</li>
+                    <li>\(10\)</li>
+                </ol>
+            </article>
+            <article>
+                Let us add the least number of edges to the graph below
+                to create a graph \(\mathrm{H}\) that has a Hamiltonian cycle.
+                What is the number of distinct graphs \(\mathrm{H}\) that can be made?
+                <small>[3 points]</small>
+                <div class="center"><img src="img/math_ga_s3_27.png" width="60%"/></div>
+                <ol>
+                    <li>\(30\)</li>
+                    <li>\(35\)</li>
+                    <li>\(40\)</li>
+                    <li>\(45\)</li>
+                    <li>\(50\)</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                A newly constructed building has \(6\) offices \(\mathrm{A,B,C,D,E}\) and \(\mathrm{F}\),
+                and the price needed to build a computer network between two offices is shown in the table.
+                What is the minimum price needed to build computer networks such that
+                all \(6\) offices are connected via the network?
+                <div class="space"></div>
+                <div style="text-align: right;">(Unit: million won)</div>
+                <table class="short" style="width:100%;">
+                    <tr><td>\( \)</td><td>\(\mathrm{A}\)</td><td>\(\mathrm{B}\)</td><td>\(\mathrm{C}\)</td><td>\(\mathrm{D}\)</td><td>\(\mathrm{E}\)</td><td>\(\mathrm{F}\)</td></tr>
+                    <tr><td>\(\mathrm{A}\)</td><td>\( \)</td><td>\(5\)</td><td>\(4\)</td><td>\(2\)</td><td>\(2\)</td><td>\(1\)</td></tr>
+                    <tr><td>\(\mathrm{B}\)</td><td>\(5\)</td><td>\( \)</td><td>\(5\)</td><td>\(3\)</td><td>\(5\)</td><td>\(5\)</td></tr>
+                    <tr><td>\(\mathrm{C}\)</td><td>\(4\)</td><td>\(5\)</td><td>\( \)</td><td>\(4\)</td><td>\(5\)</td><td>\(6\)</td></tr>
+                    <tr><td>\(\mathrm{D}\)</td><td>\(2\)</td><td>\(3\)</td><td>\(4\)</td><td>\( \)</td><td>\(3\)</td><td>\(3\)</td></tr>
+                    <tr><td>\(\mathrm{E}\)</td><td>\(2\)</td><td>\(5\)</td><td>\(5\)</td><td>\(3\)</td><td>\( \)</td><td>\(3\)</td></tr>
+                    <tr><td>\(\mathrm{F}\)</td><td>\(1\)</td><td>\(5\)</td><td>\(6\)</td><td>\(3\)</td><td>\(3\)</td><td>\( \)</td></tr>
+                </table>
+                <ol class="col-2">
+                    <li>\(11\) million won</li>
+                    <li>\(12\) million won</li>
+                    <li>\(13\) million won</li>
+                    <li>\(14\) million won</li>
+                    <li>\(15\) million won</li>
+                </ol>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Ga)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                For the following graph \(\mathrm{G}\) with \(7\) vertices,
+                which option only contains every correct statement in the &lt;List&gt;?
+                <small>[4 points]</small>
+                <div class="center"><img src="img/math_ga_s3_29.png" width="45%"/></div>
+                <div class="space"></div>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>
+                            The minimum spanning tree of graph \(\mathrm{G}\) has
+                            <br/>\(6\) edges.
+                        </li>
+                        <li>
+                            Graph \(\mathrm{G}\) is not a planar graph.
+                        </li>
+                        <li>
+                            The smallest number of colors needed for a
+                            proper vertex coloring of graph \(\mathrm{G}\) is \(3\).
+                        </li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>a, b</li>
+                    <li>a, c</li>
+                </ol>
+            </article>
+        </div>
+        <div class="col2">
+            <div class="question-type">Short Answer Quesetions</div>
+            <article>
+                Among the strings of length \(n\)
+                consisting of characters \(a, b\) and \(c\)
+                where each character can be used multiple times,
+                let \(a_n\) be the number of strings that satisfy the following.
+                <div class="box">
+                    <ol class="upper">
+                        <li>The first and last characters are both \(a\).</li>
+                        <li>Only \(a\) can come right after \(b\) or \(c\).</li>
+                    </ol>
+                </div>
+                The sequence \(\{a_n\}\) satisfies \(a_1=1, a_2=1\), and the recurrence relation
+                <div class="tab">\(a_{n+2}=a_{n+1}+pa_n\;\;(n\geq1)\).</div>
+                Given that \(a_7=q\), compute \(p+q\).
+                <small>[4 points]</small>
+            </article>
+        </div>
+        <footer>16</footer>
+    </section>
 
-/* Fonts */
-.exam h1, .exam h2, .elective-type {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: bold;
-}
-.exam h3 { font-family: 'Asap Condensed', sans-serif; }
-.exam article { font-family:'PT Serif', Times, serif; }
-.exam header::before, .exam article::before, .exam footer, .exam article small {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-weight: normal;
-}
-.exam .question-type {
-    font-family: 'Roboto', sans-serif;
-    font-weight: medium;
-}
-.exam.old h1, .exam.old h2 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: normal;
-}
-
-/* Page */
-.exam section {
-    position: relative;
-    width: 794px; /* 210mm */
-    min-height: 1123px; /* 297mm */
-    margin: 32px auto;
-    padding: 72px 64px;
-
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-
-    box-shadow: var(--color-shadow) 6px 6px 10px;
-    background-color: var(--color-paper);
-
-    /* Grid settings */
-    display: grid;
-    grid-template-rows: minmax(48px, auto) 1fr 48px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        " header header "
-        " col1 col2 "
-        " footer footer ";
-}
-.exam.old section {
-    grid-template-rows: minmax(48px, auto) 1fr 0px;
-}
-
-/* Header */
-.exam header {
-    grid-area: header;
-    border-bottom: 1px solid var(--color-black);
-    
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-}
-
-/* Controlling page number */
-.exam header::before {
-    counter-increment: page;
-    content: counter(page);
-
-    position: absolute;
-    top: 8px;
-    margin: 0;
-    font-size: 34px;
-    line-height: 34px;
-}
-.exam.old header::before {
-    top:12px;
-}
-.exam section:first-child > header::before,
-.exam section.question-reset-23 > header::before {
-    top: -8px;
-}
-.exam section:nth-of-type(odd) header::before { right: 0; }
-.exam section:nth-of-type(even) header::before { left: 0; }
-
-/* Resetting question or page */
-.exam section.question-reset-23 {
-    /* used in 2021~ */
-    counter-reset: page 0 question 22;
-}
-.exam section.question-reset-26 {
-    /* used in 2006~2013 */
-    counter-reset: question 25;
-}
-
-/* Title (first page) */
-.exam h1 {
-    margin: 0;
-    font-size: 40px;
-}
-.exam.old h1 {
-    margin: 0 0 4px;
-    font-size: 36px;
-}
-/* Title (all other pages) */
-.exam h2 {
-    margin: 0 0 -4px;
-    font-size: 30px;
-}
-.exam.old h2 {
-    margin: 0 0 2px;
-    font-size: 28px;
-}
-/* Subtitle (first page) */
-.exam h3 {
-    margin: 0 0 -4px;
-    font-size: 20px;
-    font-weight: normal;
-}
-
-/* Question container */
-.col1, .col2 {
-    position: relative;
-    overflow: hidden;
-}
-.col1 {
-    grid-area: col1;
-    padding-right: 12px;
-}
-.col2 {
-    grid-area: col2;
-    border-left: 1px solid var(--color-black);
-    padding-left: 12px;
-}
-
-/* Question */
-.exam article {
-    min-height: 50%;
-    margin-top: 12px;
-    padding-left: 12px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    line-height: 20px;
-
-    font-size: 13px;
-}
-.exam article::before {
-    counter-increment: question;
-    content: counter(question) ". ";
-    margin-left: -12px;
-    margin-right: 4px;
-    font-size: 15px;
-}
-
-/* Question Type */
-.exam .question-type {
-    display: inline-block;
-    margin: 8px 0 0;
-    border: 1px solid var(--color-black);
-    padding: 2px 16px;
-
-    font-size: 13px;
-}
-/* Offseting the question after .question-type */
-.exam .question-type + article { margin-bottom: -33px; }
-/* Elective subject type */
-.exam .elective-type {
-    margin: 8px 0 16px;
-    background-color: var(--color-gray);
-    
-    text-align: center;
-    font-size: 26px;
-    line-height: 40px;
-}
-.exam .elective-type + article { margin-bottom: -53px; }
-
-
-/* Choices */
-.exam article > ol, .select {
-    margin: 16px 0;
-    padding: 0;
-    display: flex;
-
-    justify-content: space-between;
-    align-items: baseline;
-    /* list-style-type: symbols(cyclic "①" "②" "③" "④" "⑤"); */
-    list-style-type: none;
-}
-.exam ol.col-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.exam ol.col-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.exam ol.col-1 {
-    display: block;
-}
-.exam :is(.math article > ol, .select) li { margin-bottom: 8px; }
-.exam ol.col-1 li {
-    margin-bottom: 4px;
-    margin-left: 22px;
-    text-indent: -22px;
-}
-.exam ol.col-1 li::before {
-    margin-right: 6px;
-}
-.exam :is(article > ol, .select) li:nth-child(1)::before { content: "① "; }
-.exam :is(article > ol, .select) li:nth-child(2)::before { content: "② "; }
-.exam :is(article > ol, .select) li:nth-child(3)::before { content: "③ "; }
-.exam :is(article > ol, .select) li:nth-child(4)::before { content: "④ "; }
-.exam :is(article > ol, .select) li:nth-child(5)::before { content: "⑤ "; }
-.exam :is(article > ol, .select)::after { content: ""; }
-
-
-/* Various elements inside questions */
-/* "[N points]" element */
-.exam article > small {
-    margin-left: 4px;
-    letter-spacing: -0.2px;
-}
-.exam article small.right {
-    display: block;
-    text-align: right;
-}
-/* a paragraph tabbed in */
-.exam .tab, .exam .tab-short { margin-left: 32px; }
-.exam .box .tab, .exam .box .tab-short { margin-left: 20px; }
-/* a paragraph centered */
-.exam .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* a box with outline */
-.exam .box, .exam .box-list {
-    margin-right: 8px;
-    border: 1px solid var(--color-black);
-    padding: 6px 10px;
-}
-/* the <List> box */
-.exam .box-list { position: relative; }
-.exam .box-list::before {
-    content: "< L i s t >";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(-11px);
-    padding: 0 1px;
-    text-align: center;
-    background-color: var(--color-paper);
-}
-.exam .tab, .exam .center, .exam .box, .exam .box-list {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-/* table */
-.exam table {
-    border-collapse: collapse;
-}
-.exam th, .exam td {
-    border: 1px solid var(--color-black);
-    text-align: center;
-    padding: 4px 8px;
-}
-.exam table.no-border th, .exam table.no-border td { border: none; }
-.exam table.short th, .exam table.short td {
-    padding: 0px 8px;
-}
-
-/* Lists */
-/* (A) (B) (C) - used in .box on its own */
-.exam ol.upper {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
-    list-style-type: none;
-    /* Why is ::marker not supported on my phone? */
-}
-.exam ol.upper > li { margin: 2px 0 2px 28px; }
-.exam ol.upper > li::before {
-    display: inline-block;
-    letter-spacing: -0.5px;
-    width: 28px;
-    margin-left: -28px;
-    margin-right: -4px;
-}
-.exam ol.upper > li:nth-child(1)::before { content: "(A)"; }
-.exam ol.upper > li:nth-child(2)::before { content: "(B)"; }
-.exam ol.upper > li:nth-child(3)::before { content: "(C)"; }
-
-/* (i) (ii) (iii) - used in .box between paragraphs */
-.exam ol.roman {
-    padding-inline-start: 0;
-    list-style-type: none;
-}
-.exam ol.roman > li { margin: 2px 0 2px 22px; }
-.exam ol.roman > li::before {
-    display: inline-block;
-    letter-spacing: -0.7px;
-    width: 22px;
-    margin-left: -22px;
-    margin-right: -4px;
-}
-.exam ol.roman > li:nth-child(1)::before { content: "(i)"; }
-.exam ol.roman > li:nth-child(2)::before { content: "(ii)"; }
-.exam ol.roman > li:nth-child(3)::before { content: "(iii)"; }
-.exam ol.roman > li:nth-child(4)::before { content: "(iv)"; }
-.exam ol.roman > li:nth-child(5)::before { content: "(v)"; }
-
-/* a. b. c. - used in .box-list */
-.exam ol.alpha {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 14px;
-    list-style-type: lower-alpha;
-}
-.exam ol.alpha > li { margin: 2px 0; }
-
-/* Images */
-.exam img {
-    max-width: 100%;
-    mix-blend-mode: multiply; /* remove white background */
-}
-
-/* letter spacing */
-.exam .shrink-1 {
-    letter-spacing: -0.2px;
-}
-.exam .shrink-2 {
-    letter-spacing: -0.5px;
-}
-
-/* vertical spacing */
-.exam .space { margin-bottom: 8px;}
-
-/* Footer */
-.exam footer {
-    grid-area: footer;
-    justify-self: center;
-    align-self: center;
-    width: 48px;
-    height: 15px;
-    
-    border: 1px solid var(--color-black);
-    padding: 9px 4px 0;
-    position: relative;
-
-    font-size: 12px;
-    text-align: right;
-}
-.exam footer::before {
-    float: left;
-    margin-top: -9px;
-    counter-increment: page-total;
-    content: counter(page-total);
-}
-.exam footer::after {
-    position:absolute;
-    bottom: -1px;
-    left: 0;
-    width:61px;
-    border-top:1px solid var(--color-black);
-    transform: rotate(-23.2deg);
-    transform-origin: 0% 100%;
-    content: "";
-}
-
-
-/* Small Screen */
-@media screen and (max-width: 794px) {
-    
-}
-@media screen and (max-width: 680px) {
-    .exam section {
-        width: 100%;
-        min-width: 360px;
-        margin: 0;
-        padding: 32px 0;
-        grid-template-rows: minmax(32px, auto) max-content max-content 60px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            " header "
-            " col1 "
-            " col2 "
-            " footer ";
-    }
-    .exam.old section {
-        grid-template-rows: minmax(32px, auto) max-content max-content 0px;
-    }
-    .exam .col1, .exam .col2 {
-        width: 321px;
-        height: max-content;
-        border: none;
-        padding: 0;
-        justify-self: center;
-    }
-    .exam article {
-        height: max-content;
-        min-height: 0 !important;
-        margin-bottom: 150px !important;
-    }
-    .exam h1 { font-size: 25px; }
-    .exam h2 { font-size: 20px; }
-    .exam h3 { font-size: 15px; }
-    .exam header::before {
-        font-size: 22px;
-        top:0px;
-    }
-}
-
-/* Print */
-@page {
-    size: 794px 1123px;
-    margin: 0px;
-}
-@media print {
-    :root {
-        --color-paper: white;
-        --color-black: black;
-    }
-    html, body {
-        margin: 0;
-        padding: 0;
-    }
-    .exam section {
-        width: 794px;
-        height: 1123px;
-        margin: 0;
-        overflow: hidden;
-        page-break-before: always;
-        box-shadow: none;
-    }
-    .exam img { mix-blend-mode: normal; }
-}
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
+</body>
+</html>
