@@ -266,12 +266,12 @@ html, body {
 .exam table {
     border-collapse: collapse;
 }
-.exam td {
+.exam th, .exam td {
     border: 1px solid var(--color-black);
     text-align: center;
     padding: 4px 8px;
 }
-.exam table.no-border td { border: none; }
+.exam table.no-border th, .exam table.no-border td { border: none; }
 .exam table.short th, .exam table.short td {
     padding: 0px 8px;
 }
