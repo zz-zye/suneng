@@ -182,7 +182,7 @@ html, body {
 
 
 /* Choices */
-.exam article > ol, .select {
+.exam article > ol, .exam .select {
     margin: 16px 0;
     padding: 0;
     display: flex;
@@ -203,7 +203,7 @@ html, body {
 .exam ol.col-1 {
     display: block;
 }
-.exam :is(.math article > ol, .select) li { margin-bottom: 8px; }
+.exam :is(article > ol, .select) li { margin-bottom: 8px; }
 .exam ol.col-1 li {
     margin-bottom: 4px;
     margin-left: 22px;
