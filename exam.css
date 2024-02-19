@@ -14,7 +14,7 @@ html, body {
 }
 .exam h3 { font-family: 'Asap Condensed', sans-serif; }
 .exam article { font-family:'PT Serif', Times, serif; }
-.exam :is(header::before, article::before, footer, article small) {
+.exam header::before, .exam article::before, .exam footer, .exam article small {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: normal;
 }
@@ -182,7 +182,7 @@ html, body {
 
 
 /* Choices */
-.exam article > ol, .select {
+.exam article > ol, .exam .select {
     margin: 16px 0;
     padding: 0;
     display: flex;
@@ -203,7 +203,7 @@ html, body {
 .exam ol.col-1 {
     display: block;
 }
-.exam :is(.math article > ol, .select) li { margin-bottom: 8px; }
+.exam :is(article > ol, .select) li { margin-bottom: 8px; }
 .exam ol.col-1 li {
     margin-bottom: 4px;
     margin-left: 22px;
@@ -231,7 +231,7 @@ html, body {
     text-align: right;
 }
 /* a paragraph tabbed in */
-.exa .tab, .exam .tab-short { margin-left: 32px; }
+.exam .tab, .exam .tab-short { margin-left: 32px; }
 .exam .box .tab, .exam .box .tab-short { margin-left: 20px; }
 /* a paragraph centered */
 .exam .center {
@@ -261,12 +261,6 @@ html, body {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-/* inline box */
-.exam .inline-box {
-    border: 1px solid var(--color-black);
-    padding: 1px 8px;
-    font-size: 95%;
-}
 
 /* table */
 .exam table {
@@ -277,6 +271,7 @@ html, body {
     text-align: center;
     padding: 4px 8px;
 }
+.exam table.no-border th, .exam table.no-border td { border: none; }
 .exam table.short th, .exam table.short td {
     padding: 0px 8px;
 }

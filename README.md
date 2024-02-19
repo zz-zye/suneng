@@ -25,7 +25,7 @@ View the project live on [My Github IO Page.](https://zz-zye.github.io/suneng)
 
 This is currently a personal passion project, and I am unsure how many exams will be translated.
 
-Translated exams: `2011`, `2019`, `2023`, `2024`
+Translated exams: `1994`, `2005`, `2011`, `2019`, `2021`, `2022`, `2023`, `2024`
 
 ## Why am I making it?
 
