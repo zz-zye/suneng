@@ -501,22 +501,38 @@
         </div>
         <div class="col2">
             <article>
-                For a real number \(a\,(a&gt;1)\),
-                define the function \(f(x)\) as
-                <div class="tab">\(f(x)=(x+1)(x-1)(x-a)\).</div>
-                What is the maximum value of \(a\) for which
-                the function
+                For the function
                 <div class="tab">
-                    \(\displaystyle g(x)=x^2\int_0^x f(t)dt-\int_0^x t^2f(t)dt\)
+                    \(f(x)=\begin{cases}
+                        -x &\; (x\leq0)\\
+                        x-1 &\; (0&lt;x\leq2)\\
+                        2x-3 &\; (x&gt;2)
+                    \end{cases}\)
                 </div>
-                only has one local extremum?
+                and a polynomial function \(p(x)\)
+                that is not a constant function,
+                which option only contains every correct statement in the &lt;List&gt;?
                 <small>[4 points]</small>
-                <ol>
-                    <li>\(\dfrac{9\sqrt{2}}{8}\)</li>
-                    <li>\(\dfrac{3\sqrt{6}}{4}\)</li>
-                    <li>\(\dfrac{3\sqrt{2}}{2}\)</li>
-                    <li>\(\sqrt{6}\)</li>
-                    <li>\(2\sqrt{2}\)</li>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>If the function \(p(x)f(x)\) is continuous on the
+                            set of all real numbers, then \(p(0)=0\).
+                        </li>
+                        <li>If the function \(p(x)f(x)\) is differentiable on the
+                            set of all real numbers, then \(p(2)=0\).
+                        </li>
+                        <li>If the function \(p(x)\{f(x)\}^2\) is differentiable on the
+                            set of all real numbers,
+                            then \(p(x)\) is divisible by \(x^2(x-2)^2\).
+                        </li>
+                    </ol>
+                </div>
+                <ol class="col-3">
+                    <li>a</li>
+                    <li>a, b</li>
+                    <li>a, c</li>
+                    <li>b, c</li>
+                    <li>a, b, c</li>
                 </ol>
             </article>
         </div>
@@ -528,35 +544,35 @@
         </header>
         <div class="col1">
             <article>
-                A sequence \(\{a_n\}\) satisfies \(0&lt;a_1&lt;1\),
-                and the following for all positive integers \(n\).
+                A sequence \(\{a_n\}\) satisfies the following for all positive integers \(n\).
                 <div class="box">
                     <ol class="upper">
-                        <li>\(a_{2n}=a_2\times a_n+1\)</li>
-                        <li>\(a_{2n+1}=a_2\times a_n-2\)</li>
+                        <li>\(a_{2n}=a_n-1\)</li>
+                        <li>\(a_{2n+1}=2a_n+1\)</li>
                     </ol>
                 </div>
-                If \(a_7=2\), what is the value of \(a_{25}\)?
+                If \(a_{20}=1\), what is the value of \(\displaystyle\sum_{n=1}^{63}a_n\)?
                 <small>[4 points]</small>
                 <ol>
-                    <li>\(78\)</li>
-                    <li>\(80\)</li>
-                    <li>\(82\)</li>
-                    <li>\(84\)</li>
-                    <li>\(86\)</li>
+                    <li>\(704\)</li>
+                    <li>\(712\)</li>
+                    <li>\(720\)</li>
+                    <li>\(728\)</li>
+                    <li>\(736\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <div class="question-type">Short Answer Questions</div>
             <article>
-                In the expansion of the polynomial \((3x+1)^8\),
-                compute the coefficient of \(x\).
+                Compute \(_7\mathrm{P}_2+_7\mathrm{C}_2+\).
                 <small>[3 points]</small>
             </article>
             <article>
-                A function \(f(x)\) satisfies \(f'(x)=3x^2+4x+5\) and \(f(0)=4\).
-                compute \(f(1)\).
+                A geometric progression \(\{a_n\}\) where all terms are positive numbers,
+                satisfies
+                <div class="tab">\(\dfrac{a_{16}}{a_{14}}+\dfrac{a_8}{a_7}=12\).</div>
+                Compute \(\dfrac{a_3}{a_1}+\dfrac{a_6}{a_3}\).
                 <small>[3 points]</small>
             </article>
         </div>
@@ -568,29 +584,26 @@
         </header>
         <div class="col1">
             <article>
-                Compute \(\log_3 72 - \log_3 8\).
+                A random variable \(X\) following the binomial distribution \(\mathrm{B}(80,p)\)
+                satisfies \(\mathrm{E}(X)=20\).
+                Compute \(\mathrm{V}(X)\).
                 <small>[3 points]</small>
             </article>
             <article>
-                Compute the value of the positive number \(k\)
-                for which the curve \(y=4x^3-12x+7\) and the line \(y=k\)
-                meet on exactly \(2\) points.
-                <small>[3 points]</small>
+                For a positive integer \(n\),
+                let \(a_n\) be the remainder of the division of the polynomial
+                \(2x^2-3x+1\) by \(x-n\).
+                Compute \(\displaystyle\sum_{n=1}^{7}(a_n-n^2+n)\).
+                <small>[4 points]</small>
             </article>
         </div>
         <div class="col2">
             <article>
-                The function
+                Let \(S\) be the area of the region enclosed by the graphs of two functions
                 <div class="tab">
-                    \(f(x)=\begin{cases}
-                        -3x+a &\; (x\leq1)\\\\
-                        \dfrac{x+b}{\sqrt{x+3}-2} &\; (x&gt;1)
-                    \end{cases}\)
+                    \(f(x)=\dfrac{1}{3}x(4-x)\:\) and \(\:g(x)=|x-1|-1\).
                 </div>
-                is continuous on the set of all real numbers.
-                <br/>
-                Compute \(a+b\).
-                (※ \(a\) and \(b\) are constants.)
+                Compute \(4S\).
                 <small>[4 points]</small>
             </article>
         </div>
@@ -602,70 +615,65 @@
         </header>
         <div class="col1">
             <article>
-                Compute the area of the region enclosed by
-                the curve \(y=x^2-7x+10\) and the line \(y=-x+10\).
-                <small class="right">[4 points]</small>
+                Suppose two points \(\mathrm{P}\) and \(\mathrm{Q}\) are moving on the number line,
+                and their positions \(x_1\) and \(x_2\) at time \(t\) \((t \geq 0)\) are equal to
+                <div class="tab">\(x_1=t^3-2t^2+3t\:\) and \(\:x_2=t^2+12t\)</div>
+                respectively.
+                Compute the distance between points \(\mathrm{P}\) and \(\mathrm{Q}\)
+                when the velocities of points \(\mathrm{P}\) and \(\mathrm{Q}\) become equal.
+                <small>[4 points]</small>
             </article>
         </div>
         <div class="col2">
             <article>
-                Consider a triangle \(\mathrm{ABC}\) where
-                \(\angle\mathrm{A}=\dfrac{\pi}{3}\) and \(\overline{\mathrm{AB}}:\overline{\mathrm{AC}}=3:1\).
-                If the circumcircle of the triangle \(\mathrm{ABC}\) has a radius of \(7\),
-                the length of the line segment \(\mathrm{AC}\) is equal to \(k\).
-                Compute \(k^2\).
-                <small>[4 points]</small>
-                <div class="space"></div>
-                <div class="center"><img src="img/math_ga_10.png" width="60%"/></div>
-            </article>
-        </div>
-        <footer>12</footer>
-    </section>
-    <section>
-        <header>
-            <h2>Mathematics <small>(Type Na)</small></h2>
-        </header>
-        <div class="col1">
-            <article>
-                There is a sack containing \(5\) balls marked with numbers
-                \(3,3,4,4\) and \(4\) respectively.
-                Let us perform the following trial and set a score using this sack and a die.
+                A polynomial function \(f(x)\) satisfies the following.
                 <div class="box">
-                    Randomly take out a ball from the sack.
-                    <br/>
-                    If the number marked on the ball taken out is \(3\),
-                    throw the die \(3\) times and set the score
-                    as the sum of the three numbers it lands on.
-                    <br/>
-                    If the number marked on the ball taken out is \(4\),
-                    throw the die \(4\) times and set the score
-                    as the sum of the four numbers it lands on.
+                    <ol class="upper">
+                        <li>\(\displaystyle\int_1^xf(t)dt=\frac{x-1}{2}\{f(x)+f(1)\}\)
+                            <br/>
+                            for all real numbers \(x\).
+                        </li>
+                        <li>\(\displaystyle\int_0^2f(x)dx=5\int_{-1}^1xf(x)dx\)</li>
+                    </ol>
                 </div>
-                After performing this trial once,
-                the probability that the score set is \(10\), is equal to \(\dfrac{q}{p}\).
-                Compute \(p+q\).
-                <br/>
-                (※ \(p\) and \(q\) are positive integers that are coprime.)
-                <small class="right">[4 points]</small>
-                <div class="center"><img src="img/math_ga_19.png" width="60%"/></div>
+                Given that \(f(0)=1\), compute \(f(4)\).
+                <small>[4 points]</small>
+            </article>
+        </div>
+        <footer>12</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type Na)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                There are \(6\) identical candies and \(5\) identical chocolates.
+                Compute the number of ways to give all of the candies and chocolates
+                to three students \(\mathrm{A,B}\) and \(\mathrm{C}\) according to the following rules.
+                <small>[4 points]</small>
+                <div class="box">
+                    <ol class="upper">
+                        <li>Student \(\mathrm{A}\) receives at least \(1\) candy.</li>
+                        <li>Student \(\mathrm{B}\) receives at least \(1\) chocolate.</li>
+                        <li>The number of candies and chocolates
+                            received by student \(\mathrm{C}\) add up to \(1\) or more.</li>
+                    </ol>
+                </div>
             </article>
         </div>
         <div class="col2">
             <article>
-                Consider a cubic function \(f(x)\) with a leading coefficient of \(1\),
-                and a linear function \(g(x)\).
-                <br/>
-                Define the function \(h(x)\) as
-                <div class="tab">
-                    \(h(x)=\begin{cases}
-                        |f(x)-g(x)| &\; (x&lt;1)\\\\
-                        f(x)+g(x) &\; (x\geq 1).
-                    \end{cases}\)
+                A cubic function \(f(x)\) with a positive leading coefficient satisfies the following.
+                <div class="box">
+                    <ol class="upper">
+                        <li>The equation \(f(x)-x=0\) has \(2\) distinct real solutions.</li>
+                        <li>The equation \(f(x)+x=0\) has \(2\) distinct real solutions.</li>
+                    </ol>
                 </div>
-                Given that the function \(h(x)\) is differentiable on the set of all real numbers,
-                and \(h(0)=0\) and \(h(2)=5\),
-                compute \(h(4)\).
-                <small>[4 points]</small>
+                Given that \(f(0)=0\) and \(f'(1)=1\),
+                compute \(f(3)\).
+                <small class="right">[4 points]</small>
             </article>
         </div>
         <footer>12</footer>
