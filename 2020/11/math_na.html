@@ -328,14 +328,71 @@
         </div>
         <div class="col2">
             <article>
-                TODO
-                <small>[4 points]</small>
+                There is a sack containing \(10\) balls marked with the number \(1\),
+                \(20\) balls marked with the number \(2\),
+                and \(30\) balls marked with the number \(3\).
+                Let us randomly take out a ball from this sack,
+                check the number marked on it,
+                and put it back in.
+                Let the random variable \(Y\) be the
+                sum of \(10\) numbers checked by repeating this trial \(10\) times.
+                The following is a process computing the mean \(\mathrm{E}(Y)\)
+                and variance \(\mathrm{V}(Y)\) of the random variable \(Y\).
+                <div class="box" style="position:relative;">
+                    Consider the \(60\) balls in the sack as a population.
+                    Let the random variable \(X\) be the number
+                    marked on a ball randomly taken out from this population.
+                    The distribution of \(X\), which is the distribution of the population,
+                    is as the table below.
+                    <table style="width:100%">
+                        <tr>
+                            <td>\(X\)</td>
+                            <td>\(1\)</td>
+                            <td>\(2\)</td>
+                            <td>\(3\)</td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>\(\mathrm{P}(X=x)\)</td>
+                            <td>\(\dfrac{1}{6}\)</td>
+                            <td>\(\dfrac{1}{3}\)</td>
+                            <td>\(\dfrac{1}{2}\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                    </table>
+                    Therefore the mean \(m\) and variance \(\sigma^2\)
+                    of the population are
+                    <div class="tab-short">
+                        \(m=\mathrm{E}(X)=\dfrac{7}{3}\:\) and
+                        \(\:\sigma^2=\mathrm{V}(X)=\fbox{\(\;(\alpha)\;\)}\).
+                    </div>
+                    Let \(\overline{X}\) be the mean of a random sample of size \(10\)
+                    from this population. Then,
+                    <div class="tab-short">
+                        \(\mathrm{E}(\overline{X})=\dfrac{7}{3}\:\) and
+                        \(\:\mathrm{V}(\overline{X})=\fbox{\(\;(\beta)\;\)}\).
+                    </div>
+                    Let \(X_n\) be the number marked on the \(n\)th ball
+                    taken out from the sack. Then,
+                    <div class="tab-short">
+                        \(\displaystyle Y=\sum_{n=1}^{10}X_n=10\overline{X}\)
+                    </div>
+                    therefore
+                    <div class="tab-short">
+                        \(\mathrm{E}(Y)=\dfrac{70}{3}\:\) and
+                        \(\:\mathrm{V}(Y)=\fbox{\(\;(\gamma)\;\)}\).
+                    </div>
+                </div>
+                Let \(p, q\) and \(r\) be the correct number for
+                \((\alpha), (\beta)\) and \((\gamma)\) respectively.
+                What is the value of \(p+q+r\)?
+                <small class="right">[4 points]</small>
                 <ol>
-                    <li>\(5\pi\)</li>
-                    <li>\(6\pi\)</li>
-                    <li>\(7\pi\)</li>
-                    <li>\(8\pi\)</li>
-                    <li>\(9\pi\)</li>
+                    <li>\(\dfrac{31}{6}\)</li>
+                    <li>\(\dfrac{11}{2}\)</li>
+                    <li>\(\dfrac{35}{6}\)</li>
+                    <li>\(\dfrac{37}{6}\)</li>
+                    <li>\(\dfrac{13}{2}\)</li>
                 </ol>
             </article>
         </div>
@@ -347,57 +404,69 @@
         </header>
         <div class="col1">
             <article>
-                Two polynomial fuctions \(f(x)\) and \(g(x)\) satisfy
-                <div class="tab">
-                    \(\displaystyle\lim_{x\to 0}\!\dfrac{f(x)+g(x)}{x}=3\:\)
-                    and \(\:\displaystyle\lim_{x\to 0}\!\dfrac{f(x)+3}{xg(x)}=2\).
-                </div>
-                For the function \(h(x)=f(x)g(x)\), what is the value of \(h'(0)\)?
+                Let \(f(n)\) be the number of positive divisors of a positive integer \(n\),
+                and let \(a_1, a_2, a_3, \cdots, a_9\) be the list of all positive divisors of \(36\).
+                What is the value of
+                \(\displaystyle\sum_{k=1}^9\left\{(-1)^{f(a_k)}\times\log a_k\right\}\)?
                 <small>[4 points]</small>
-                <ol>
-                    <li>\(27\)</li>
-                    <li>\(30\)</li>
-                    <li>\(33\)</li>
-                    <li>\(36\)</li>
-                    <li>\(39\)</li>
+                <ol class="col-2">
+                    <li>\(\log2+\log3\)</li>
+                    <li>\(2\log2+\log3\)</li>
+                    <li>\(\log2+2\log3\)</li>
+                    <li>\(2\log2+2\log3\)</li>
+                    <li>\(3\log2+2\log3\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                For a real number \(a\) in \(\dfrac{1}{4}&lt;a&lt;1\),
-                let \(\mathrm{A}\) and \(\mathrm{B}\) be points
-                where the line \(y=1\) meets the two curves
-                \(y=\log_a x\) and \(y=\log_{4a} x\) respectively,
-                and let \(\mathrm{C}\) and \(\mathrm{D}\) be points
-                where the line \(y=-1\) meets the two curves
-                \(y=\log_a x\) and \(y=\log_{4a} x\) respectively.
+                As the figure shows, let us draw a sector \(\mathrm{ABD}\)
+                with center \(\mathrm{A}\) and central angle \(90°\),
+                on the square \(\mathrm{ABCD}\) with side lengths of \(5\).
+                Let \(\mathrm{A_1}\) be the point internally dividing the line segment \(\mathrm{AD}\)
+                in the ratio \(3:2\),
+                and let \(\mathrm{B_1}\) be the point where a line
+                through point \(\mathrm{A_1}\) parallel to line \(\mathrm{AB}\,\),
+                meets the arc \(\mathrm{BD}\).
+                With the line segment \(\mathrm{A_1B_1}\) as an edge,
+                let us draw a square \(\mathrm{A_1B_1C_1D_1}\) that meets line \(\mathrm{DC}\),
+                and let us draw the sector \(\mathrm{D_1A_1C_1}\)
+                with center \(\mathrm{D_1}\) and central angle \(90°\).
+                Let \(\mathrm{E_1}\) and \(\mathrm{F_1}\) be points where
+                the line \(\mathrm{DC}\) meets arc \(\mathrm{A_1C_1}\) and line \(\mathrm{B_1C_1}\) respectively.
+                Figure \(R_1\) is obtained by coloring the
+                <img src="img/math_na_18_inline.png" width="22px;" style="transform: translateY(5px)"/> shape consisting of
+                the region enclosed by arc \(\mathrm{A_1E_1}\) and lines \(\mathrm{DA_1}\) and \(\mathrm{DE_1}\),
+                and the region enclosed by arc \(\mathrm{E_1C_1}\) and lines \(\mathrm{E_1F_1}\) and \(\mathrm{F_1C_1}\).
                 <br/>
-                Which option only contains every correct statement in the &lt;List&gt;?
-                <small>[3 points]</small>
-                <div class="box-list">
-                    <ol class="alpha">
-                        <li>
-                            The point externally dividing the line segment \(\mathrm{AB}\)
-                            in the ratio \(1:4\) has coordinates \((0,1)\).
-                        </li>
-                        <li>
-                            If the quadrilateral \(\mathrm{ABCD}\) is a rectangle,
-                            <br/>
-                            then \(a=\dfrac{1}{2}\).
-                        </li>
-                        <li>
-                            If \(\overline{\mathrm{AB}}&lt;\overline{\mathrm{CD}}\),
-                            then \(\dfrac{1}{2}&lt;a&lt;1\).
-                        </li>
-                    </ol>
-                </div>
-                <ol class="col-3">
-                    <li>a</li>
-                    <li>c</li>
-                    <li>a, b</li>
-                    <li>b, c</li>
-                    <li>a, b, c</li>
+                Starting from figure \(R_1\), let us draw the sector \(\mathrm{A_1B_1D_1}\)
+                with center \(\mathrm{A_1}\) and central angle \(90°\),
+                on square \(\mathrm{A_1B_1C_1D_1}\).
+                Let \(\mathrm{A_2}\) be the point internally dividing the line segment \(\mathrm{A_1D_1}\)
+                in the ratio \(3:2\),
+                and let \(\mathrm{B_2}\) be the point where a line
+                through point \(\mathrm{A_2}\) parallel to line \(\mathrm{A_1B_1}\),
+                meets the arc \(\mathrm{B_1D_1}\).
+                With the line segment \(\mathrm{A_2B_2}\) as an edge,
+                let us draw a square \(\mathrm{A_2B_2C_2D_2}\) that meets line \(\mathrm{D_1C_1}\).
+                With the same method used to obtain figure \(R_1\),
+                figure \(R_2\) is obtained by drawing the
+                <img src="img/math_na_18_inline.png" width="22px;" style="transform: translateY(5px)"/> shape
+                on square \(\mathrm{A_2B_2C_2D_2}\) and coloring it.
+                <br/>
+                Continue this process,
+                and let \(S_n\) be the area of the colored region in \(R_n\),
+                the \(n\)th obtained figure.
+                <br/>
+                What is the value of \(\displaystyle\lim_{n\to\infty} S_n\)?
+                <small>[4 points]</small>
+                <div class="center"><img src="img/math_na_18.png" width="90%"/></div>
+                <ol class="col-2">
+                    <li>\(\dfrac{50}{3}\left(\!3-\sqrt{3}+\dfrac{\pi}{6}\!\right)\)</li>
+                    <li>\(\dfrac{100}{9}\left(\!3-\sqrt{3}+\dfrac{\pi}{3}\!\right)\)</li>
+                    <li>\(\dfrac{50}{3}\left(\!2-\sqrt{3}+\dfrac{\pi}{3}\!\right)\)</li>
+                    <li>\(\dfrac{100}{9}\left(\!3-\sqrt{3}+\dfrac{\pi}{6}\!\right)\)</li>
+                    <li>\(\dfrac{100}{9}\left(\!2-\sqrt{3}+\dfrac{\pi}{3}\!\right)\)</li>
                 </ol>
             </article>
         </div>
@@ -409,34 +478,24 @@
         </header>
         <div class="col1">
             <article>
-                A random variable \(X\) follows a normal distribution
-                with a mean of \(8\) and a standard deviation of \(3\),
-                and a random variable \(Y\) follows a normal distribution
-                with a mean of \(m\) and a standard deviation of \(\sigma\).
-                Two random variables \(X\) and \(Y\) satisfy
-                <div class="tab">
-                    \(\mathrm{P}(4\leq X\leq 8)+\mathrm{P}(Y\geq 8)=\dfrac{1}{2}\).
+                Let us select five numbers among numbers \(1,2,3,4,5\) and \(6\),
+                and arrange them in a line to make a \(5\)-digit integer.
+                Each number may be selected multiple times,
+                and the following should be satisfied.
+                What is the number of all \(5\)-digit integers that can be made?
+                <small>[4 points]</small>
+                <div class="box">
+                    <ol class="upper">
+                        <li>Each odd number is either not selected or selected exactly once.</li>
+                        <li>Each odd number is either not selected or selected exactly twice.</li>
+                    </ol>
                 </div>
-                <div style="display: flex;">
-                    <div>
-                        What is the value of \(\mathrm{P}\!\left(\!Y\leq 8+\dfrac{2\sigma}{3}\!\right)\)
-                        computed using the standard normal table to the right?
-                        <small>[3 points]</small>
-                    </div>
-                    <table class="short" style="margin-left: 4px;">
-                        <tr><th>\(z\)</th><th>\(\mathrm{P}(0\!\leq\! Z \!\leq\!z)\)</th></tr>
-                        <tr><td>\(1.0\)</td><td>\(0.3413\)</td></tr>
-                        <tr><td>\(1.5\)</td><td>\(0.4332\)</td></tr>
-                        <tr><td>\(2.0\)</td><td>\(0.4772\)</td></tr>
-                        <tr><td>\(2.5\)</td><td>\(0.4938\)</td></tr>
-                    </table>
-                </div>
-                <ol class="col-3">
-                    <li>\(0.8351\)</li>
-                    <li>\(0.8413\)</li>
-                    <li>\(0.9332\)</li>
-                    <li>\(0.9772\)</li>
-                    <li>\(0.9938\)</li>
+                <ol>
+                    <li>\(450\)</li>
+                    <li>\(445\)</li>
+                    <li>\(440\)</li>
+                    <li>\(435\)</li>
+                    <li>\(430\)</li>
                 </ol>
             </article>
         </div>
