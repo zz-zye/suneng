@@ -368,69 +368,81 @@
             <div class="exam-type">Nat. Sciences</div>
         </header>
         <div class="col1">
-            <article>
-                TODO
-                What is the sum of the \(55\) numbers listed below?
-                <div class="box" style="text-align: center;">
-                    <div>\(1\)</div>
-                    <div>\(2\quad4\)</div>
-                    <div>\(3\quad6\quad9\)</div>
-                    <div>\(4\quad8\quad12\quad16\)</div>
-                    <div>\(5\quad10\quad15\quad20\quad25\)</div>
-                    <div>\(6\quad12\quad18\quad24\quad30\quad36\)</div>
-                    <div>\(7\quad14\quad21\quad28\quad35\quad42\quad49\)</div>
-                    <div>\(8\quad16\quad24\quad32\quad40\quad48\quad56\quad64\)</div>
-                    <div>\(9\quad18\quad27\quad36\quad45\quad54\quad63\quad72\quad81\)</div>
-                    <div>\(10\quad20\quad30\quad40\quad50\quad60\quad70\quad80\quad90\quad100\)</div>
-                </div>
+            <article style="min-height:40%">
+                <div style="float:right; width:30%;"><img src="img/math_nat_17.png" width="100%"/></div>
+                The flowchart to the right is an algorithm finding the smallest positive integer \(n\)
+                for which the inequality \(2^{n+1}&lt;9n^4\) is false.
+                What is appropriate for \((\alpha), (\beta)\) and \((\gamma)\) in the
+                flowchart to the right in this order?
+                <small>[2 points]</small>
                 <ol class="col-1">
-                    <li>\(1755\)</li>
-                    <li>\(1705\)</li>
-                    <li>\(1655\)</li>
-                    <li>\(1605\)</li>
-                    <li>\(1555\)</li>
+                    <li>\(S\!\gets\!S\!+\!2,\;S\geq 9N^4,\:\) Print \(N+1\)</li>
+                    <li>\(S\!\gets\!S\!\times\!2,\;S&lt; 9N^4,\:\) Print \(N\)</li>
+                    <li>\(S\!\gets\!S\!\times\!2,\;S&lt; 9N^4,\:\) Print \(N+1\)</li>
+                    <li>\(S\!\gets\!S\!\times\!2,\;S\geq 9N^4,\:\) Print \(N\)</li>
+                    <li>\(S\!\gets\!S\!\times\!2,\;S\geq 9N^4,\:\) Print \(N+1\)</li>
                 </ol>
             </article>
             <article>
-                On the \(xy\)-plane,
-                consider the region that satisfies three inequalities
-                <div class="center"><span>\(3x+4y-16&lt;0\), \(\:3x-4y+10&gt;0\:\) and \(\:y&gt;0\)</span></div>
-                at the same time.
-                What is the number of points in this region
-                for which the distance between the point and the three line segments
-                forming the boundary of this region,
-                are all positive integers?
+                The following is the middle part of a proof of the statement
+                「If \(x^2+y^2+z^2=1111\), then \(\fbox{\(\;(\alpha)\;\)}\)」.
+                <div class="box">
+                    &lt;Proof&gt;
+                    <br/>
+                    \(\cdots\) (omitted) \(\cdots\)
+                    <br/>
+                    In the division of integers \(x, y\) and \(z\) by \(8\),
+                    <br/>
+                    the remainder is among \(0,1,2,3,4,5,6\) or \(7\).
+                    Therefore, in the division of \(x^2, y^2\) and \(z^2\) by \(8\),
+                    the remainder is among \(0,1\) or \(4\).
+                    Therefore, in the division of \(x^2+y^2+z^2\) by \(8\),
+                    the remainder is among \(0,1,2,3,4,5\) or \(6\).
+                    However, the division of \(1111\) by \(8\) has remainder \(7\).
+                    <br/>
+                    \(\cdots\) (omitted) \(\cdots\)
+                </div>
+                What is appropriate for \(\fbox{\(\;(\alpha)\;\)}\) above?
+                <small>[2 points]</small>
                 <ol class="col-1">
-                    <li>\(0\)</li>
-                    <li>\(1\)</li>
-                    <li>\(3\)</li>
-                    <li>\(5\)</li>
-                    <li>\(7\)</li>
+                    <li>at least one among \(x, y\) and \(z\) is an integer.</li>
+                    <li>none among \(x, y\) and \(z\) are integers.</li>
+                    <li>there is at least one solution where \(x, y\) and \(z\) are all integers.</li>
+                    <li>there is only one solution where \(x, y\) and \(z\) are all integers.</li>
+                    <li>there are no solutions where \(x, y\) and \(z\) are all integers.</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                Two cars \(\mathrm{A}\) and \(\mathrm{B}\) start from the same position
-                at the same time, and only moves forward on a straight road.
-                The distance \(\mathrm{A}\) and \(\mathrm{B}\) travels for \(t\) seconds
-                are given as two differentiable functions \(f(t)\) and \(g(t)\) respectively,
-                that satisfy the following.
-                <div class="box">
-                    <ol class="upper">
-                        <li>\(f(20)=g(20)\)</li>
-                        <li>\(f'(t)&lt;g'(t)\) for \(10\leq t\leq 30\)</li>
-                    </ol>
-                </div>
-                When \(10\leq t\leq 30\),
-                which option below is correct about the positions of
-                \(\mathrm{A}\) and \(\mathrm{B}\)?
+                <div style="float:right; width:40%"><img src="img/math_nat_19.png" width="100%"/></div>
+                As the figure shows,
+                a quadrilateral \(\mathrm{ABCD}\) is inscribed in a circle,
+                and its two diagonals \(\mathrm{AC}\) and \(\mathrm{BD}\)
+                meet at point \(\mathrm{P}\) perpendicular to each other.
+                Let \(\mathrm{E}\) be the perpendicular foot from point \(\mathrm{P}\) to edge \(\mathrm{BC}\),
+                and let \(\mathrm{F}\) be the point where line \(\mathrm{PE}\) meets the edge \(\mathrm{AD}\).
+                Which option below cannot be proven from this?
+                <small class="right">[3 points]</small>
                 <ol class="col-1">
-                    <li>\(\mathrm{B}\) is always ahead of \(\mathrm{A}\).</li>
-                    <li>\(\mathrm{B}\) is always ahead of \(\mathrm{A}\).</li>
-                    <li>\(\mathrm{B}\) overtakes \(\mathrm{A}\) once.</li>
-                    <li>\(\mathrm{A}\) overtakes \(\mathrm{B}\) once.</li>
-                    <li>\(\mathrm{A}\) overtakes \(\mathrm{B}\), and then \(\mathrm{B}\) overtakes \(\mathrm{A}\) again.</li>
+                    <li>\(\angle\mathrm{CBP}=\angle\mathrm{PAD}\)</li>
+                    <li>\(\angle\mathrm{APF}=\angle\mathrm{PAF}\)</li>
+                    <li>\(\angle\mathrm{FPD}=\angle\mathrm{FDP}\)</li>
+                    <li>\(\overline{\mathrm{AF}}=\overline{\mathrm{FD}}\)</li>
+                    <li>\(\overline{\mathrm{AP}}=\overline{\mathrm{AF}}\)</li>
+                </ol>
+            </article>
+            <article>
+                What is the minimum distance from a point on
+                the sphere \((x-1)^2+(y-2)^2+(z-3)^2=1\)
+                to the plane \(x+y+z=10\)?
+                <small>[3 points]</small>
+                <ol class="col-1">
+                    <li>\(\dfrac{3\sqrt{3}-3}{3}\)</li>
+                    <li>\(\dfrac{4\sqrt{3}-3}{3}\)</li>
+                    <li>\(\dfrac{3\sqrt{3}+2}{3}\)</li>
+                    <li>\(\dfrac{2\sqrt{3}+5}{3}\)</li>
+                    <li>\(\dfrac{3\sqrt{3}+5}{3}\)</li>
                 </ol>
             </article>
         </div>
