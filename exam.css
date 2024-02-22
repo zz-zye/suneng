@@ -20,7 +20,7 @@ html, body {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: normal;
 }
-.exam .question-type {
+.exam .question-type, .exam .question-type-old {
     font-family: 'Roboto', sans-serif;
     font-weight: medium;
 }
@@ -195,6 +195,16 @@ html, body {
 }
 .exam .elective-type + article { margin-bottom: -53px; }
 
+/* Old question type format */
+.exam .question-type-old {
+    margin: 40px 25px;
+    border: 1px solid var(--color-black);
+    padding: 4px;
+    background-color: var(--color-gray);
+
+    text-align: center;
+    font-size: 18px;
+}
 
 /* Choices */
 .exam article > ol, .exam .select {
