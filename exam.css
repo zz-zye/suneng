@@ -12,13 +12,15 @@ html, body {
     font-family: 'Catamaran', sans-serif;
     font-weight: bold;
 }
-.exam h3 { font-family: 'Asap Condensed', sans-serif; }
+.exam h3, .exam .exam-type {
+    font-family: 'Asap Condensed', sans-serif;
+}
 .exam article { font-family:'PT Serif', Times, serif; }
 .exam header::before, .exam article::before, .exam footer, .exam article small {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: normal;
 }
-.exam .question-type {
+.exam .question-type, .exam .question-type-old {
     font-family: 'Roboto', sans-serif;
     font-weight: medium;
 }
@@ -122,6 +124,19 @@ html, body {
     font-size: 20px;
     font-weight: normal;
 }
+/* Text in rounded div */
+.exam .exam-type {
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    
+    border: 1px solid var(--color-black);
+    border-radius: 100px;
+    padding: 2px 8px;
+
+    font-size: 18px;
+}
+.exam section:nth-of-type(even) .exam-type { left: 30px; }
 
 /* Question container */
 .col1, .col2 {
@@ -180,6 +195,16 @@ html, body {
 }
 .exam .elective-type + article { margin-bottom: -53px; }
 
+/* Old question type format */
+.exam .question-type-old {
+    margin: 40px 25px;
+    border: 1px solid var(--color-black);
+    padding: 4px;
+    background-color: var(--color-gray);
+
+    text-align: center;
+    font-size: 18px;
+}
 
 /* Choices */
 .exam article > ol, .exam .select {
