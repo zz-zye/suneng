@@ -600,19 +600,23 @@
         </header>
         <div class="col1">
             <article>
-                TODO
-                <small class="right">[4 points]</small>
+                A sequence \(\{a_n\}\) satisfies
+                <div class="tab">
+                    \(\displaystyle\sum_{k=1}^{10}(a_k+1)^2=28\:\)
+                    and \(\:\displaystyle\sum_{k=1}^{10}a_k(a_k+1)=16\).
+                </div>
+                Compute \(\displaystyle\sum_{k=1}^{10}(a_k)^2\).
+                <small>[4 points]</small>
             </article>
         </div>
         <div class="col2">
             <article>
-                There are \(4\) white balls marked with numbers \(1,2,3\) and \(4\) respectively,
-                and \(3\) black balls marked with numbers \(4,5\) and \(6\) respectively.
+                Suppose we throw a coin \(6\) times.
+                The probability that the number of times it lands on heads
+                is greater than the number of times it lands on tails, is \(\dfrac{q}{p}\).
+                Compute \(p+q\).
                 <br/>
-                If we randomly arrange all the balls in a line,
-                the probability that no two balls marked with the same number are adjacent,
-                is equal to \(\dfrac{q}{p}\).
-                Compute \(p+q\). (※ \(p\) and \(q\) are positive integers that are coprime.)
+                (※ \(p\) and \(q\) are positive integers that are coprime.)
                 <small class="right">[4 points]</small>
             </article>
         </div>
@@ -624,54 +628,65 @@
         </header>
         <div class="col1">
             <article>
-                An arithmetic progression \(\{a_n\}\) whose common difference is a negative integer,
-                and a geometric progression \(\{b_n\}\) whose common ratio is a negative integer,
-                satisfy the following.
-                Compute \(a_7 + b_7\).
-                <small class="right">[4 points]</small>
+                For two real numbers \(a\) and \(k\),
+                functions \(f(x)\) and \(g(x)\) are defined as
+                <div class="tab">
+                    \(f(x)=\begin{cases}
+                        0 & (x\leq a)\\\\
+                        (x-1)^2(2x+1) & (x&gt;a)
+                    \end{cases}\)
+                    <br/>
+                    and
+                    <br/>
+                    \(g(x)=\begin{cases}
+                        0 & (x\leq k)\\\\
+                        12(x-k) & (x&gt;k),
+                    \end{cases}\)
+                </div>
+                and satisfy the following.
                 <div class="box">
                     <ol class="upper">
-                        <li>\(\displaystyle{\sum_{n=1}^5 \left(a_n + b_n \right) = 27}\)</li>
-                        <li>\(\displaystyle{\sum_{n=1}^5 \left(a_n + |b_n| \right) = 67}\)</li>
-                        <li>\(\displaystyle{\sum_{n=1}^5 \left(|a_n| + |b_n| \right) = 81}\)</li>
+                        <li>The function \(f(x)\) is differentiable on the set of all real numbers.</li>
+                        <li>\(f(x)\geq g(x)\) for all real numbers \(x\).</li>
                     </ol>
                 </div>
+                Given that the smallest possible value for \(k\) is \(\dfrac{q}{p}\),
+                compute \(a+p+q\).
+                <br/>
+                (※ \(p\) and \(q\) are positive integers that are coprime.)
+                <small class="right">[4 points]</small>
             </article>
         </div>
         <div class="col2">
             <article>
-                A cubic function \(f(x)\) with a leading coefficient of \(1\),
-                and a quadratic function \(g(x)\) with a leading coefficient of \(-1\), satisfy the following.
+                For the quadratic function \(f(x)=\dfrac{3x-x^2}{2}\),
+                a function \(g(x)\) defined on the interval \([0,\infty)\)
+                satisfies the following.
                 <div class="box">
                     <ol class="upper">
-                        <li>
-                            The tangent line to the curve \(y=f(x)\)
+                        <li>For \(0\leq x&lt;1\), \(g(x)=f(x)\).</li>
+                        <li>For \(n\leq x&lt;n+1\),
                             <br/>
-                            at point \((0,0)\) on the curve, 
+                            \(g(x)=\dfrac{1}{2^n}\{f(x-n)-(x-n)\}+x\).
                             <br/>
-                            and the tangent line to the curve \(y=g(x)\)
-                            <br/>
-                            at point \((2,0)\) on the curve,
-                            <br/>
-                            are both the \(x\)-axis.
-                        </li>
-                        <li>
-                            Exactly \(2\) tangent lines to the curve \(y=f(x)\) passes through the point \((2,0)\).
-                        </li>
-                        <li>
-                            The equation \(f(x)=g(x)\) only has \(1\) real solution.
+                            (※ This holds for all positive integers \(n\).)
                         </li>
                     </ol>
                 </div>
-                A real number \(k\) satisfies
+                For some positive integer \(k\,(k\geq 6)\),
+                a function \(h(x)\) is defined as
                 <div class="tab">
-                    \(g(x) \leq kx-2 \leq f(x)\)
+                    \(h(x)=\begin{cases}
+                        g(x) & (0\leq x&lt;5\: \text{ or } \:x\geq k)\\\\
+                        2x-g(x) & (5\leq x&lt; k).
+                    \end{cases}\)
                 </div>
-                for all real numbers \(x &gt; 0\). Let \(\alpha\) and \(\beta\) be the maximum and minimum value of \(k\), respectively.
-                Given that \(\alpha - \beta = a + b\sqrt{2}\), compute \(a^2 + b^2\).
+                For a sequence \(\{a_n\}\) defined as
+                \(a_n=\displaystyle\int_0^n h(x)dx\),
                 <br/>
-                (※ \(a\) and \(b\) are rational numbers.)
-                <small>[4 points]</small>
+                it is given that \(\displaystyle\lim_{n\to\infty}\!\big(2a_n-n^2\big)=\frac{241}{768}.\)
+                Compute \(k\).
+                <small class="right">[4 points]</small>
             </article>
         </div>
         <footer>12</footer>
