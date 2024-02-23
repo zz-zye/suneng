@@ -387,37 +387,110 @@
         </header>
         <div class="col1">
             <article>
-                
+                There are \(6\) coins that weigh \(1\),
+                \(3\) coins that weigh \(2\), and an empty sack.
+                Let us perform the following trial using a die.
+                (※ The unit of weight is \(\text{g}\).)
+                <div class="box">
+                    Throw the die once.
+                    If it lands on \(2\) or less,
+                    put a coin with weight \(1\) in the sack.
+                    If it lands on \(3\) or more,
+                    put a coin with weight \(2\) in the sack.
+                </div>
+                Let us repeat the trial above until the total weight in the sack
+                becomes \(6\) or more for the first time.
+                Let the random variable \(X\) be the number of coins in the sack
+                at this point.
+                The following is a process computing \(\mathrm{P}(X=x)\,(x=3,4,5,6)\).
+                <div class="box">
+                    <ol class="roman" style="margin-top: 0; margin-bottom: 0;">
+                        <li>
+                            The event \(X=3\) happens
+                            if the sack has \(3\) coins with weight \(2\). Therefore
+                            <br/>
+                            \(\mathrm{P}(X=3)=\fbox{\(\;(\alpha)\;\)}\)
+                        </li>
+                        <li>
+                            The event \(X=4\) happens
+                            <br/>
+                            if the total weight after the \(3\)rd trial is \(4\)
+                            and a coin with weight \(2\) is put in the \(4\)th trial,
+                            <br/>
+                            or if the total weight after the \(3\)rd trial is \(5\).
+                            Therefore
+                            <br/>
+                            \(\mathrm{P}(X=4)=\fbox{\(\;(\beta)\;\)}+\,_3\mathrm{C}_1\left(\!\dfrac{1}{3}\!\right)^{\!\!1}\!\left(\!\dfrac{2}{3}\!\right)^{\!\!2}\)
+                        </li>
+                        <li>
+                            The event \(X=5\) happens
+                            <br/>
+                            if the total weight after the \(4\)th trial is \(4\)
+                            and a coin with weight \(2\) is put in the \(5\)th trial,
+                            <br/>
+                            or if the total weight after the \(4\)th trial is \(5\).
+                            Therefore
+                            <br/>
+                            \(\mathrm{P}(X=5)=\,_4\mathrm{C}_4\left(\!\dfrac{1}{3}\!\right)^{\!\!4}\!\left(\!\dfrac{2}{3}\!\right)^{\!\!0}\times\dfrac{2}{3}+\fbox{\(\;(\gamma)\;\)}\)
+                        </li>
+                        <li>
+                            The event \(X=6\) happens
+                            if the total weight after the \(5\)th trial is \(5\).
+                            Therefore
+                            <br/>
+                            \(\mathrm{P}(X=6)=\left(\!\dfrac{1}{3}\!\right)^{\!\!5}\)
+                        </li>
+                    </ol>
+                </div>
+                Let \(a\), \(b\) and \(c\) be the correct number for \((\alpha)\), \((\beta)\) and \((\gamma)\) respectively.
+                What is the value of \(\dfrac{ab}{c}\)?
                 <small>[4 points]</small>
                 <ol>
-                    <li>\(\sqrt{11}\)</li>
-                    <li>\(2\sqrt{3}\)</li>
-                    <li>\(\sqrt{13}\)</li>
-                    <li>\(\sqrt{14}\)</li>
-                    <li>\(\sqrt{15}\)</li>
+                    <li>\(\dfrac{4}{9}\)</li>
+                    <li>\(\dfrac{7}{9}\)</li>
+                    <li>\(\dfrac{10}{9}\)</li>
+                    <li>\(\dfrac{13}{9}\)</li>
+                    <li>\(\dfrac{16}{9}\)</li>
                 </ol>
-                <div class="center"><img src="img/math_ga_19.png" width="80%"/></div>
+                <div style="line-height:14px;">
+                    <small>† Original question used weights instead of coins, which was confusing in English.</small>
+                </div>
             </article>
         </div>
         <div class="col2">
             <article>
-                Let us draw all tangent lines to the curve \(y=\sin x \, (x &gt; 0)\) which passes through the point \(\left(\!-\dfrac{\pi}{2}, 0\!\right)\),
-                and list all of the \(x\)-coordinates of the points of tangency in ascending order.
-                <br/>
-                Let \(a_n\) be the \(n\)th number in this list.
-                Which option only contains every statement in the &lt;List&gt; that is true for all positive integers \(n\)?
+                In \(3\)-dimensional space,
+                consider three points \(\mathrm{A,B}\) and \(\mathrm{C}\) that are not on a line.
+                For a plane \(\alpha\) that satisfies the following,
+                let \(d(\alpha)\) be the smallest among the three distances from
+                points \(\mathrm{A,B}\) and \(\mathrm{C}\) to plane \(\alpha\) respectively.
+                <div class="box">
+                    <ol class="upper">
+                        <li>Plane \(\alpha\) meets line segments \(\mathrm{AC}\) and \(\mathrm{BC}\).</li>
+                        <li>Plane \(\alpha\) does not meet line segment \(\mathrm{AB}\).</li>
+                    </ol>
+                </div>
+                Among all planes \(\alpha\) that satisfy the above,
+                let \(\beta\) be the plane with the greatest value of \(d(\alpha)\).
+                Which option only contains every correct statement in the &lt;List&gt;?
                 <small>[4 points]</small>
                 <div class="box-list">
                     <ol class="alpha">
-                        <li>\(\tan a_n = a_n + \dfrac{\pi}{2}\)</li>
-                        <li>\(\tan a_{n+2} - \tan a_n &gt; 2\pi\)</li>
-                        <li>\(a_{n+1} + a_{n+2} &gt; a_n + a_{n+3}\)</li>
+                        <li>Plane \(\beta\) is perpendicular to the plane that passes through
+                            points \(\mathrm{A, B}\) and \(\mathrm{C}\).
+                        </li>
+                        <li>Plane \(\beta\) passes through either the midpoint of the line segment \(\mathrm{AC}\)
+                            or the midpoint of the line segment \(\mathrm{BC}\) (or both).
+                        </li>
+                        <li>For points \(\mathrm{A}(2,3,0), \mathrm{B}(0,1,0)\) and \(\mathrm{C}(2,-1,0)\),
+                            \(d(\beta)\) is equal to the distance between point \(\mathrm{B}\) and plane \(\beta\).
+                        </li>
                     </ol>
                 </div>
                 <ol class="col-3">
                     <li>a</li>
+                    <li>c</li>
                     <li>a, b</li>
-                    <li>a, c</li>
                     <li>b, c</li>
                     <li>a, b, c</li>
                 </ol>
@@ -431,36 +504,43 @@
         </header>
         <div class="col1">
             <article>
-                A function \(f(x)\) differentiable on the set of all real numbers satisfies the following.
-                What is the value of \(f(-1)\)?
-                <small>[4 points]</small>
-                <div class="box">
-                    <ol class="upper">
-                        <li>
-                            \(2\left\{f(x)\right\}^2f'(x) = \left\{f(2x+1)\right\}^2f'(2x+1)\)
-                            <br/>
-                            for all real numbers \(x\).</li>
-                        <li>\(f\!\left(\!-\dfrac{1}{8}\!\right) = 1\) and \(f(6)=2\).</li>
-                    </ol>
+                For a positive number \(t\),
+                let us define a function \(f(x)\) on the interval \([1,\infty)\) as
+                <div class="tab">
+                    \(f(x)=\begin{cases}
+                        \ln x &\; (1\leq x&lt;e)\\\\
+                        -t+\ln x &\; (x\geq e),
+                    \end{cases}\)
                 </div>
-                <ol>
-                    <li>\(\dfrac{\sqrt[3]{3}}{6}\)</li>
-                    <li>\(\dfrac{\sqrt[3]{3}}{3}\)</li>
-                    <li>\(\dfrac{\sqrt[3]{3}}{2}\)</li>
-                    <li>\(\dfrac{2\sqrt[3]{3}}{3}\)</li>
-                    <li>\(\dfrac{5\sqrt[3]{3}}{6}\)</li>
+                and let \(h(t)\) be the minimum value of the slope of the line \(y=g(x)\)
+                where \(g(x)\) is a linear function that satisfies the following.
+                <div class="box">
+                    \((x-e)\{g(x)-f(x)\}\geq 0\)
+                    for all real numbers \(x\) greater than or equal to \(1\).
+                </div>
+                \(h(t)\) is a differentiable function,
+                and a positive number \(a\) satisfies \(h(a)=\dfrac{1}{e+2}\).
+                What is the value of
+                \(h'\!\left(\!\dfrac{1}{2e}\!\right)\times h'(a)\)?
+                <small>[4 points]</small>
+                <ol class="col-3">
+                    <li>\(\dfrac{1}{(e+1)^2}\)</li>
+                    <li>\(\dfrac{1}{e(e+1)}\)</li>
+                    <li>\(\dfrac{1}{e^2}\)</li>
+                    <li>\(\dfrac{1}{(e-1)(e+1)}\)</li>
+                    <li>\(\dfrac{1}{e(e-1)}\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <div class="question-type">Short Answer Questions</div>
             <article>
-                Compute \(_6\mathrm{P}_2 - _6\mathrm{C}_2\).
+                Compute \(_5\mathrm{C}_3\).
                 <small>[3 points]</small>
             </article>
             <article>
-                Given that \(\tan \theta = 5\), compute \(\sec^2 \theta\).
-                <small>[3 points]</small>
+                For the function \(f(x)=\ln(x^2+1)\), compute \(f'(1)\).
+                <small class="right">[3 points]</small>
             </article>
         </div>
         <footer>12</footer>
@@ -471,31 +551,32 @@
         </header>
         <div class="col1">
             <article>
-                Suppose a point \(\mathrm{P}\) is moving on the \(xy\)-plane, and its position \((x, y)\) at time \(t \, (t \geq 0)\) is equal to
-                <div class="tab">\(x = 1 - \cos 4t \:\) and \(\: y = \dfrac{1}{4} \sin 4t\).</div>
-                Compute the magnitude of acceleration of point \(\mathrm{P}\) when its speed is at its greatest.
+                Compute the slope of the tangent line to the curve
+                \(2x+x^2y-y^3=2\) at point \((1,1)\).
                 <small>[3 points]</small>
             </article>
             <article>
-                Compute \(\displaystyle\int_0^\pi \! x \cos(\pi - x)dx\).
+                On the \(xy\)-plane,
+                a line passes through the point \((4,1)\) and
+                is perpendicular to the vector \(\overrightarrow{n}=(1,2)\).
+                The coordinates of points where this line meets
+                the<br/>\(x\)-axis and the \(y\)-axis are \((a,0)\) and \((0,b)\) respectively.
+                Compute \(a+b\).
                 <small>[3 points]</small>
             </article>
         </div>
         <div class="col2">
             <article>
-                In some region, the daily leisure time of residents follows a normal distribution
-                with a mean of \(m\) minutes and a standard deviation of \(\sigma\) minutes.
+                A random variable \(X\) follows a normal distribution
+                with a mean of \(m\) and a standard deviation of \(\sigma\),
+                and satisfies
+                <div class="tab">\(\mathrm{P}(X\leq3)=\mathrm{P}(3\leq X\leq80)=0.3\).</div>
+                Compute \(m+\sigma\).
                 <br/>
-                Suppose \(16\) residents were randomly sampled from this region, and their daily leisure time had a mean of \(75\) minutes.
-                The \(95\%\) confidence interval for \(m\) computed with this sample is \(a \leq m \leq b\).
-                <br/>
-                Suppose \(16\) residents were randomly sampled from this region again, and their daily leisure time had a mean of \(77\) minutes.
-                The \(99\%\) confidence interval for \(m\) computed with this sample is \(c \leq m \leq d\).
-                <br/>
-                Given that \(d - b = 3.86\), Compute the value of \(\sigma\).
-                <br/>
-                (※ For a random variable \(Z\) that follows the standard normal distribution, suppose \(\mathrm{P}(|Z| \leq 2.58) = 0.99\).)
-                <small class="right">[4 points]</small>
+                (※ For a random variable \(Z\) that follows the standard normal distribution,
+                suppose \(\mathrm{P}(0\leq Z\leq 0.25) = 0.1\)
+                and \(\mathrm{P}(0\leq Z\leq 0.52) = 0.2\).)
+                <small>[4 points]</small>
             </article>
         </div>
         <footer>12</footer>
@@ -506,9 +587,7 @@
         </header>
         <div class="col1">
             <article>
-                Let us throw a die once. Let \(A\) be the event where it lands on an odd number,
-                and let \(B\) be the event where it lands on a factor of \(m\) for a positive integer \(m \leq 6\).
-                Compute the sum of all \(m\) for which the two events \(A\) and \(B\) are independent.
+                TODO
                 <small>[4 points]</small>
             </article>
         </div>
