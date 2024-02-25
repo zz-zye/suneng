@@ -254,90 +254,99 @@
             <div class="exam-type">Humanities</div>
         </header>
         <div class="col1">
-            <article style="min-height:55%">
-                TODO
+            <article>
+                For two real numbers \(x\) and \(y\),
+                let us use \(x*y\) to denote
+                <div class="tab">
+                    \(x*y=\begin{cases}
+                        x&(x\geq y)
+                        y&(x\leq y).
+                    \end{cases}\)
+                </div>
+                For example, \(2*1=2\).
+                A set \(A=\{a,b,c,d\}\) of \(4\) distinct real numbers satisfies the following.
+                <div class="box">
+                    <ol class="upper">
+                        <li>\(x*a=x\) for all elements \(x\) in \(A\).</li>
+                        <li>\(c*d&lt;c*b\)</li>
+                    </ol>
+                </div>
+                Which option below is correct?
                 <small>[3 points]</small>
-                <div class="center"><img src="img/math_nat_13.png" width="85%"/></div>
-                <ol>
-                    <li>Between \(a_4\) and \(a_5\)</li>
-                    <li>Between \(a_6\) and \(a_7\)</li>
-                    <li>Between \(a_8\) and \(a_9\)</li>
-                    <li>Between \(a_{10}\) and \(a_{11}\)</li>
-                    <li>Between \(a_{12}\) and \(a_{13}\)</li>
+                <ol class="col-3">
+                    <li>\(b&lt;c&lt;a\)</li>
+                    <li>\(b&lt;d&lt;a\)</li>
+                    <li>\(d&lt;b&lt;c\)</li>
+                    <li>\(a&lt;b&lt;c\)</li>
+                    <li>\(a&lt;c&lt;b\)</li>
                 </ol>
             </article>
             <article>
-                A function \(f(x)\) defined for all real numbers
-                is a periodic function satisfying
-                \(f(x)=x^2\,(-1\leq x\leq1)\:\) and \(\:f(x+2)=f(x)\).
-                On the \(xy\)-plane, for all positive integers \(n\),
-                let \(a_n\) be the number of intersections
-                between the line \(y=\dfrac{1}{2n}x+\dfrac{1}{4n}\)
-                and the graph of the function \(y=f(x)\).
-                What is the value of \(\displaystyle\lim_{n\to\infty}\!\frac{a_n}{n}\)?
-                <small class="right">[2 points]</small>
+                On the \(xy\)-plane, a point \(\mathrm{P}(x,y)\)
+                moves or does not move according to the following rules.
+                \(\mathrm{P}\) started from point \(\mathrm{A}(6,5)\),
+                and stopped moving after reaching point \(\mathrm{B}\).
+                What is the number of times it moves from \(\mathrm{A}\)
+                until it reaches \(\mathrm{B}\)?
+                <small>[2 points]</small>
+                <div class="box">
+                    <ol class="upper">
+                        <li>If \(y=2x\), do not move.</li>
+                        <li>If \(y&lt;2x\), move \(-1\) units horizontally.</li>
+                        <li>If \(y&gt;2x\), move \(-1\) units vertically.</li>
+                    </ol>
+                </div>
                 <ol>
-                    <li>\(0\)</li>
-                    <li>\(1\)</li>
-                    <li>\(2\)</li>
-                    <li>\(3\)</li>
                     <li>\(4\)</li>
+                    <li>\(5\)</li>
+                    <li>\(6\)</li>
+                    <li>\(7\)</li>
+                    <li>\(8\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
-            <article style="min-height:55%;">
-                The two tangent lines to the parabola
-                \(y=(x-a)^2+b\) at points \(\mathrm{P}(s+a,s^2+b)\) and \(\mathrm{Q}(t+a,t^2+b)\) respectively,
-                are perpendicular to each other.
-                Let \(A\) be the area of the shape enclosed by these two tangent lines and the parabola.
-                Which option contains every correct statement in the &lt;List&gt;?
-                <small>[2 points]</small>
-                <div class="box-list">
-                    <ol class="alpha">
-                        <li>If \(s\) increases, \(t\) also increases.</li>
-                        <li>If \(a\) increases, the area \(A\) also increases.</li>
-                        <li>If \(b\) changes, the area \(A\) also changes.</li>
-                    </ol>
+            <article style="min-height:60%;">
+                The following is a proof of the statement
+                &lsquo;If \(n\) is not divisible by any primes that are \(\sqrt{n}\) or less,
+                then \(n\) is prime.&rsquo;
+                where \(n\) is an integer greater than \(1\).
+                <div class="box">
+                    &lt;Proof&gt;
+                    <br/>
+                    Let us assume the conclusion is false and \(n\) is not prime.
+                    Then there are integers \(l\) and \(m\) greater than \(1\) such that \(n=lm\).
+                    Let \(p\) be a prime factor of \(l\),
+                    and \(q\) be a prime factor of \(m\).
+                    Then \(pq\) is a divisor of \(lm\), so \(pq\leq n\).
+                    If \(p&gt;\sqrt{n}\) and \(q&gt;\sqrt{n}\),
+                    then \(pq&gt;\sqrt{n}\sqrt{n}=n\) which is a contradiction.
+                    Therefore it should be that \(\fbox{\(\qquad\quad(\alpha)\quad\qquad\)}\).
+                    <br/>
+                    This means there is a prime factor of \(n\)
+                    that is \(\sqrt{n}\) or less.
+                    However, this contradicts the premise. Therefore \(n\) is prime.
                 </div>
+                In the proof above, what is appropriate for \((\alpha)\)?
+                <small class="right">[2 points]</small>
                 <ol class="col-2">
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>a, c</li>
-                    <li>b, c</li>
+                    <li>\(p\leq\sqrt{n}\) or \(q\leq\sqrt{n}\)</li>
+                    <li>\(p\leq\sqrt{n}\) and \(q\leq\sqrt{n}\)</li>
+                    <li>\(p\leq\sqrt{n}\) or \(q\geq\sqrt{n}\)</li>
+                    <li>\(p\leq\sqrt{n}\) and \(q\geq\sqrt{n}\)</li>
+                    <li>\(p\geq\sqrt{n}\) or \(q\geq\sqrt{n}\)</li>
                 </ol>
             </article>
             <article>
-                Members of the &lsquo;base-\(12\) society&rsquo; write integers by
-                using the mapping shown in the table below.
-                <div class="space"></div>
-                <table class="short" style="width:100%;">
-                    <tr>
-                        <td>Base-\(10\)</td>
-                        <td style="text-align:left;">
-                            \(1\;\:2\;\:3\;\:4\;\:5\;\:6\;\:7\;\:8\;\:9\;\:10\;\:11\;\:12\;\:13\;\:\cdots\)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Base-\(12\)</td>
-                        <td style="text-align:left;">
-                            \(1\;\:2\;\:3\;\:4\;\:5\;\:6\;\:7\;\:8\;\:9\;\;\:x\;\;\:y\;\:\:\,10\;\:11\;\:\cdots\)
-                        </td>
-                    </tr>
-                </table>
-                <div class="space"></div>
-                Some examples of addition in base-\(12\) are
-                <div class="tab">\(1+9=x\:\) and \(\:x+y=19\).</div>
-                For two base-\(12\) numbers \(xxx\) and \(yyy\),
-                what is their sum \(xxx+yyy\) written in base-\(12\)?
-                <small>[3 points]</small>
-                <ol class="col-2">
-                    <li>\(1779\)</li>
-                    <li>\(2331\)</li>
-                    <li>\(1xx9\)</li>
-                    <li>\(1yy9\)</li>
-                    <li>\(1yyx\)</li>
+                What is the equation of the tangent line to the
+                circle \(x^2+y^2=5\) at point \((1,2)\)?
+                <small>[2 points]</small>
+                <ol class="col-3">
+                    <li>\(x+y=3\)</li>
+                    <li>\(2x-y=0\)</li>
+                    <li>\(x-2y=-3\)</li>
+                    <li>\(2x+y=4\)</li>
+                    <li>\(x+2y=5\)</li>
                 </ol>
             </article>
         </div>
@@ -349,19 +358,8 @@
         </header>
         <div class="col1">
             <article style="min-height:40%">
-                <div style="float:right; width:30%;"><img src="img/math_nat_17.png" width="100%"/></div>
-                The flowchart to the right is an algorithm finding the smallest positive integer \(n\)
-                for which the inequality \(2^{n+1}&lt;9n^4\) is false.
-                What is appropriate for \((\alpha), (\beta)\) and \((\gamma)\) in the
-                flowchart to the right in this order?
+                TODO
                 <small>[2 points]</small>
-                <ol>
-                    <li>\(S\!\gets\!S\!+\!2,\;S\geq 9N^4,\:\) Print \(N+1\)</li>
-                    <li>\(S\!\gets\!S\!\times\!2,\;S&lt; 9N^4,\:\) Print \(N\)</li>
-                    <li>\(S\!\gets\!S\!\times\!2,\;S&lt; 9N^4,\:\) Print \(N+1\)</li>
-                    <li>\(S\!\gets\!S\!\times\!2,\;S\geq 9N^4,\:\) Print \(N\)</li>
-                    <li>\(S\!\gets\!S\!\times\!2,\;S\geq 9N^4,\:\) Print \(N+1\)</li>
-                </ol>
             </article>
             <article>
                 The following is the middle part of a proof of the statement
