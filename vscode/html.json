@@ -1,5 +1,11 @@
 {
-	
+	"Degree symbol": {
+		"prefix": "deg",
+		"body": [
+			"°"
+		],
+		"description": "Degree symbol"
+	},
 
 	"TeX": {
 		"prefix": "xx",
@@ -59,11 +65,23 @@
 		],
 		"description": "Overrightarrow"
 	},
-	"Degree symbol": {
-		"prefix": "deg",
+
+	"Cases": {
+		"prefix": "cases",
 		"body": [
-			"°"
+			"\\cases{begin}",
+			"    ${1:x} &\\; (${2:x &lt; 0})\\\\",
+			"    ${3:x} &\\; (${4:x \\geq 0})",
+			"\\cases{end}"
 		],
-		"description": "Degree symbol"
+		"description": "Cases"
+	},
+	"Pmatrix": {
+		"prefix": "pmat",
+		"body": [
+			"\\pmatrix{begin} ${1:0&0}\\\\${2:0&0} \\pmatrix{end}"
+		],
+		"description": "Pmatrix"
 	}
+
 }
