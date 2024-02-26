@@ -1,0 +1,69 @@
+{
+	
+
+	"TeX": {
+		"prefix": "xx",
+		"body": [
+			"\\($0\\)"
+		],
+		"description": "TeX"
+	},
+
+	"Displaystyle Limit": {
+		"prefix": "dlim",
+		"body": [
+			"\\displaystyle\\lim_{${1:x}\\to${2:\\infty}}$3"
+		],
+		"description": "Displaystyle Limit"
+	},
+	"Displaystyle Integral": {
+		"prefix": "dint",
+		"body": [
+			"\\displaystyle\\int_{${1:0}}^{${2:1}}$3"
+		],
+		"description": "Displaystyle Integral"
+	},
+	"Displaystyle Sum": {
+		"prefix": "dsum",
+		"body": [
+			"\\displaystyle\\sum_{${1:n}=${2:1}}^{${3:\\infty}}$4"
+		],
+		"description": "Displaystyle Sum"
+	},
+
+	"Mathrm": {
+		"prefix": "rm",
+		"body": [
+			"\\mathrm{${1:A}}"
+		],
+		"description": "Mathrm"
+	},
+	"TeX Mathrm": {
+		"prefix": "xrm",
+		"body": [
+			"\\(\\mathrm{${1:A}}\\)"
+		],
+		"description": "TeX Mathrm"
+	},
+	"Overline": {
+		"prefix": "ol",
+		"body": [
+			"\\overline{\\mathrm{${1:AB}}}"
+		],
+		"description": "Overline"
+	},
+	"Overrightarrow": {
+		"prefix": "ora",
+		"body": [
+			"\\overrightarrow{\\mathrm{${1:AB}}}"
+		],
+		"description": "Overrightarrow"
+	},
+	"Degree symbol": {
+		"prefix": "deg",
+		"body": [
+			"°"
+		],
+		"description": "Degree symbol"
+	}
+}
