@@ -20,7 +20,7 @@ html, body {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: normal;
 }
-.exam .question-type, .exam .question-type-old {
+.exam .question-type, .exam .question-type-old, .exam .flavor-sans {
     font-family: 'Roboto', sans-serif;
     font-weight: medium;
 }
@@ -285,6 +285,13 @@ html, body {
 .exam .tab, .exam .center, .exam .box, .exam .box-list {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+/* Used in 'questions 13-14' in 2014-2016 */
+.exam .flavor-sans {
+    margin-top: 4px;
+    margin-left: 12px;
+    text-indent: -12px;
+    font-size: 13px;
 }
 
 /* table */
