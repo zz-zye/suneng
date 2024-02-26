@@ -1,4 +1,36 @@
 {
+	// HTML Elements
+	"Div.tab": {
+		"prefix": "tab",
+		"body": [
+			"<div class=\"tab\">",
+			"    $0",
+			"</div>"
+		],
+		"description": "Div.tab"
+	},
+	"Div.center": {
+		"prefix": "center",
+		"body": [
+			"<div class=\"center\">",
+			"    $0",
+			"</div>"
+		],
+		"description": "Div.center"
+	},
+	"Div.box > ol": {
+		"prefix": "boxol",
+		"body": [
+			"<div class=\"box\">",
+			"    <ol class=\"upper\">",
+			"        <li>$0</li>",
+			"    </ol>",
+			"</div>"
+		],
+		"description": "Div.box > ol"
+	},
+
+	// Miscellaneous symbols
 	"Degree symbol": {
 		"prefix": "deg",
 		"body": [
@@ -7,81 +39,128 @@
 		"description": "Degree symbol"
 	},
 
+	// MathJax stuff
 	"TeX": {
-		"prefix": "xx",
+		"prefix": "x",
 		"body": [
-			"\\($0\\)"
+			"\\($1\\)$0"
 		],
 		"description": "TeX"
 	},
-
+	
+	// Displaystyle stuff
+	"Frac": {
+		"prefix": "fr",
+		"body": [
+			"\\frac{$1}{$2}$0"
+		],
+		"description": "Frac"
+	},
+	"Displaystyle Frac": {
+		"prefix": "dfr",
+		"body": [
+			"\\dfrac{$1}{$2}$0"
+		],
+		"description": "Displaystyle Frac"
+	},
+	"Limit": {
+		"prefix": "lim",
+		"body": [
+			"\\lim_{${1:x}\\to${2:\\infty}}$0"
+		],
+		"description": "Limit"
+	},
 	"Displaystyle Limit": {
 		"prefix": "dlim",
 		"body": [
-			"\\displaystyle\\lim_{${1:x}\\to${2:\\infty}}$3"
+			"\\displaystyle\\lim_{${1:x}\\to${2:\\infty}}$0"
 		],
 		"description": "Displaystyle Limit"
+	},
+	"Integral": {
+		"prefix": "int",
+		"body": [
+			"\\int_{${1:0}}^{${2:1}}$0"
+		],
+		"description": "Integral"
 	},
 	"Displaystyle Integral": {
 		"prefix": "dint",
 		"body": [
-			"\\displaystyle\\int_{${1:0}}^{${2:1}}$3"
+			"\\displaystyle\\int_{${1:0}}^{${2:1}}$0"
 		],
 		"description": "Displaystyle Integral"
+	},
+	"Sum": {
+		"prefix": "sum",
+		"body": [
+			"\\sum_{${1:n}=${2:1}}^{${3:\\infty}}$0"
+		],
+		"description": "Sum"
 	},
 	"Displaystyle Sum": {
 		"prefix": "dsum",
 		"body": [
-			"\\displaystyle\\sum_{${1:n}=${2:1}}^{${3:\\infty}}$4"
+			"\\displaystyle\\sum_{${1:n}=${2:1}}^{${3:\\infty}}$0"
 		],
 		"description": "Displaystyle Sum"
 	},
 
+	// Mathrm stuff
 	"Mathrm": {
 		"prefix": "rm",
 		"body": [
-			"\\mathrm{${1:A}}"
+			"\\mathrm{${1:A}}$0"
 		],
 		"description": "Mathrm"
 	},
 	"TeX Mathrm": {
 		"prefix": "xrm",
 		"body": [
-			"\\(\\mathrm{${1:A}}\\)"
+			"\\(\\mathrm{${1:A}}\\)$0"
 		],
 		"description": "TeX Mathrm"
 	},
 	"Overline": {
-		"prefix": "ol",
+		"prefix": "ovl",
 		"body": [
-			"\\overline{\\mathrm{${1:AB}}}"
+			"\\overline{\\mathrm{${1:AB}}}$0"
 		],
 		"description": "Overline"
 	},
 	"Overrightarrow": {
-		"prefix": "ora",
+		"prefix": "ovr",
 		"body": [
-			"\\overrightarrow{\\mathrm{${1:AB}}}"
+			"\\overrightarrow{\\mathrm{${1:AB}}}$0"
 		],
 		"description": "Overrightarrow"
 	},
 
+	// Begin-End stuff
 	"Cases": {
 		"prefix": "cases",
 		"body": [
-			"\\cases{begin}",
+			"\\begin{cases}",
 			"    ${1:x} &\\; (${2:x &lt; 0}) \\\\\\",
 			"    ${3:x} &\\; (${4:x \\geq 0})",
-			"\\cases{end}"
+			"\\end{cases}$0"
 		],
 		"description": "Cases"
 	},
 	"Pmatrix": {
 		"prefix": "pmat",
 		"body": [
-			"\\pmatrix{begin} ${1:0&0} \\\\\\ ${2:0&0} \\pmatrix{end}"
+			"\\begin{pmatrix} ${1:0&0} \\\\\\ ${2:0&0} \\end{pmatrix}$0"
 		],
 		"description": "Pmatrix"
-	}
+	},
 
+	// Parentheses stuff
+	"Parentheses ()": {
+		"prefix": "par",
+		"body": [
+			"\\left(\\!$1\\!\\right)$0"
+		],
+		"description": "Parentheses ()"
+	}
 }
