@@ -70,7 +70,7 @@
 		"prefix": "cases",
 		"body": [
 			"\\cases{begin}",
-			"    ${1:x} &\\; (${2:x &lt; 0})\\\\",
+			"    ${1:x} &\\; (${2:x &lt; 0}) \\\\\\",
 			"    ${3:x} &\\; (${4:x \\geq 0})",
 			"\\cases{end}"
 		],
@@ -79,7 +79,7 @@
 	"Pmatrix": {
 		"prefix": "pmat",
 		"body": [
-			"\\pmatrix{begin} ${1:0&0}\\\\${2:0&0} \\pmatrix{end}"
+			"\\pmatrix{begin} ${1:0&0} \\\\\\ ${2:0&0} \\pmatrix{end}"
 		],
 		"description": "Pmatrix"
 	}
