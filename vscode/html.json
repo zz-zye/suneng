@@ -29,6 +29,28 @@
 		],
 		"description": "Div.box > ol"
 	},
+	"Div.box-list & text": {
+		"prefix": "boxlist",
+		"body": [
+			"Which option only contains every correct statement in the &lt;List&gt;?",
+            "<small>[${1:4} points]</small>",
+            "<div class=\"box-list\">",
+            "    <ol class=\"alpha\">",
+            "        <li>$2</li>",
+            "        <li>$3</li>",
+            "        <li>$4</li>",
+            "    </ol>",
+            "</div>",
+            "<ol class=\"col-3\">",
+            "    <li>a</li>",
+            "    <li>a, b</li>",
+            "    <li>a, c</li>",
+            "    <li>b, c</li>",
+            "    <li>a, b, c</li>",
+            "</ol>"
+		],
+		"description": "Div.box-list & text"
+	},
 
 	// Miscellaneous symbols
 	"Degree symbol": {
@@ -162,5 +184,13 @@
 			"\\left(\\!$1\\!\\right)$0"
 		],
 		"description": "Parentheses ()"
+	},
+
+	"Fbox": {
+		"prefix": "fbox",
+		"body": [
+			"\\fbox{\\(\\;(${1:\\alpha})\\;\\)}$0"
+		],
+		"description": "Fbox"
 	}
 }
