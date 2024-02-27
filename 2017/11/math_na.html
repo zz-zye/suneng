@@ -329,86 +329,72 @@
         </header>
         <div class="col1">
             <article>
-                TODO
-                <div class="space"></div>
-                <table class="short" style="width:100%">
-                    <tr>
-                        <td>\(X\)</td>
-                        <td>\(0.121\)</td>
-                        <td>\(0.221\)</td>
-                        <td>\(0.321\)</td>
-                        <td>Total</td>
-                    </tr>
-                    <tr>
-                        <td>\(\mathrm{P}(X=x)\)</td>
-                        <td>\(a\)</td>
-                        <td>\(b\)</td>
-                        <td>\(\dfrac{2}{3}\)</td>
-                        <td>\(1\)</td>
-                    </tr>
-                </table>
-                <div class="space"></div>
-                The following is a process computing \(\mathrm{V}(X)\),
-                given that \(\mathrm{E}(X)=0.271\).
-                <div class="box">
-                    Let \(Y=10X-2.21\).
-                    The probability distribution of the random variable \(Y\) is as follows.
-                    <div class="space"></div>
-                    <table class="short" style="width:100%">
-                        <tr>
-                            <td>\(Y\)</td>
-                            <td>\(-1\)</td>
-                            <td>\(0\)</td>
-                            <td>\(1\)</td>
-                            <td>Total</td>
-                        </tr>
-                        <tr>
-                            <td>\(\mathrm{P}(Y=y)\)</td>
-                            <td>\(a\)</td>
-                            <td>\(b\)</td>
-                            <td>\(\dfrac{2}{3}\)</td>
-                            <td>\(1\)</td>
-                        </tr>
-                    </table>
-                    <div class="space"></div>
-                    Since \(\:\mathrm{E}(Y)=10\,\mathrm{E}(X)-2.21=0.5\),
-                    <div class="space"></div>
-                    \(a=\fbox{\(\;(\alpha)\;\)}\,,\;b=\fbox{\(\;(\beta)\;\)}\,,\)
-                    <br/>
-                    and \(\mathrm{V}(Y)=\dfrac{7}{12}\).
-                    <div class="space"></div>
-                    Since \(Y=10X-2.21,\;\mathrm{V}(Y)=\fbox{\(\;(\gamma)\;\)}\times\mathrm{V}(X)\).
-                    <div class="space"></div>
-                    Therefore \(\mathrm{V}(X)=\dfrac{1}{\fbox{\(\;(\gamma)\;\)}}\times\dfrac{7}{12}\).
-                </div>
-                Let \(p, q\) and \(r\) be the correct number for
-                \((\alpha), (\beta)\) and \((\gamma)\) respectively.
-                What is the value of \(pqr\)?
+                As the figure shows,
+                there is a circle \(O\) whose diameter \(\mathrm{AB}\) has a length of \(4\).
+                Let \(\mathrm{C}\) be the center of the circle,
+                and let \(\mathrm{D}\) and \(\mathrm{P}\) be midpoints of line segments
+                \(\mathrm{AC}\) and \(\mathrm{BC}\) respectively.
+                Let \(\mathrm{E}\) and \(\mathrm{Q}\) be the points where the
+                perpendicular bisectors of line segments \(\mathrm{AC}\) and \(\mathrm{BC}\)
+                meets the upper half of circle \(O\) respectively.
+                With the line segment \(\mathrm{DE}\) as an edge and the line segment \(\mathrm{DF}\) as a diagonal,
+                let us draw a square \(\mathrm{DEFG}\) that meets circle \(O\) at point \(\mathrm{A}\).
+                With the line segment \(\mathrm{PQ}\) as an edge and the line segment \(\mathrm{PR}\) as a diagonal,
+                let us draw a square \(\mathrm{PQRS}\) that meets circle \(O\) at point \(\mathrm{B}\).
+                Figure \(R_1\) is obtained by coloring
+                the common region inside circle \(O\) and square \(\mathrm{DEFG}\) with the
+                <img src="img/math_na_17_inline_1.png" width="8px"> shape,
+                and the common region inside circle \(O\) and square \(\mathrm{PQRS}\) with the
+                <img src="img/math_na_17_inline_2.png" width="8px"> shape.
+                <br/>
+                Starting from figure \(R_1\),
+                let us draw a circle \(O_1\) with center \(\mathrm{F}\)
+                and radius \(\dfrac{1}{2}\overline{\mathrm{DE}}\),
+                and a circle \(O_2\) with center \(\mathrm{R}\)
+                and radius \(\dfrac{1}{2}\overline{\mathrm{PQ}}\).
+                Figure \(R_2\) is obtained by
+                applying the same method used to obtain figure \(R_1\)
+                to circles \(O_1\) and \(O_2\) respectively,
+                to draw and color \(2\) <img src="img/math_na_17_inline_1.png" width="8px"> shapes
+                and \(2\) <img src="img/math_na_17_inline_2.png" width="8px"> shapes.
+                <br/>
+                Continue this process,
+                and let \(S_n\) be the area of the colored region in \(R_n\),
+                the \(n\)th obtained figure.
+                <br/>
+                What is the value of \(\displaystyle\lim_{n\to\infty} S_n\)?
                 <small>[4 points]</small>
-                <ol>
-                    <li>\(\dfrac{13}{9}\)</li>
-                    <li>\(\dfrac{16}{9}\)</li>
-                    <li>\(\dfrac{19}{9}\)</li>
-                    <li>\(\dfrac{22}{9}\)</li>
-                    <li>\(\dfrac{25}{9}\)</li>
+                <div class="center">
+                    <img src="img/math_na_17_1.png" width="66%"/>
+                    <img src="img/math_na_17_2.png" width="66%"/>
+                </div>
+                <ol class="col-3">
+                    <li>\(\dfrac{12\pi-9\sqrt{3}}{10}\)</li>
+                    <li>\(\dfrac{8\pi-6\sqrt{3}}{5}\)</li>
+                    <li>\(\dfrac{32\pi-24\sqrt{3}}{15}\)</li>
+                    <li>\(\dfrac{28\pi-21\sqrt{3}}{10}\)</li>
+                    <li>\(\dfrac{16\pi-12\sqrt{3}}{5}\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                A cubic function \(f(x)\) with a leading coefficient of \(1\)
-                satisfies \(f(1)=0\) and
+                A quadratic function \(f(x)\) with a leading coefficient of \(1\)
+                satisfies
                 <div class="tab">
-                    \(\displaystyle\lim_{x\to 2}\frac{f(x)}{(x-2)\{f'(x)\}^2}=\frac{1}{4}\).
+                    \(\displaystyle\lim_{x\to\,a}\frac{f(x)-(x-a)}{f(x)+(x-a)}=\frac{3}{5}\).
                 </div>
-                What is the value of \(f(3)\)?
+                Let \(\alpha\) and \(\beta\) be the two solutions to the equation \(f(x)=0\).
+                What is the value of \(\big|\alpha-\beta\big|\)?
+                <br/>
+                (※ \(a\) is a constant.)
                 <small>[4 points]</small>
                 <ol>
+                    <li>\(1\)</li>
+                    <li>\(2\)</li>
+                    <li>\(3\)</li>
                     <li>\(4\)</li>
-                    <li>\(6\)</li>
-                    <li>\(8\)</li>
-                    <li>\(10\)</li>
-                    <li>\(12\)</li>
+                    <li>\(5\)</li>
                 </ol>
             </article>
         </div>
@@ -420,68 +406,82 @@
         </header>
         <div class="col1">
             <article>
-                As the figure shows, 
-                there is an equilateral triangle \(\mathrm{A_1B_1C_1}\) with side lengths of \(1\).
-                Let \(\mathrm{D_1}\) be the midpoint of the line segment \(\mathrm{A_1B_1}\).
-                For a point \(\mathrm{B_2}\) on the line segment \(\mathrm{B_1C_1}\)
-                satisfying \(\overline{\mathrm{C_1D_1}}=\overline{\mathrm{C_1B_2}}\),
-                let us draw the sector \(\mathrm{C_1D_1B_2}\) with center \(\mathrm{C_1}\).
-                Let \(\mathrm{A_2}\) be the perpendicular foot from point \(\mathrm{B_2}\) to line \(\mathrm{C_1D_1}\),
-                and let \(\mathrm{C_2}\) be the midpoint of the line segment \(\mathrm{C_1B_2}\).
-                Figure \(R_1\) is obtained by coloring inside the triangle \(\mathrm{C_1A_2C_2}\),
-                and the region enclosed by arc \(\mathrm{D_1B_2}\) and lines \(\mathrm{B_1B_2}\) and \(\mathrm{B_1D_1}\).
+                On the \(xy\)-plane,
+                a jump is defined as moving from a point \((x,y)\) to one of three points
+                \((x+1,y)\), \((x,y+1)\), or \((x+1,y+1)\).
                 <br/>
-                Starting from figure \(R_1\),
-                let \(\mathrm{D_2}\) be the midpoint of the line segment \(\mathrm{A_2B_2}\).
-                For a point \(\mathrm{B_3}\) on the line segment \(\mathrm{B_2C_2}\)
-                satisfying \(\overline{\mathrm{C_2D_2}}=\overline{\mathrm{C_2B_3}}\),
-                let us draw the sector \(\mathrm{C_2D_2B_3}\) with center \(\mathrm{C_2}\).
-                Let \(\mathrm{A_3}\) be the perpendicular foot from point \(\mathrm{B_3}\) to line \(\mathrm{C_2D_2}\),
-                and let \(\mathrm{C_3}\) be the midpoint of the line segment \(\mathrm{C_2B_3}\).
-                Figure \(R_2\) is obtained by coloring inside the triangle \(\mathrm{C_2A_3C_3}\),
-                and the region enclosed by arc \(\mathrm{D_2B_3}\) and lines \(\mathrm{B_2B_3}\) and \(\mathrm{B_2D_2}\).
-                <br/>
-                Continue this process,
-                and let \(S_n\) be the area of the colored region in \(R_n\),
-                the \(n\)th obtained figure.
-                <br/>
-                What is the value of \(\displaystyle\lim_{n\to\infty} S_n\)?
-                <small>[4 points]</small>
-                <div class="center">
-                    <img src="img/math_na_19_1.png" width="75%"/>
-                    <img src="img/math_na_19_2.png" width="75%"/>
+                Suppose we move from point \((0,0)\) to point \((4,3)\) by performing jumps repeatedly.
+                Among all possible cases of doing such, let the random variable \(X\)
+                be the number of jumps in a randomly selected case.
+                The following is a process computing \(\mathrm{E}(X)\).
+                (※ The probability of selecting each case is the same.)
+                <div class="box">
+                    Let \(N\) be the number of all cases of moving from point \((0,0)\)
+                    to point \((4,3)\) by performing jumps repeatedly.
+                    Let \(k\) be the smallest value that the random variable \(X\) can have.
+                    Then \(k=\fbox{\(\;(\alpha)\;\)}\), and the largest value that can be taken is \(k+3\).
+                    <div class="space"></div>
+                    <div class="tab-short">
+                        \(\mathrm{P}(X=k)=\dfrac{1}{N}\times \dfrac{4!}{3!}=\dfrac{4}{N}\)
+                        <br/>
+                        \(\mathrm{P}(X=k+1)=\dfrac{1}{N}\times \dfrac{5!}{2!2!}=\dfrac{30}{N}\)
+                        \(\mathrm{P}(X=k+2)=\dfrac{1}{N}\times \fbox{\(\;(\beta)\;\)}\)
+                        \(\mathrm{P}(X=k+3)=\dfrac{1}{N}\times \dfrac{7!}{3!4!}=\dfrac{35}{N}\)
+                    </div>
+                    and
+                    <div class="space"></div>
+                    <div class="tab-short">
+                        \(\displaystyle\sum_{i\,=\,k}^{k+3}\mathrm{P}(X=i)=1\),
+                    </div>
+                    therefore \(N=\fbox{\(\;(\gamma)\;\)}\).
+                    <br/>
+                    Therefore the mean of the random variable \(X\) is
+                    <div class="tab-short">
+                        \(\mathrm{E}(X)=\displaystyle\sum_{i\,=\,k}^{k+3}\{i\times \mathrm{P}(X=i)\}=\dfrac{257}{43}\).
+                    </div>
                 </div>
-                <ol class="col-3">
-                    <li>\(\dfrac{11\sqrt{3}-4\pi}{56}\)</li>
-                    <li>\(\dfrac{11\sqrt{3}-4\pi}{52}\)</li>
-                    <li>\(\dfrac{15\sqrt{3}-6\pi}{56}\)</li>
-                    <li>\(\dfrac{15\sqrt{3}-6\pi}{52}\)</li>
-                    <li>\(\dfrac{15\sqrt{3}-4\pi}{52}\)</li>
+                Let \(a, b\) and \(c\) be the correct number for
+                \((\alpha), (\beta)\) and \((\gamma)\) respectively.
+                What is the value of \(a+b+c\)?
+                <small class="right">[4 points]</small>
+                <ol>
+                    <li>\(190\)</li>
+                    <li>\(193\)</li>
+                    <li>\(196\)</li>
+                    <li>\(199\)</li>
+                    <li>\(202\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                A quartic function \(f(x)\) with a leading coefficient of \(1\) satisfies the following.
+                A cubic function \(f(x)\) with a positive leading coefficient satisfies the following.
                 <div class="box">
                     <ol class="upper">
-                        <li>\(f'(0)=0\:\) and \(\:f'(2)=16\).</li>
-                        <li>\(f'(x)&lt;0\) on intervals \((-\infty,0)\) and \((0,k)\), where \(k\) is some positive number.</li>
+                        <li>The function \(f(x)\) has a local maximum at \(x=0\),
+                            and a local minimum at \(x=k\).
+                            <br/>
+                            (※ \(k\) is a constant.)
+                        </li>
+                        <li>
+                            For all real numbers \(t\) greater than \(1\),
+                            \(\displaystyle\int_{0}^{t}\!\big|f'(x)\big|dx=f(t)+f(0)\).
+                        </li>
                     </ol>
                 </div>
                 Which option only contains every correct statement in the &lt;List&gt;?
                 <small>[4 points]</small>
                 <div class="box-list">
                     <ol class="alpha">
-                        <li>The equation \(f'(x)=0\) has one solution on the open interval \((0,2)\).</li>
-                        <li>The function \(f(x)\) has a local maximum.</li>
-                        <li>If \(f(0)=0\), then \(f(x)\geq -\dfrac{1}{3}\) for all real numbers \(x\).</li>
+                        <li>\(\displaystyle\int_{0}^{k}f'(x)dx&lt;0\)</li>
+                        <li>\(0&lt;k\leq 1\)</li>
+                        <li>\(f(x)\) has a local minimum value of \(0\).</li>
                     </ol>
                 </div>
-                <ol class="col-3">
+                <ol>
                     <li>a</li>
-                    <li>b</li>
-                    <li>a, c</li>
+                    <li>c</li>
+                    <li>a, b</li>
                     <li>b, c</li>
                     <li>a, b, c</li>
                 </ol>
@@ -495,17 +495,7 @@
         </header>
         <div class="col1">
             <article>
-                As the figure shows, a function \(f(x)\) is defined on the closed interval \([0,4]\),
-                and its graph is the same as the points
-                \((0,0),\:(1,4),\:(2,1),\:(3,4)\) and \((4,3)\) connected with line segments in this order.
-                <div class="center"><img src="img/math_na_21.png" width="55%"/></div>
-                What is the number of sets \(X=\{a,b\}\) that satisfy the following?
-                (※ \(0\leq a&lt;b\leq 4\))
-                <small>[4 points]</small>
-                <div class="box">
-                    There exists a function \(g(x)=f(f(x))\) from \(X\) to \(X\),
-                    where \(g(a)=f(a)\) and \(g(b)=f(b)\).
-                </div>
+                TODO
                 <ol>
                     <li>\(11\)</li>
                     <li>\(13\)</li>
