@@ -352,23 +352,56 @@
         </header>
         <div class="col1">
             <article>
-                TODO
+                On the \(xy\)-plane,
+                a jump is defined as moving from a point \((x,y)\) to one of three points
+                \((x+1,y)\), \((x,y+1)\), or \((x+1,y+1)\).
+                <br/>
+                Suppose we move from point \((0,0)\) to point \((4,3)\) by performing jumps repeatedly.
+                Among all possible cases of doing such, let the random variable \(X\)
+                be the number of jumps in a randomly selected case.
+                The following is a process computing \(\mathrm{E}(X)\).
+                (※ The probability of selecting each case is the same.)
+                <div class="box">
+                    Let \(N\) be the number of all cases of moving from point \((0,0)\)
+                    to point \((4,3)\) by performing jumps repeatedly.
+                    Let \(k\) be the smallest value that the random variable \(X\) can have.
+                    Then \(k=\fbox{\(\;(\alpha)\;\)}\), and the largest value that can be taken is \(k+3\).
+                    <div class="space"></div>
+                    <div class="tab-short">
+                        \(\mathrm{P}(X=k)=\dfrac{1}{N}\times \dfrac{4!}{3!}=\dfrac{4}{N}\)
+                        <br/>
+                        \(\mathrm{P}(X=k+1)=\dfrac{1}{N}\times \dfrac{5!}{2!2!}=\dfrac{30}{N}\)
+                        \(\mathrm{P}(X=k+2)=\dfrac{1}{N}\times \fbox{\(\;(\beta)\;\)}\)
+                        \(\mathrm{P}(X=k+3)=\dfrac{1}{N}\times \dfrac{7!}{3!4!}=\dfrac{35}{N}\)
+                    </div>
+                    and
+                    <div class="space"></div>
+                    <div class="tab-short">
+                        \(\displaystyle\sum_{i\,=\,k}^{k+3}\mathrm{P}(X=i)=1\),
+                    </div>
+                    therefore \(N=\fbox{\(\;(\gamma)\;\)}\).
+                    <br/>
+                    Therefore the mean of the random variable \(X\) is
+                    <div class="tab-short">
+                        \(\mathrm{E}(X)=\displaystyle\sum_{i\,=\,k}^{k+3}\{i\times \mathrm{P}(X=i)\}=\dfrac{257}{43}\).
+                    </div>
+                </div>
+                Let \(a, b\) and \(c\) be the correct number for
+                \((\alpha), (\beta)\) and \((\gamma)\) respectively.
+                What is the value of \(a+b+c\)?
                 <small class="right">[4 points]</small>
                 <ol>
-                    <li>\(\dfrac{1}{24}\)</li>
-                    <li>\(\dfrac{1}{20}\)</li>
-                    <li>\(\dfrac{1}{16}\)</li>
-                    <li>\(\dfrac{1}{12}\)</li>
-                    <li>\(\dfrac{1}{8}\)</li>
+                    <li>\(190\)</li>
+                    <li>\(193\)</li>
+                    <li>\(196\)</li>
+                    <li>\(199\)</li>
+                    <li>\(202\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                Suppose we put \(4\) distinct balls into \(4\) distinct boxes
-                without leaving any ball outside the boxes.
-                What is the number of cases where a box with exactly \(1\) ball exists?
-                (※ There can be a box without any balls.)
+                TODO
                 <small>[4 points]</small>
                 <ol>
                     <li>\(220\)</li>
