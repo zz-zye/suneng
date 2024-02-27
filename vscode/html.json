@@ -9,14 +9,12 @@
 		],
 		"description": "Div.tab"
 	},
-	"Div.center": {
-		"prefix": "center",
+	"Div.center > img": {
+		"prefix": "centerimg",
 		"body": [
-			"<div class=\"center\">",
-			"    $0",
-			"</div>"
+			"<div class=\"center\"><img src=\"img/$1\" width=\"${2:100%}\"/></div>"
 		],
-		"description": "Div.center"
+		"description": "Div.center > img"
 	},
 	"Div.box > ol": {
 		"prefix": "boxol",
