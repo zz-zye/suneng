@@ -409,65 +409,46 @@
         </header>
         <div class="col1">
             <article>
-                For a sequence \(\{a_n\}\) with \(a_1=1\),
-                and \(S_n=\displaystyle\sum_{k=1}^{n}a_k\),
+                Two square matrices \(A\) and \(B\) of order \(2\) satisfy
                 <div class="tab">
-                    \(a_{n+1}=(n+1)S_n+n!\quad(n\geq 1)\)
+                    \(AB+A^2B=E\:\) and \(\:(A-E)^2+B^2=O\).
                 </div>
-                is satisfied.
-                The following is a process computing the general term \(a_n\).
-                <div class="box">
-                    \(a_{n+1}=S_{n+1}-S_n\) for all positive integers \(n\),
-                    so the given equation becomes
-                    <div class="space"></div>
-                    <div class="tab-short">\(S_{n+1}=(n+2)S_n+n!\quad(n\geq 1)\).</div>
-                    <div class="space"></div>
-                    Dividing both sides with \((n+2)!\) gives
-                    <div class="space"></div>
-                    <div class="tab-short">\(\dfrac{S_{n+1}}{(n+2)!}=\dfrac{S_n}{(n+1)!}+\dfrac{1}{(n+1)(n+2)}\).</div>
-                    <div class="space"></div>
-                    Let \(b_n=\dfrac{S_n}{(n+1)!}\).
-                    Then \(b_1=\dfrac{1}{2}\), and
-                    <div class="tab-short">\(b_{n+1}=b_n+ \dfrac{1}{(n+1)(n+2)}\).</div>
-                    <div class="space"></div>
-                    The general term of the sequence \(\{b_n\}\) is
-                    <div class="tab-short">\(b_n=\dfrac{\fbox{\(\;(\alpha)\;\)}}{n+1}\).</div>
-                    Therefore
-                    <div class="tab-short">\(S_n=\fbox{\(\;(\alpha)\;\)}\times n!\)</div>
-                    and
-                    <div class="tab-short">\(a_n=\fbox{\(\;(\beta)\;\)}\times (n-1)!\quad(n\geq1)\).</div>
+                Which option only contains every correct statement in the &lt;List&gt;?
+                (※ \(E\) is the identity matrix and \(O\) is the zero matrix.)
+                <small>[4 points]</small>
+                <div class="box-list">
+                    <ol class="alpha">
+                        <li>\(B\) is invertible.</li>
+                        <li>\(AB=BA\)</li>
+                        <li>\((A^3-A)^2+E=O\)</li>
+                    </ol>
                 </div>
-                Let \(f(n)\) and \(g(n)\) be the correct expression
-                for \((\alpha)\) and \((\beta)\) respectively.
-                What is the value of \(f(7)+g(6)\)?
-                <small class="right">[4 points]</small>
-                <ol>
-                    <li>\(44\)</li>
-                    <li>\(41\)</li>
-                    <li>\(38\)</li>
-                    <li>\(35\)</li>
-                    <li>\(32\)</li>
+                <ol class="col-3">
+                    <li>b</li>
+                    <li>c</li>
+                    <li>a, b</li>
+                    <li>a, c</li>
+                    <li>a, b, c</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                There is a sack containing \(1\) ball marked with number \(1\),
-                \(2\) balls marked with number \(2\), and \(5\) balls marked with number \(3\).
-                Let us randomly take out a ball from this sack,
-                check the number marked on it, and put it back in.
-                After repeating such trial \(2\) times, let \(\overline{X}\)
-                be the mean of the numbers marked on the balls taken out.
-                What is the value of \(\mathrm{P}(\overline{X}=2)\)?
-                <small class="right">[4 points]</small>
+                For a positive integer \(n\),
+                let \(a_n\) be the \(n\)th smallest number
+                in the list of all \(x\)-coordinates of points in the \(1\)st quadrant,
+                where the line \(y=n\) meets the graph of the function \(y=\tan x\).
+                <br/>
+                What is the value of \(\displaystyle\lim_{n\to\,\infty}\dfrac{a_n}{n}\)?
+                <small>[4 points]</small>
                 <ol>
-                    <li>\(\dfrac{5}{32}\)</li>
-                    <li>\(\dfrac{11}{64}\)</li>
-                    <li>\(\dfrac{3}{16}\)</li>
-                    <li>\(\dfrac{13}{64}\)</li>
-                    <li>\(\dfrac{7}{32}\)</li>
+                    <li>\(\dfrac{\pi}{4}\)</li>
+                    <li>\(\dfrac{\pi}{2}\)</li>
+                    <li>\(\dfrac{3}{4}\pi\)</li>
+                    <li>\(\pi\)</li>
+                    <li>\(\dfrac{5}{4}\pi\)</li>
                 </ol>
-                <div class="center"><img src="img/math_b_18.png" width="40%"/></div>
+                <div class="center"><img src="img/math_b_18.png" width="95%"/></div>
             </article>
         </div>
         <footer>12</footer>
@@ -479,43 +460,42 @@
         <div class="col1">
             <article>
                 In \(3\)-dimensional space,
-                the line \(l: \dfrac{x}{2}=6-y=z-6\) and a plane \(\alpha\)
-                meets at point \(\mathrm{P}(2,5,7)\) perpendicular to each other.
-                A point \(\mathrm{A}(a,b,c)\) on line \(l\) and
-                a point \(\mathrm{Q}\) on plane \(\alpha\) satisfy
-                \(\overrightarrow{\mathrm{AP}}\cdot \overrightarrow{\mathrm{AQ}}=6\).
-                What is the value of \(a+b+c\)?
-                <br/>
-                (※ \(a&gt;0\))
+                consider a sphere \(S\) whose center has positive
+                \(x\), \(y\), and \(z\)-coordinates.
+                The sphere \(S\) is tangent to the \(x\)-axis and the \(y\)-axis,
+                and meets the \(z\)-axis at two distinct points.
+                The intersection of sphere \(S\) and the \(xy\)-plane
+                is a circle with an area of \(64\pi\),
+                and the distance between the two intersections of sphere \(S\) and
+                the \(z\)-axis is \(8\).
+                What is the radius of sphere \(S\)?
                 <small>[4 points]</small>
                 <ol>
+                    <li>\(11\)</li>
+                    <li>\(12\)</li>
+                    <li>\(13\)</li>
+                    <li>\(14\)</li>
                     <li>\(15\)</li>
-                    <li>\(16\)</li>
-                    <li>\(17\)</li>
-                    <li>\(18\)</li>
-                    <li>\(19\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                As the figure shows,
-                there is an isosceles triangle \(\mathrm{ABC}\) with
-                an inscribed circle with radius \(1\),
-                where \(\angle \mathrm{CAB}=\angle \mathrm{BCA}=\theta\).
-                Let \(\mathrm{D}\) be a point on line \(\mathrm{AB}\) that is not point \(\mathrm{A}\),
-                such that \(\angle \mathrm{DCB}=\theta\).
-                Let \(S(\theta)\) be the area of the triangle \(\mathrm{BDC}\).
-                What is the value of \(\displaystyle\lim_{\theta\to+0}\{\theta\times S(\theta)\}\)?
-                (※ \(0&lt; \theta &lt; \dfrac{\pi}{4}\))
-                <small>[4 points]</small>
-                <div class="center"><img src="img/math_b_20.png" width="85%"/></div>
+                For a real number \(x\) greater than \(1\),
+                let \(f(x)\) and \(g(x)\) be the characteristic and mantissa
+                of \(\log_{10}x\) respectively.
+                Let us list all values of \(x\) for which
+                \(3f(x)+5g(x)\) is a multiple of \(10\).
+                Let \(a\) be the \(2\)nd smallest number in this list,
+                and \(b\) be the \(6\)th smallest number in this list.
+                What is the value of \(\log_{10} ab\)?
+                <small class="right">[4 points]</small>
                 <ol>
-                    <li>\(\dfrac{2}{3}\)</li>
-                    <li>\(\dfrac{8}{9}\)</li>
-                    <li>\(\dfrac{10}{9}\)</li>
-                    <li>\(\dfrac{4}{3}\)</li>
-                    <li>\(\dfrac{14}{9}\)</li>
+                    <li>\(8\)</li>
+                    <li>\(10\)</li>
+                    <li>\(12\)</li>
+                    <li>\(14\)</li>
+                    <li>\(16\)</li>
                 </ol>
             </article>
         </div>
@@ -527,39 +507,64 @@
         </header>
         <div class="col1">
             <article>
-                For a positive integer \(n\),
-                let \(a_n\) be the smallest positive integer
-                \(m\) that satisfies the following.
-                What is the value of \(\displaystyle\sum_{n=1}^{10}a_n\)?
-                <small>[4 points]</small>
-                <div class="box">
-                    <ol class="upper">
-                        <li>Point \(\mathrm{A}\) has coordinates \((2^n,0)\).</li>
-                        <li>Among the points on a line passing through
-                            two points \(\mathrm{B}(1,0)\) and \(\mathrm{C}(2^m,m)\),
-                            let \(\mathrm{D}\) be the point with an \(x\)-coordinate of \(2^n\).
-                            Then the area of the triangle \(\mathrm{ABD}\) is \(\dfrac{m}{2}\) or less.
-                        </li>
-                    </ol>
+                The graph of a continuous function \(y=f(x)\) is
+                symmetric about the origin, and
+                <div class="tab">
+                    \(f(x)=\dfrac{\pi}{2}\displaystyle\int_{1}^{x+1}\!f(t)dt\)
                 </div>
-                <ol>
-                    <li>\(109\)</li>
-                    <li>\(111\)</li>
-                    <li>\(113\)</li>
-                    <li>\(115\)</li>
-                    <li>\(117\)</li>
+                for all real numbers \(x\).
+                What is the value of
+                <div class="tab">
+                    \(\pi^2 \displaystyle\int_{0}^{1}xf(x+1)dx\),
+                </div>
+                given that \(f(1)=1\)?
+                <small>[4 points]</small>
+                <ol class="col-3">
+                    <li>\(2(\pi-2)\)</li>
+                    <li>\(2\pi-3\)</li>
+                    <li>\(2(\pi-1)\)</li>
+                    <li>\(2\pi-1\)</li>
+                    <li>\(2\pi\)</li>
                 </ol>
-                <div class="center"><img src="img/math_b_21.png" width="85%"/></div>
             </article>
         </div>
         <div class="col2">
             <div class="question-type">Short Answer Questions</div>
             <article>
-                Compute the solution to the equation \(\log_2(x+6)=5\).
-                <small>[3 points]</small>
+                For the function \(f(x)=5e^{3x-3}\),
+                compute \(f'(1)\).
+                <small class="right">[3 points]</small>
             </article>
             <article>
-                For the function \(f(x)=\cos x+4e^{2x}\), compute \(f'(0)\).
+                Among \(50\) members of a marathon club who participated in
+                some marathon race,
+                the number of members who finished and those who retired is as follows.
+                <div class="center">
+                    <div style="width:60%">
+                        <div style="text-align:right">(Unit: people)</div>
+                        <table style="width:100%">
+                            <tr>
+                                <td></td>
+                                <td>Male</td>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <td>Finished</td>
+                                <td>\(27\)</td>
+                                <td>\(9\)</td>
+                            </tr>
+                            <tr>
+                                <td>Retired</td>
+                                <td>\(8\)</td>
+                                <td>\(6\)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                Suppose a member who participated in this race was chosen at random.
+                Given that this member is female,
+                the probability that this member finished the marathon is \(p\).
+                Compute \(100p\).
                 <small>[3 points]</small>
             </article>
         </div>
@@ -572,11 +577,13 @@
         <div class="col1">
             <article>
                 Let \(k\) be the product of all real solutions to the equation
-                \(x^2-6x-\sqrt{x^2-6x-1}=3\).
+                \(\sqrt{2x^2-6x}=x^2-3x-4\).
                 Compute \(k^2\).
                 <small class="right">[3 points]</small>
             </article>
             <article>
+                TODO
+
                 Upon compressing a digital image,
                 let \(P\) be the peak signal-to-noise ratio,
                 which is an indicator of the difference between the original and compressed image,
