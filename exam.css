@@ -317,13 +317,12 @@ html, body {
     list-style-type: none;
     /* Why is ::marker not supported on my phone? */
 }
-.exam ol.upper > li { margin: 2px 0 2px 28px; }
+.exam ol.upper > li { margin: 2px 0 2px 24px; }
 .exam ol.upper > li::before {
     display: inline-block;
     letter-spacing: -0.5px;
-    width: 28px;
-    margin-left: -28px;
-    margin-right: -4px;
+    width: 24px;
+    margin-left: -24px;
 }
 .exam ol.upper > li:nth-child(1)::before { content: "(A)"; }
 .exam ol.upper > li:nth-child(2)::before { content: "(B)"; }
@@ -340,7 +339,6 @@ html, body {
     letter-spacing: -0.7px;
     width: 22px;
     margin-left: -22px;
-    margin-right: -4px;
 }
 .exam ol.roman > li:nth-child(1)::before { content: "(i)"; }
 .exam ol.roman > li:nth-child(2)::before { content: "(ii)"; }
