@@ -538,7 +538,7 @@
             <article>
                 Among \(50\) members of a marathon club who participated in
                 some marathon race,
-                the number of members who finished and those who retired is as follows.
+                the number of members who finished or retired is as follows.
                 <div class="center">
                     <div style="width:60%">
                         <div style="text-align:right">(Unit: people)</div>
@@ -575,72 +575,46 @@
             <h2>Mathematics <small>(Type B)</small></h2>
         </header>
         <div class="col1">
-            <article>
+            <article style="min-height:40%">
                 Let \(k\) be the product of all real solutions to the equation
                 \(\sqrt{2x^2-6x}=x^2-3x-4\).
                 Compute \(k^2\).
                 <small class="right">[3 points]</small>
             </article>
             <article>
-                TODO
-
-                Upon compressing a digital image,
-                let \(P\) be the peak signal-to-noise ratio,
-                which is an indicator of the difference between the original and compressed image,
-                and let \(E\) be the mean square error between the original and compressed image.
+                Suppose water completely fills and flows in a cylindrical pipe,
+                whose cross section has a radius of \(R\,(R&lt;1)\).
+                Let \(v_c\) be the speed of water at the center of a cross section of this pipe,
+                and let \(v\) be the speed of water at a point \(x\,(0&lt;x \leq R)\) units apart
+                from the walls of the pipe towards the center.
                 Then the following relation is known.
                 <div class="tab">
-                    \(P=20\log_{10} 255-10\log_{10} E\quad(E&gt;0)\)
+                    \(\dfrac{v_c}{v}=1-k\log_{10} \dfrac{x}{R}\)
                 </div>
-                Upon compressing two original images \(A\) and \(B\),
-                let \(P_A\) and \(P_B\) be their peak signal-to-noise ratio respectively,
-                and let \(E_A\) and \(E_B\) (\(E_A&gt;0, E_B&gt;0\)) be their
-                mean square error respectively.
-                Given that \(E_B=100E_A\), compute \(P_A-P_B\).
+                (※ \(k\) is a positive constant.
+                Then units of length and speed are \(\text{m}\) and \(\text{m/s}\) respectively.)
+                <div class="space"></div>
+                For this pipe satisfying \(R&lt; 1\),
+                the speed of water at a point \(R^{\small{\dfrac{27}{23}}}\) units apart from the walls towards the center
+                is \(\dfrac{1}{2}\) times the speed of water at the center,
+                and the speed of water at a point \(R^a\) units apart from the walls towards the center
+                is \(\dfrac{1}{3}\) times the speed of water at the center.
+                Compute \(23a\).
                 <small>[3 points]</small>
             </article>
         </div>
         <div class="col2">
             <article>
-                Compute the number of all \(3\)-tuples \((a,b,c)\) where
-                \(a, b\) and \(c\) are positive integers that satisfy the following.
-                <small>[4 points]</small>
-                <div class="box">
-                    <ol class="upper">
-                        <li>\(a\times b\times c\) is odd.</li>
-                        <li>\(a\leq b\leq c\leq 20\)</li>
-                    </ol>
-                </div>
-            </article>
-        </div>
-        <footer>12</footer>
-    </section>
-    <section>
-        <header>
-            <h2>Mathematics <small>(Type B)</small></h2>
-        </header>
-        <div class="col1">
-            <article>
-                Among the two foci of the ellipse
-                \(\dfrac{x^2}{9}+ \dfrac{y^2}{4}=1\),
-                let \(\mathrm{F}\) be the point with a positive \(x\)-coordinate,
-                and \(\mathrm{F'}\) be the point with a negative \(x\)-coordinate.
-                Let \(\mathrm{P}\) be a point on this ellipse in the \(1\)st quadrant
-                such that \(\angle \mathrm{FPF'}=\dfrac{\pi}{2}\),
-                and let \(\mathrm{Q}\) be a point on line \(\mathrm{FP}\)
-                with a positive \(y\)-coordinate such that \(\overline{\mathrm{FQ}}=6\).
-                Compute the area of the triangle \(\mathrm{QF'F}\).
-                <small>[4 points]</small>
-                <div class="center"><img src="img/math_b_27.png" width="60%"/></div>
-            </article>
-        </div>
-        <div class="col2">
-            <article>
-                Consider a positive number \(a\) for which the
-                function \(f(x)=\displaystyle\int_{0}^{x}(a-t)e^t dt\)
-                has a global maximum value of \(32\).
-                Compute the area of the region enclosed by the curve \(y=3e^x\)
-                and two lines \(x=a\) and \(y=3\).
+                Suppose we took a random sample of \(n\) people from the residents of some city
+                to find the proportion of people who have used the central park of the city,
+                and \(80\%\) of people answered that they have used it.
+                Using this result, a \(95\%\) confidence interval for the proportion of
+                all residents of this city who have used the central park,
+                is computed to be \([a,b]\).
+                Given that \(b-a=0.098\), compute \(n\).
+                <br/>
+                (※ For a random variable \(Z\) that follows the standard normal distribution,
+                suppose \(\mathrm{P}(|Z| \leq 1.96) = 0.95\).)
                 <small class="right">[4 points]</small>
             </article>
         </div>
@@ -652,34 +626,81 @@
         </header>
         <div class="col1">
             <article>
-                Consider the sphere \(S: x^2+y^2+z^2=50\)
-                and the point \(\mathrm{P}(0,5,5)\) in \(3\)-dimensional space.
-                Among all circles \(C\) that satisfy the following,
-                the maximum area of the projection of \(C\) onto the \(xy\)-plane
-                is \(\dfrac{q}{p}\pi\). Compute \(p+q\).
-                (※ \(p\) and \(q\) are positive integers that are coprime.)
+                As the figure shows,
+                there is a point \(\mathrm{A}(0,a)\) on the \(y\)-axis,
+                and a point \(\mathrm{P}\) that moves on the ellipse
+                \(\dfrac{x^2}{25}+ \dfrac{y^2}{9}=1\)
+                with two foci \(\mathrm{F}\) and \(\mathrm{F'}\).
+                Given that the minimum value of
+                \(\overline{\mathrm{AP}}- \overline{\mathrm{FP}}\) is \(1\),
+                compute \(a^2\).
+                <small class="right">[4 points]</small>
+                <div class="center"><img src="img/math_b_27.png" width="50%"/></div>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                As the figure shows,
+                there is an isosceles triangle \(\mathrm{ABC}\)
+                where the line segment \(\mathrm{AB}\) has a length of \(4\),
+                \(\overline{\mathrm{AC}} = \overline{\mathrm{BC}}\),
+                and \(\angle \mathrm{ACB}=\theta\).
+                Let \(\mathrm{D}\) be a point on the extended line \(\mathrm{AB}\) such that
+                \(\overline{\mathrm{AC}} = \overline{\mathrm{AD}}\),
+                and let \(\mathrm{P}\) be a point such that
+                \(\overline{\mathrm{AC}} = \overline{\mathrm{AP}}\) and
+                \(\angle \mathrm{PAB}=2\theta\).
+                <br/>
+                Let \(S(\theta)\) be the area of the triangle \(\mathrm{BDP}\).
+                <br/>
+                Compute \(\displaystyle\lim_{\theta\to\,+0}(\theta\times S(\theta))\).
+                (※ \(0&lt; \theta&lt; \dfrac{\pi}{6}\))
                 <small>[4 points]</small>
+                <div class="center"><img src="img/math_b_28.png" width="50%"/></div>
+            </article>
+        </div>
+        <footer>12</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type B)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                In \(3\)-dimensional space,
+                suppose two points \(\mathrm{P}\) and \(\mathrm{Q}\) are moving
+                on the sphere \(x^2+y^2+z^2=4\).
+                Let \(\mathrm{P_1}\) and \(\mathrm{Q_1}\) be perpendicular foots
+                from points \(\mathrm{P}\) and \(\mathrm{Q}\) to the plane
+                \(y=4\) respectively,
+                and let \(\mathrm{P_2}\) and \(\mathrm{Q_2}\) be perpendicular foots
+                from points \(\mathrm{P}\) and \(\mathrm{Q}\) to the plane
+                \(y+\sqrt{3}z+8=0\) respectively.
+                Compute the maximum value of
+                \(2\big|\overrightarrow{\mathrm{PQ}}\big|^2
+                -\big|\overrightarrow{\mathrm{P_1Q_1}}\big|^2
+                -\big|\overrightarrow{\mathrm{P_2Q_2}}\big|^2\).
+                <small>[4 points]</small>
+                <div class="center"><img src="img/math_b_29.png" width="75%"/></div>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                For a quadratic function \(f(x)\),
+                the function \(g(x)=f(x)e^{-x}\) satisfies the following.
                 <div class="box">
                     <ol class="upper">
-                        <li>Circle \(C\) is a cross section of the sphere \(S\)
-                            and a plane passing through point \(\mathrm{P}\).
+                        <li>Points \((1,g(1))\) and \((4,g(4))\) are
+                            inflection points of the curve \(y=g(x)\).
                         </li>
-                        <li>Circle \(C\) has a radius of \(1\).</li>
+                        <li>The number of tangent lines to the curve
+                            \(y=g(x)\) that passes through point \((0,k)\)
+                            is \(3\) if and only if \(-1&lt;k&lt;0\).
+                        </li>
                     </ol>
                 </div>
-                <div class="center"><img src="img/math_b_29.png" width="80%"/></div>
-            </article>
-        </div>
-        <div class="col2">
-            <article>
-                For the function \(f(x)=e^{x+1}-1\) and for a positive integer \(n\),
-                let us define a function \(g(x)\) as
-                <div class="tab">
-                    \(g(x)=100\,|\,f(x)\,|- \displaystyle\sum_{k=1}^{n}|\,f(x^k)\,|\).
-                </div>
-                Compute the sum of all positive integers \(n\) for which
-                \(g(x)\) is differentiable on the set of all real numbers.
-                <small class="right">[4 points]</small>
+                Compute \(g(-2)\times g(4)\).
+                <small>[4 points]</small>
             </article>
         </div>
         <footer>12</footer>
