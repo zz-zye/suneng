@@ -585,8 +585,16 @@
         <div class="col2">
             <article>
                 A company has \(60\) employees in total,
-                and each employee is in one of the departments \(\mathrm{A}\) and \(\mathrm{B}\).
-                
+                and each employee is either in department \(\mathrm{A}\) or department \(\mathrm{B}\).
+                Department \(\mathrm{A}\) consists of \(20\) employees and
+                department \(\mathrm{B}\) consists of \(40\) employees.
+                \(50\%\) of employees in department \(\mathrm{A}\) are female.
+                \(60\%\) of female employees of this company are in department \(\mathrm{B}\).
+                Suppose one of the \(60\) employees of this company
+                is chosen at random.
+                Given that this employee is in department \(\mathrm{B}\),
+                the probability that this employee is female is \(p\).
+                Compute \(80p\).
                 <small>[4 points]</small>
             </article>
         </div>
@@ -598,66 +606,76 @@
         </header>
         <div class="col1">
             <article>
-                An absolutely continuous random variable \(X\)
-                <br/>
-                can take all values in the interval \([0, 3]\),
-                and the graph of its probability density function is as below.
-                <div class="center"><img src="img/math_a_27.png" width="90%"/></div>
-                Given that \(\mathrm{P}(0\leq X\leq 2)=\dfrac{q}{p}\),
-                compute \(p+q\).
-                <br/>
-                (※ \(k\) is a constant. \(p\) and \(q\) are positive integers that are coprime.)
+                For two functions
+                <div class="tab">
+                    \(f(x)=\begin{cases}
+                        x+3 &\; (x \leq a) \\
+                        x^2-x &\; (x &gt; a)
+                    \end{cases}\:\)
+                    <br/>
+                    and \(\:g(x)=x-(2a+7)\),
+                </div>
+                compute the product of all real numbers \(a\)
+                for which the function \(f(x)g(x)\) is continuous
+                on the set of all real numbers.
                 <small>[4 points]</small>
             </article>
         </div>
         <div class="col2">
             <article>
-                For a positive integer \(k\), let
-                <div class="tab">
-                    \(a_k=\displaystyle\lim_{n\to\infty}
-                    \dfrac{\left(\!\dfrac{6}{k}\!\right)^{\!n+1}}
-                    {\left(\!\dfrac{6}{k}\!\right)^{\!n}+1}\).
-                </div>
-                Compute \(\displaystyle\sum_{k=1}^{10}ka_k\).
-                <small>[4 points]</small>
-            </article>
-        </div>
-        <footer>12</footer>
-    </section>
-    <section>
-        <header>
-            <h2>Mathematics <small>(Type A)</small></h2>
-        </header>
-        <div class="col1">
-            <article>
-                Two polynomial functions \(f(x)\) and \(g(x)\) satisfy
-                <div class="tab">
-                    \(g(x)=(x^3+2)f(x)\)
-                </div>
-                for all real numbers \(x\).
-                Given that \(g(x)\) has a local minimum value of \(24\) at \(x=1\),
-                compute \(f(1)-f'(1)\).
-                <small class="right">[4 points]</small>
-            </article>
-        </div>
-        <div class="col2">
-            <article>
-                For a positive integer \(n\),
-                let \(f(n)\) be the number of triangles \(\mathrm{OAB}\)
-                on the \(xy\)-plane that satisfy the following.
-                Compute \(f(1)+f(2)+f(3)\).
-                <br/>
-                (※ \(\mathrm{O}\) is the origin.)
-                <small>[4 points]</small>
+                Two polynomial functions \(f(x)\) and \(g(x)\) satisfy the following.
                 <div class="box">
                     <ol class="upper">
-                        <li>Point \(\mathrm{A}\) has coordinates \((-2,3^n)\).</li>
-                        <li>Let \((a,b)\) be the coordinates of point \(\mathrm{B}\).
-                            Then \(a\) and \(b\) are positive integers satisfying \(b\leq \log_2 a\).
-                        </li>
-                        <li>The area of the triangle \(\mathrm{OAB}\) is \(50\) or less.</li>
+                        <li>\(g(x)=x^3f(x)-7\)</li>
+                        <li>\(\displaystyle\lim_{x\to 2} \dfrac{f(x)-g(x)}{x-2} = 2\)</li>
                     </ol>
                 </div>
+                The equation of the tangent line to the curve \(y=g(x)\) at point \((2, g(2))\)
+                is \(ax+b\).
+                compute \(a^2+b^2\).
+                (※ \(a\) and \(b\) are constants.)
+                <small>[4 points]</small>
+            </article>
+        </div>
+        <footer>12</footer>
+    </section>
+    <section>
+        <header>
+            <h2>Mathematics <small>(Type A)</small></h2>
+        </header>
+        <div class="col1">
+            <article>
+                A quadratic function \(f(x)\) satisfies \(f(0)=0\) and the following.
+                <div class="box">
+                    <ol class="upper">
+                        <li>\(\displaystyle\int_{0}^{2}|f(x)|dx = -\int_{0}^{2}f(x)dx = 4\)</li>
+                        <li>\(\displaystyle\int_{2}^{3}|f(x)|dx = \int_{2}^{3}f(x)dx\)</li>
+                    </ol>
+                </div>
+                Compute \(f(5)\).
+                <small>[4 points]</small>
+            </article>
+        </div>
+        <div class="col2">
+            <article>
+                For a real number \(x \geq \dfrac{1}{100}\),
+                let \(f(x)\) be the mantissa of \(\log_{10}x\).
+                Let \(R\) be the region created by points \((a,b)\) on the \(xy\)-plane,
+                where \(a\) and \(b\) are real numbers that satisfy the following.
+                <div class="box">
+                    <ol class="upper">
+                        <li>\(a&lt;0\) and \(b&gt;10\).</li>
+                        <li>The graph of the function \(y=9f(x)\) and
+                            the line \(ax+b\) meet at only one point.
+                        </li>
+                    </ol>
+                </div>
+                Among all points \((a,b)\) in the region \(R\),
+                the minimum value of \((a+20)^2+b^2\) is \(100\times \dfrac{q}{p}\).
+                Compute \(p+q\).
+                <br/>
+                (※ \(p\) and \(q\) are positive integers that are coprime.)
+                <small class="right">[4 points]</small>
             </article>
         </div>
         <footer>12</footer>
