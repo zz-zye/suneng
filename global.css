@@ -8,3 +8,8 @@ html {
     --color-brown: #6d5c4d;
     --color-shadow: #504d4b;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}

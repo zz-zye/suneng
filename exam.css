@@ -1,10 +1,9 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-beige);
+/* Everything fits in .exam */
+.exam {
+    counter-reset: page-total page question;
     color: var(--color-black);
+    background-color: var(--color-beige);
 }
-.exam { counter-reset: page-total page question; }
 .MathJax { font-size: 100% !important; }
 
 /* Fonts */
