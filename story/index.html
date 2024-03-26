@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Catamaran:wght@600&family=Frank+Ruhl+Libre:wght@500&family=PT+Serif:ital@0;1&family=Roboto:wght@500&family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="title.css">
-    <link rel="stylesheet" href="exam.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../title.css">
+    <link rel="stylesheet" href="../exam.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <header id="title">
+    <header id="title" onclick="window.location.href='../'">
         <div class="title-container">
             <div class="title-size">
                 <div class="title-dots">
@@ -64,53 +64,15 @@
         </div>
     </header>
     <main>
-        <div class="exam exam-small">
-            <section>
-                <header>
-                    <h3>2024 College Scholastic Ability Test</h3>
-                    <h1>Mathematics</h1>
-                </header>
-                <div class="col1">
-                    <div class="question-type">Multiple Choice Questions</div>
-                    <article>
-                        What is the value of \({\sqrt[3]{24} \times 3^{^2/_3}}\)?
-                        <small>[2 points]</small>
-                        <ol>
-                            <li>\(6\)</li><li>\(7\)</li><li>\(8\)</li><li>\(9\)</li><li>\(10\)</li>
-                        </ol>
-                    </article>
-                    <article style="opacity: 0;"></article>
-                </div>
-                <div class="col2">
-                    <article>
-                        For \(\theta\) that satisfies \(\dfrac{3}{2}\pi &lt; \theta &lt; 2\pi\) and \(\sin(-\theta) = \dfrac{1}{3}\), what is the value of \(\tan\theta\)?
-                        <small>[3 points]</small>
-                        <ol>
-                            <li>\(-\dfrac{\sqrt{2}}{2}\)</li><li>\(-\dfrac{\sqrt{2}}{4}\)</li><li>\(-\dfrac{1}{4}\)</li><li>\(\dfrac{1}{4}\)</li><li>\(\dfrac{\sqrt{2}}{4}\)</li>
-                        </ol>
-                    </article>
-                </div>
-            </section>
-        </div>
         <div class="flavor-text"><div>The story of Suneung in English.</div></div>
-        <div class="text">
-            <div>
-                <hr/>
-                <h2>Suneung [<span class="korean">수능</span>]</h2>
-                <div style="font-style: italic;">
-                    The college entrance exam of Korea.
-                </div>
-                <br/>
-                <button onclick="window.location.href='./story'">Read the story</button>
-                <hr/>
-                <div class="to-list">
-                    or
-                    <a href="./list/index.html">just look into the database</a>
-                </div>
-            </div>
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+        <div class="text" id="content">
+            
         </div>
     </main>
 
+    <script src="./load.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>

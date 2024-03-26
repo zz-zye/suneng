@@ -1,4 +1,11 @@
-/* Header */
+html {
+    background-color: var(--color-brown);
+}
+.korean {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Header Animation */
 @keyframes header-shrink {
     0%, 15% { height: 100%; }
     33%, 100% { height: 100px; }
@@ -34,6 +41,7 @@
 #title .s-0,
 #title .s-1 { animation: thicken-height 7s ease-in-out 0s forwards; }
 
+
 /* Main */
 main {
     position: absolute;
@@ -60,6 +68,26 @@ main {
     font-style: italic;
     color: var(--color-brown);
     text-align: center;
+}
+
+/* Example Exam */
+.exam-small {
+    background-color: transparent;
+    transform: scale(0.8);
+}
+.exam-small section {
+    min-height: 500px;
+    padding-bottom: 0;
+    grid-template-rows: minmax(48px, auto) 1fr;
+    background-color: var(--color-beige);
+}
+.exam-small section::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    height: 200px;
+    background: linear-gradient(180deg, transparent 0%, var(--color-brown) 80%);
+    transform: scale(1.2);
 }
 
 /* Main text */
@@ -99,6 +127,8 @@ h2 {
     font-weight: bold;
     color: var(--color-brown);
     background-color: var(--color-beige);
+    
+    cursor: pointer;
 }
 .to-list {
     font-size: 80%;
