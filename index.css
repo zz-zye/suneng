@@ -63,7 +63,7 @@ main {
     align-items: center;
 }
 .flavor-text > div {
-    font-size: clamp(12px, 4vw, 20px);
+    font-size: 20px;
     font-weight: bold;
     font-style: italic;
     color: var(--color-brown);
@@ -117,7 +117,8 @@ h2 {
     font-size: 2rem;
     font-weight: bold;
 }
-.text button {
+.button {
+    text-decoration: none;
     margin: 8px;
     border: none;
     padding: 4px 16px;
@@ -127,8 +128,6 @@ h2 {
     font-weight: bold;
     color: var(--color-brown);
     background-color: var(--color-beige);
-    
-    cursor: pointer;
 }
 .to-list {
     font-size: 80%;
