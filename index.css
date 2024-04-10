@@ -46,37 +46,55 @@ html {
 main {
     position: absolute;
     inset: 0;
-    
-    display: grid;
-    grid-template-rows: 40px 1fr;
-    grid-template-areas:
-        "flavor-text"
-        "text";
 }
 
 /* Flavor text */
 .flavor-text {
-    grid-area: flavor-text;
+    height: 40px;
     background-color: var(--color-beige);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.flavor-text > div {
     font-size: 20px;
+    line-height: 40px;
     font-weight: bold;
     font-style: italic;
     color: var(--color-bg);
     text-align: center;
 }
 
+.exam-container {
+    position: relative;
+}
+
 /* Example Exam */
 .exam-small {
+    position: absolute;
+    left: 50%;
     background-color: transparent;
-    transform: scale(0.8);
+    transform: translateX(-50%) scale(0.7) skew(348deg, 9.5deg);
 }
+
+.exam-page {
+    position: absolute;
+    width: 794px;
+    min-height: 500px;
+    box-shadow: var(--color-shadow) 6px 6px 10px;
+    background-color: var(--color-beige);
+}
+.exam-page:nth-of-type(1) {
+    transform: rotate(-5deg) translate(-3%, -3%);
+    opacity: 0.6;
+}
+.exam-page:nth-of-type(2) {
+    transform: rotate(-3deg) translate(-2%, -3%);
+    opacity: 0.7;
+}
+.exam-page:nth-of-type(3) {
+    transform: rotate(-2deg) translate(-1%, -1%);
+    opacity: 0.8;
+}
+
 .exam-small section {
     min-height: 500px;
+    margin: 0;
     padding-bottom: 0;
     grid-template-rows: minmax(48px, auto) 1fr;
     background-color: var(--color-beige);
@@ -87,12 +105,11 @@ main {
     inset: auto 0 0;
     height: 200px;
     background: linear-gradient(180deg, transparent 0%, var(--color-bg) 80%);
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 /* Main text */
 .text {
-    grid-area: text;
     position: relative;
     padding: 16px;
     color: var(--color-beige);

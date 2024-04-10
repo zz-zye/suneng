@@ -1,3 +1,8 @@
+/* Header */
+#title {
+    cursor: pointer;
+}
+
 main {
     display: grid;
     grid-template-rows: 40px 1fr;
@@ -11,12 +16,8 @@ main {
 .flavor-text {
     grid-area: flavor-text;
     background-color: var(--color-beige);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.flavor-text > div {
-    font-size: clamp(12px, 4vw, 20px);
+    font-size: 20px;
+    line-height: 40px;
     font-weight: bold;
     font-style: italic;
     color: var(--color-bg);
