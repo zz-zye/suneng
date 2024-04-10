@@ -6,3 +6,12 @@
 /* Transition */
 #content { transition: opacity 0.5s; }
 .opacity-0 { opacity: 0; }
+
+html, body {
+    background-color: var(--color-beige);
+}
+
+main {
+    padding: 2em;
+    
+}
