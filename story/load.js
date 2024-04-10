@@ -27,7 +27,7 @@ function disable_buttons() {
 
 async function goto_page(new_page) {
     // Fetch the new content
-    let innerHTML = await get_html(`./${new_page}.html`);
+    let innerHTML = await get_html(`./en/${new_page}.html`);
     if (innerHTML === undefined) {
         // TODO: return to default page
         throw `No page found: ${new_page}.html`;

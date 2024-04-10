@@ -11,15 +11,11 @@ main {
 .flavor-text {
     grid-area: flavor-text;
     background-color: var(--color-beige);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.flavor-text > div {
-    font-size: clamp(12px, 4vw, 20px);
+    font-size: 20px;
+    line-height: 40px;
     font-weight: bold;
     font-style: italic;
-    color: var(--color-brown);
+    color: var(--color-bg);
     text-align: center;
 }
 
@@ -57,7 +53,7 @@ aside a {
     border-radius: 10px;
     padding-top: 5px;
 
-    color: var(--color-brown);
+    color: var(--color-bg);
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
@@ -89,7 +85,7 @@ section {
     margin-left: 16px;
     padding: 10px;
 
-    color: var(--color-brown);
+    color: var(--color-bg);
     background-color: var(--color-beige);
     box-shadow: var(--color-shadow) 6px 6px 10px;
 }
@@ -120,7 +116,7 @@ section > h2::after {
     content: "";
     position: absolute;
     top: 35%;
-    border-top: 4px dotted var(--color-brown);
+    border-top: 4px dotted var(--color-bg);
 }
 section > h2::before { left: 10%; right: 77.5%; }
 section > h2::after { left: 77.5%; right: 10%; }
@@ -133,7 +129,7 @@ section > h3 {
     font-weight: normal;
     text-align: center;
     
-    border: 1px solid var(--color-brown);
+    border: 1px solid var(--color-bg);
     border-left: none;
     border-right: none;
 }
@@ -162,5 +158,5 @@ section > h3 {
 /* hr */
 section hr {
     border: none;
-    border-top: 1px solid var(--color-brown);
+    border-top: 1px solid var(--color-bg);
 }

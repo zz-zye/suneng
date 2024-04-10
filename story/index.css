@@ -1,8 +1,42 @@
-/* Header */
-#title {
-    cursor: pointer;
-}
-
 /* Transition */
 #content { transition: opacity 0.5s; }
 .opacity-0 { opacity: 0; }
+
+html, body {
+    background-color: var(--color-bg);
+}
+
+.flavor-text {
+    height: 40px;
+    background-color: var(--color-beige);
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--color-bg);
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: auto min(80vw, 680px) auto;
+    grid-template-rows: auto 60px;
+    grid-template-areas: 
+        "left content right"
+        "left content right";
+}
+
+.left { grid-area: left; }
+.right { grid-area: right; }
+
+.left button,
+.right button {
+    position: sticky;
+}
+
+#content {
+    grid-area: content;
+    background-color: var(--color-beige);
+    padding: 2em;
+}
