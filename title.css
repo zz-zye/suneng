@@ -24,6 +24,16 @@ main { margin-top: 100px; }
     align-items: center;
 }
 
+/* Title anchor */
+.title-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+}
+
 .title-container {
     width: 60px;
     min-width: 60px;
@@ -94,3 +104,6 @@ main { margin-top: 100px; }
 
 @keyframes appear { 0%, 25% { opacity: 0; } 30%, 100% { opacity: 1; } }
 .title-other { animation: appear 7s ease-in-out 0s infinite alternate; }
+
+@keyframes title-button { 0%, 15% { width: 80px; } 30%, 100% { width: 260px; } }
+.title-button { animation: title-button 7s ease-in-out 0s infinite alternate; }

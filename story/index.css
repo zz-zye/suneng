@@ -1,8 +1,3 @@
-/* Header */
-#title {
-    cursor: pointer;
-}
-
 /* Transition */
 #content { transition: opacity 0.5s; }
 .opacity-0 { opacity: 0; }
@@ -25,7 +20,7 @@ html, body {
 main {
     padding: 2em;
     display: grid;
-    grid-template-columns: auto min(80vw, 480px) auto;
+    grid-template-columns: auto min(80vw, 680px) auto;
     grid-template-rows: auto 60px;
     grid-template-areas: 
         "left content right"
