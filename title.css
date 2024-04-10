@@ -1,4 +1,4 @@
-html { background-color: var(--color-brown); }
+html { background-color: var(--color-bg); }
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ main { margin-top: 100px; }
     left: 0;
     width: 100%;
     height: 100px;
-    background-color: var(--color-brown);
+    background-color: var(--color-bg);
     overflow-x: hidden;
 
     display: flex;
