@@ -75,7 +75,7 @@
                 (※ \(\mathrm{U}\) is the universe,
                 and \(\mathrm{X}^C\) is the complement of \(\mathrm{X}\).)
                 <small>[2 points]</small>
-                <div class="center"><img src="img/math_hum_5.png" width="70%"></div>
+                <div class="center"><img src="img/math_hum_5.png" width="65%"></div>
                 <ol class="col-2">
                     <li>\(\mathrm{A}\cap(\mathrm{B}\cap \mathrm{C})^C\)</li>
                     <li>\(\mathrm{A}\cap(\mathrm{B}\cup \mathrm{C})^C\)</li>
@@ -122,7 +122,7 @@
             </article>
             <article>
                 Figure below is the net of a cube.
-                <div class="center"><img src="img/math_hum_8.png" width="70%"></div>
+                <div class="center"><img src="img/math_hum_8.png" width="55%"></div>
                 What is the magnitude of \(\angle \mathrm{ABC}\)
                 in the original cube?
                 <small class="right">[3 points]</small>
@@ -357,85 +357,150 @@
         </header>
         <div class="col1">
             <article style="min-height:40%">
-                <div style="float:right; width:30%;"><img src="img/math_hum_18.png" width="100%"></div>
-                TODO
-                <small>[2 points]</small>
-                <ol class="col-1">
-                    <li>\(S\!\gets\!S\!+\!2,\;S\geq 9N^4,\:\) Print \(N+1\)</li>
-                    <li>\(S\!\gets\!S\!\times\!2,\;S&lt; 9N^4,\:\) Print \(N\)</li>
-                    <li>\(S\!\gets\!S\!\times\!2,\;S&lt; 9N^4,\:\) Print \(N+1\)</li>
-                    <li>\(S\!\gets\!S\!\times\!2,\;S\geq 9N^4,\:\) Print \(N\)</li>
-                    <li>\(S\!\gets\!S\!\times\!2,\;S\geq 9N^4,\:\) Print \(N+1\)</li>
-                </ol>
-            </article>
-            <article>
-                The following is the middle part of a proof of the statement
-                「If \(x^2+y^2+z^2=1111\), then \(\fbox{\(\;(\alpha)\;\)}\)」.
+                <div style="float:right; width:35%;"><img src="img/math_hum_18.png" width="100%"></div>
+                On the \(xy\)-plane, consider a line \(l\) that is not parallel to any axis.
+                Let \(\mathrm{P}(x_1, y_1)\) be a point not on line \(l\),
+                and let \(\mathrm{H}(x_2, y_2)\) be the perpendicular foot from point \(\mathrm{P}\) to line \(l\).
+                The following is a process computing the length of the line segment \(\mathrm{PH}\).
                 <div class="box">
-                    &lt;Proof&gt;
+                    Suppose the equation of line \(l\) is
+                    <div style="display:flex; justify-content: space-between; align-items: center;">
+                        <div class="tab-short">
+                            \(ax+by+c=0\)
+                        </div>
+                        <div style="
+                            flex: auto;
+                            border-bottom: 1px dotted black;
+                            margin: 0 6px;
+                            transform: translateY(-50%);
+                        "></div>
+                        <div>
+                            \((1)\)
+                        </div>
+                    </div>
+                    where \(a \ne 0\) and \(b \ne 0\) by the given condition.
+                    <div class="space"></div>
+                    Since the slope of \(l\) is \(- \dfrac{a}{b}\),
                     <br>
-                    \(\cdots\) (omitted) \(\cdots\)
-                    <br>
-                    In the division of integers \(x, y\) and \(z\) by \(8\),
-                    <br>
-                    the remainder is among \(0,1,2,3,4,5,6\) or \(7\).
-                    Therefore, in the division of \(x^2, y^2\) and \(z^2\) by \(8\),
-                    the remainder is among \(0,1\) or \(4\).
-                    Therefore, in the division of \(x^2+y^2+z^2\) by \(8\),
-                    the remainder is among \(0,1,2,3,4,5\) or \(6\).
-                    However, the division of \(1111\) by \(8\) has remainder \(7\).
-                    <br>
-                    \(\cdots\) (omitted) \(\cdots\)
+                    the equation of line \(\mathrm{PH}\) is
+                    <div style="display:flex; justify-content: space-between; align-items: center;">
+                        <div class="tab-short">
+                            \(y-y_1=\fbox{\(\;(\alpha)\;\)}\)
+                        </div>
+                        <div style="
+                            flex: auto;
+                            border-bottom: 1px dotted black;
+                            margin: 0 6px;
+                            transform: translateY(-50%);
+                        "></div>
+                        <div>
+                            \((1)\)
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    Using \((1)\) and \((2)\), we have the following.
+                    <div class="tab-short">
+                        \(x_2-x_1=\dfrac{-a(ax_1+by_1+c)}{a^2+b^2}\)
+                    </div>
+                    <div class="tab-short">
+                        \(y_2-y_1=\dfrac{-b(ax_1+by_1+c)}{a^2+b^2}\)
+                    </div>
+                    Therefore the length of the line segment \(\mathrm{PH}\) is
+                    <div class="tab-short">
+                        \(\begin{align}
+                            \overline{\mathrm{PH}} &= \fbox{\(\;(\beta)\;\)}\\
+                             &= \dfrac{|ax_1+by_1+c|}{\sqrt{a^2+b^2}}.
+                        \end{align}\)
+                    </div>
                 </div>
-                What is appropriate for \(\fbox{\(\;(\alpha)\;\)}\) above?
-                <small>[2 points]</small>
+                In the process above, what are appropriate for
+                \((\alpha)\) and \((\beta)\) in this order?
+                <small>[3 points]</small>
                 <ol class="col-1">
-                    <li>at least one among \(x, y\) and \(z\) is an integer.</li>
-                    <li>none among \(x, y\) and \(z\) are integers.</li>
-                    <li>there is at least one solution where \(x, y\) and \(z\) are all integers.</li>
-                    <li>there is only one solution where \(x, y\) and \(z\) are all integers.</li>
-                    <li>there are no solutions where \(x, y\) and \(z\) are all integers.</li>
+                    <li>\(\dfrac{a}{b}(x-x_1), \: |x_2-x_1| + |y_2-y_1|\)</li>
+                    <li>\(\dfrac{b}{a}(x-x_1), \: (x_2-x_1)^2 + (y_2-y_1)^2\)</li>
+                    <li>\(-\dfrac{b}{a}(x-x_1), \: \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}\)</li>
+                    <li>\(\dfrac{b}{a}(x-x_1), \: \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}\)</li>
+                    <li>\(-\dfrac{a}{b}(x-x_1), \: |x_2-x_1| + |y_2-y_1|\)</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
-            <article style="min-height:45%">
-                <div style="float:right; width:40%"><img src="img/math_nat_19.png" width="100%"></div>
-                As the figure shows,
-                a quadrilateral \(\mathrm{ABCD}\) is inscribed in a circle,
-                and its two diagonals \(\mathrm{AC}\) and \(\mathrm{BD}\)
-                meet at point \(\mathrm{P}\) perpendicular to each other.
-                Let \(\mathrm{E}\) be the perpendicular foot from point \(\mathrm{P}\) to edge \(\mathrm{BC}\),
-                and let \(\mathrm{F}\) be the point where line \(\mathrm{PE}\) meets the edge \(\mathrm{AD}\).
-                Which option below cannot be proven from this?
+            <article style="min-height:55%">
+                Integers starting from \(1\) are consecutively listed in the following pattern.
+                <div class="box">
+                    <table class="no-border question-19" style="width:100%">
+                        <style>
+                            .question-19 td{
+                                padding: 2px 0;
+                                min-width: 22px;
+                            }
+                            .question-19 td:first-child{
+                                text-align: start;
+                            }
+                        </style>
+                        <tr>
+                            <td>Row \(1\)</td>
+                            <td>\(1\)</td>
+                        </tr>
+                        <tr>
+                            <td>Row \(2\)</td>
+                            <td>\(2\)</td><td>\(3\)</td>
+                        </tr>
+                        <tr>
+                            <td>Row \(3\)</td>
+                            <td>\(4\)</td><td>\(5\)</td><td>\(6\)</td>
+                        </tr>
+                        <tr>
+                            <td>Row \(4\)</td>
+                            <td>\(7\)</td><td>\(8\)</td><td>\(9\)</td><td>\(10\)</td>
+                        </tr>
+                        <tr>
+                            <td>Row \(5\)</td>
+                            <td>\(11\)</td><td>\(12\)</td><td>\(13\)</td><td>\(14\)</td><td>\(15\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(\;\cdot\)</td>
+                            <td>\(\cdot\)</td><td>\(\cdot\)</td><td>\(\cdot\)</td>
+                            <td>\(\cdot\)</td><td>\(\cdot\)</td><td>\(\cdot\)</td>
+                        </tr>
+                        <tr style="height:80px;"><td></td></tr>
+                        <tr>
+                            <td>Row \(10\)</td>
+                            <td>\(\cdot\)</td><td>\(\cdot\)</td><td>\(\cdot\)</td>
+                            <td>\(\cdot\)</td><td>\(\cdot\)</td><td>\(\cdot\)</td>
+                            <td>\(\cdot\)</td><td>\(\cdot\)</td><td>\(\cdot\)</td>
+                            <td>\(\large\square\)</td>
+                        </tr>
+                    </table>
+                </div>
+                What would be the last number of row \(10\)?
                 <small>[3 points]</small>
-                <ol class="col-1">
-                    <li>\(\angle\mathrm{CBP}=\angle\mathrm{PAD}\)</li>
-                    <li>\(\angle\mathrm{APF}=\angle\mathrm{PAF}\)</li>
-                    <li>\(\angle\mathrm{FPD}=\angle\mathrm{FDP}\)</li>
-                    <li>\(\overline{\mathrm{AF}}=\overline{\mathrm{FD}}\)</li>
-                    <li>\(\overline{\mathrm{AP}}=\overline{\mathrm{AF}}\)</li>
+                <ol>
+                    <li>\(45\)</li>
+                    <li>\(50\)</li>
+                    <li>\(55\)</li>
+                    <li>\(60\)</li>
+                    <li>\(65\)</li>
                 </ol>
             </article>
             <article>
-                <div style="float:right; width:40%"><img src="img/math_hum_20.png" width="100%"></div>
-                Consider triangles with internal angles of \(30°,60°\) and \(90°\) that are congruent to each other.
-                As the figure shows, let us put these triangles together without overlap such that
-                the vertex with angle \(90°\) of one triangle matches the vertex with angle \(60°\) of the previous triangle,
-                and the triangle is attached to the hypotenuse of the previous triangle.
-                Let us put as many triangles together as possible while no triangles overlap each other.
-                What is the greatest number of triangles that can be put together?
-                <small>[3 points]</small>
-                <ol class="col-1">
-                    <li>\(6\)</li>
-                    <li>\(8\)</li>
-                    <li>\(10\)</li>
-                    <li>\(12\)</li>
-                    <li>\(14\)</li>
-                </ol>
-                <div style="line-height:14px;">
-                    <small>† Assume no triangles are reflections of each other.</small>
+                A sequence \(\{a_n\}\) satisfies
+                <div class="tab">
+                    \(a_1=1, a_2=2\)
+                    <br>
+                    and \(\,a_{n+2}=a_{n+1}+a_n \,(n=1,2,3,\cdots)\).
                 </div>
+                What is the value of the infinite series
+                \(\displaystyle\sum_{n=1}^{\infty}\dfrac{a_n}{a_{n+1}a_{n+2}}\)?
+                <small class="right">[3 points]</small>
+                <ol>
+                    <li>\(\dfrac{1}{2}\)</li>
+                    <li>\(1\)</li>
+                    <li>\(\dfrac{3}{2}\)</li>
+                    <li>\(2\)</li>
+                    <li>\(3\)</li>
+                </ol>
             </article>
         </div>
     </section>
@@ -446,13 +511,7 @@
         </header>
         <div class="col1">
             <article style="min-height:35%">
-                It is the summer of the year \(2525\),
-                and you are making plans for January \(2526\).
-                You have the calendar of the current year (\(2525\)) from January to December,
-                but you don't have the calendar for the New Year (January \(2526\)).
-                What month in the \(2525\) calendar has the same number of dates,
-                on the same day of the week,
-                as the January \(2526\) calendar?
+                TODO
                 <small>[3 points]</small>
                 <ol class="col-2">
                     <li>March</li>
