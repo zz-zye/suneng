@@ -322,95 +322,111 @@
                 The following is a proof that the perpendicular bisectors of
                 the three edges of \(\triangle \mathrm{ABC}\) meet at a single point.
                 <div class="box">
+                    <div style="float: right; width: 40%; margin-left: 4px;"><img src="img/math_hum_17.png" width="100%"></div>
                     &lt;Proof&gt;
                     <br>
-                    <div style="float: right; width: 35%; margin-left: 4px;"><img src="img/math_hum_17.png" width="100%"></div>
                     Consider line \(\mathrm{BC}\) as the \(x\)-axis
                     and the perpendicular bisector of edge \(\mathrm{BC}\) as the \(y\)-axis,
-                    and let \(\mathrm{A}(a, b), \mathrm{B}(-c, 0)\) and \(\mathrm{C}(c, 0).\)
+                    and let \(\mathrm{A}(a, b)\), \(\mathrm{B}(-c, 0)\) and \(\mathrm{C}(c, 0).\)
                     (※ \(b \ne 0, c &gt; 0\))
-                    <div class="tab">
+                    <div style="margin: 4px 0px 4px 8px;">
                         (i) If \(a \ne c\) and \(a \ne -c\)
                     </div>
                     The slope of line \(\mathrm{AC}\) is \(\dfrac{b}{a-c}\),
                     so the equation of the line passing through the midpoint \(\mathrm{E}\) of edge \(\mathrm{AC}\)
                     perpendicular to edge \(\mathrm{AC}\), is
-                    <div class="tab-short">
-                        \(y=\fbox{\(\;(\alpha)\;\)}\left(\!\!x-\dfrac{a+c}{2}\!\!\right)\!+\!\dfrac{b}{2} 
-                        =\fbox{\(\;(\alpha)\;\)}x + \fbox{\(\;(\beta)\;\)}\)
+                    <div style="margin: 4px 0px 4px 8px;">
+                        <div style="display:flex; justify-content: space-between; align-items: center;">
+                            <div style="font-size: 90%;">\(y=\fbox{\(\;(\alpha)\;\)}\left(\!\!x-\dfrac{a+c}{2}\!\!\right)\!+\!\dfrac{b}{2}
+                                =\fbox{\(\;(\alpha)\;\)}x + \fbox{\(\;(\beta)\;\)}\)
+                            </div>
+                            <div style="
+                                flex: auto;
+                                border-bottom: 1px dotted black;
+                                margin: 0 6px;
+                                transform: translateY(-50%);
+                            "></div>
+                            <div>
+                                ①
+                            </div>
+                        </div>
                     </div>
+                    Similarly, the equation of the line passing through the midpoint \(\mathrm{D}\) of edge \(\mathrm{AB}\)
+                    perpendicular to edge \(\mathrm{AB}\), is
+                    <div style="margin: 4px 0px 4px 8px;">
+                        <div style="display:flex; justify-content: space-between; align-items: center;">
+                            <div style="font-size: 90%;">\(y= -\dfrac{a+c}{b}x + \fbox{\(\;(\beta)\;\)}\)
+                            </div>
+                            <div style="
+                                flex: auto;
+                                border-bottom: 1px dotted black;
+                                margin: 0 6px;
+                                transform: translateY(-50%);
+                            "></div>
+                            <div>
+                                ②
+                            </div>
+                        </div>
+                    </div>
+                    The two lines ① and ② have the same \(y\)-intercept,
+                    so the three perpendicular bisectors meet at point \((0, \fbox{\(\;(\beta)\;\)})\) on the \(y\)-axis.
+                    <br>
+                    Therefore, the perpendicular bisectors of
+                    the three edges of \(\triangle \mathrm{ABC}\) meet at a single point.
+                    <div style="margin: 4px 0px 4px 8px;">
+                        (ii) If \(a = c\) or \(a = -c\)
+                    </div>
+                    \(\triangle \mathrm{ABC}\) is \(\fbox{\(\;(\gamma)\;\)}\),
+                    and the three perpendicular bisectors meet at either \(\mathrm{D}\) or \(\mathrm{E}\).
+                    <br>
+                    Therefore, the perpendicular bisectors of
+                    the three edges of \(\triangle \mathrm{ABC}\) meet at a single point.
                 </div>
-                TODO
-                
-                
+                In the proof above, what are appropriate for
+                \((\alpha), (\beta)\) and \((\gamma)\) in this order?
                 <small>[3 points]</small>
-                <div class="box-list">
-                    <ol class="alpha">
-                        <li>If \(\mathrm{A}&gt;\dfrac{1}{4}\), then \(\:\mathrm{C}&lt;\dfrac{1}{4}\).</li>
-                        <li>If \(\mathrm{A}&lt;\dfrac{1}{4}\), then \(\:\mathrm{D}&gt;\dfrac{1}{4}\).</li>
-                        <li>If \(\mathrm{A}&gt;\dfrac{1}{4}\), then \(\:\mathrm{D}&lt;\dfrac{1}{4}\).</li>
-                    </ol>
-                </div>
-                <ol class="col-3">
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>a, c</li>
-                    <li>b, c</li>
-                </ol>
-            </article>
-            <article>
-                For all positive numbers \(x\),
-                let \(f(x)\) be the number of primes no larger than \(x\).
-                For example, \(f\!\left(\!\dfrac{5}{2}\!\right)=1\) and \(f(5)=3\).
-                Which option contains every correct statement in the &lt;List&gt;?
-                <small>[3 points]</small>
-                <div class="box-list">
-                    <ol class="alpha">
-                        <li>\(f(10)=4\)</li>
-                        <li>\(f(x)&lt;x\) for all positive numbers \(x\).</li>
-                        <li>\(f(x+1)=f(x)\) for all positive numbers \(x\).</li>
-                    </ol>
-                </div>
-                <ol class="col-3">
-                    <li>a</li>
-                    <li>a, b</li>
-                    <li>a, c</li>
-                    <li>b, c</li>
-                    <li>a, b, c</li>
+                <ol class="col-1">
+                    <li>\(-\dfrac{a-c}{b}\),&nbsp; \(\dfrac{a^2+b^2-c^2}{2b}\),&nbsp; a right triangle</li>
+                    <li>\(-\dfrac{a-c}{b}\),&nbsp; \(\dfrac{a^2+b^2-c^2}{2b}\),&nbsp; an equilateral triangle</li>
+                    <li>\(-\dfrac{a-c}{b}\),&nbsp; \(\dfrac{-a^2+b^2-c^2}{2b}\),&nbsp; an isosceles triangle</li>
+                    <li>\(\dfrac{a-c}{b}\),&nbsp; \(\dfrac{a^2+b^2-c^2}{2b}\),&nbsp; an isosceles triangle</li>
+                    <li>\(\dfrac{a-c}{b}\),&nbsp; \(\dfrac{-a^2+b^2-c^2}{2b}\),&nbsp; a right triangle</li>
                 </ol>
             </article>
         </div>
         <div class="col2">
             <article>
-                <div style="float:right; width:40%"><img src="img/math_hum_19.png" width="100%"></div>
-                For a tetrahedron \(\mathrm{ABCD}\),
-                let \(\mathrm{P,Q,R}\) and \(\mathrm{S}\) be the midpoint of edges
-                \(\mathrm{BC,CD,DB}\) and \(\mathrm{AD}\) respectively.
-                What is the ratio of the volume of tetrahedrons
-                \(\mathrm{APQR}\) and \(\mathrm{SQDR}\)?
-                <small>[3 points]</small>
-                <ol>
-                    <li>\(1:1\)</li>
-                    <li>\(2:1\)</li>
-                    <li>\(3:1\)</li>
-                    <li>\(3:2\)</li>
-                    <li>\(4:1\)</li>
-                </ol>
-            </article>
-            <article>
-                On the \(xy\)-plane,
-                suppose a point \((x,y)\) is moving
-                in the region satisfying the inequality
-                \(-x\leq y\leq 2-x^2\).
-                What is the maximum value of \(x+y\)?
-                <small>[3 points]</small>
-                <ol>
-                    <li>\(\dfrac{5}{4}\)</li>
-                    <li>\(\dfrac{7}{4}\)</li>
-                    <li>\(\dfrac{9}{4}\)</li>
-                    <li>\(\dfrac{11}{4}\)</li>
-                    <li>\(\dfrac{13}{4}\)</li>
+                The following is a proof that there are infinitely many primes of the form \(4k+3\).
+                <br>
+                (※ \(k\) is a nonnegative integer.)
+                <div class="box">
+                    &lt;Proof&gt;
+                    <br>
+                    Suppose there are finitely many primes of the form \(4k+3\),
+                    and let them be \(3, 7, 11, 19, \cdots, p\).
+                    <div class="space"></div>
+                    Suppose \(n=4(7 \cdot 11 \cdot 19 \cdot \;\cdots\; \cdot p)+3\).
+                    Then \(n\) is \(\fbox{\(\;(\alpha)\;\)}\) by numbers \(3, 7, 11, 19, \cdots, p\).
+                    All prime factors of \(n\) are integers of the form \(4k+1\) or \(4k+3\),
+                    and the product of two integers of the form \(4k+1\)
+                    is an integer of the form \(\fbox{\(\;(\beta)\;\)}\).
+                    Therefore, if all prime factors of \(n\) are of the form \(\fbox{\(\;(\beta)\;\)}\),
+                    then \(n\) is also of the form \(\fbox{\(\;(\beta)\;\)}\).
+                    This is a contradiction, thus \(n\) has a prime factor \(q\) of the form \(\fbox{\(\;(\gamma)\;\)}\).
+                    \(n\) is divisible by \(q\), so \(q\) is a prime of the form \(4k+3\) which is different from all of
+                    \(3, 7, 11, 19, \cdots, p\). This contradicts the premise.
+                    <div class="space"></div>
+                    Therefore, there are infinitely many primes of the form \(4k+3\).
+                </div>
+                In the proof above, what are appropriate for
+                \((\alpha), (\beta)\) and \((\gamma)\) in this order?
+                <small>[2 points]</small>
+                <ol class="col-1">
+                    <li>divisible,&nbsp; \(4k+1\),&nbsp; \(4k+1\)</li>
+                    <li>divisible,&nbsp; \(4k+3\),&nbsp; \(4k+3\)</li>
+                    <li>not divisible,&nbsp; \(4k+3\),&nbsp; \(4k+1\)</li>
+                    <li>not divisible,&nbsp; \(4k+1\),&nbsp; \(4k+1\)</li>
+                    <li>not divisible,&nbsp; \(4k+1\),&nbsp; \(4k+3\)</li>
                 </ol>
             </article>
         </div>
@@ -422,17 +438,7 @@
         </header>
         <div class="col1">
             <article>
-                <div style="float:right; width:45%"><img src="img/math_hum_21.png" width="100%"></div>
-                As the figure shows,
-                there is a point \(\mathrm{A}\) on a circle with radius \(1\),
-                and triangles inscribed in the circle which have point \(\mathrm{A}\) as a vertex
-                with the angle at \(\mathrm{A}\) being \(30°\).
-                <br>
-                Let us draw as many such triangles as possible without having an overlap.
-                Let \(\mathrm{P}_1, \mathrm{P}_2, \cdots, \mathrm{P}_n, \mathrm{P}_{n+1}\) be
-                the vertices of the triangles except vertex \(\mathrm{A}\), in counter-clockwise order.
-                What is the sum of the lengths of line segments
-                \(\overline{\mathrm{P_1 P_2}},\overline{\mathrm{P_2 P_3}},\cdots,\overline{\mathrm{P_n P_{n+1}}}\)?
+                TODO
                 <small>[3 points]</small>
                 <ol>
                     <li>\(5\)</li>
