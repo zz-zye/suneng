@@ -1,42 +1,47 @@
 # `zz-zye/suneng`
 
-## What is Suneung?
+## What is Su-neung?
 
 **Su-neung**(**수능**, abbreviation of 대학**수**학**능**력시험) is a college entrance exam in South Korea.
-It is officially recognized as **CSAT**(College Scholastic Ability Test) in English.
 
-Suneung is a test lasting 8-9 hours, consisting of the following subjects.
- - Language Arts (80 minutes)
- - Mathematics (100 minutes)
- - English (70 minutes)
- - Korean History (30 minutes)
- - Social Studies / Science (2 elective subjects, 30 minutes each)
- - Foreign Language / Classical Chinese (optional, 40 minutes)
+In English, it is officially recognized as **CSAT**(College Scholastic Ability Test).
 
-[KICE](https://www.kice.re.kr/sub/info.do?m=0205&s=english), the institute in charge of CSAT,
-introduces it as a 'reliable data for college admissions,'
-as well as a benchmark that 'impacts teaching and learning practices in high schools.'
+Suneung lasts 8-9 hours, consisting of the following subjects.
+ - Language Arts (80 min.)
+ - Mathematics (100 min.)
+ - English (70 min.)
+ - Korean History (30 min.)
+ - Social Studies / Science (2 elective subjects, 30 min. each)
+ - Foreign Language / Classical Chinese (optional, 40 min.)
 
-## What is SunEng?
+The institute in charge, [KICE](https://www.kice.re.kr/sub/info.do?m=0205&s=english),
+introduces the exam as a *'reliable data for college admissions,'*
+as well as a benchmark that *'impacts teaching and learning practices in high schools.'*
 
-An English translation of Suneung, mainly the mathematics exams.
+## What is SUN-ENG?
 
-View the project live on [My Github IO Page.](https://zz-zye.github.io/suneng)
+**SUN**eung math exams translated in **ENG**lish.
 
-This is currently a personal passion project, and I am unsure how many exams will be translated.
+View the project online [Here.](https://zz-zye.github.io/suneng)
 
-Translated exams: `1994 ~ 2000`, `2005`, `2011`, `2014 ~ 2024`
+This is a personal passion project. I cannot guarantee that all exams will be translated.
+
+Currently translated: `1994 ~ 2000`, `2005`, `2011`, `2014 ~ 2024`
 
 ## Why am I making it?
 
-The infamy of Suneung has well spread beyond the boundaries of the country,
-whether it be its difficulty or its affect on students' lives.
-[(a BBC article)](https://www.bbc.com/news/world-asia-46181240)
+Word about Suneung has spread well beyond the border of the country,
+whether it be the difficulty or its effect on the lives of students.
+[(BBC article)](https://www.bbc.com/news/world-asia-46181240)
+Compared to its infamy, **I've rarely seen Suneung exams presented in English** for the international population to examine.
+So I'm making one myself.
 
-I have seen some English Youtubers try a few hard English and Math questions from Suneung,
-but never the exam as a whole, maybe due to not having any good translated resources.
+**Why is it specifically the math exams?**
+Well, the Language Arts exams are simply impossible to translate
+*(how would I translate Korean poems while maintaining rhyme structures?)*
+and the English exams are, well, in English.
+Science exams are translatable but requires a lot of work, since they always contain loads of diagrams with Korean text.
 
-CSAT math is quite an assortment of carefully crafted problems, difficult or not.
-It would be a helpful resource if you study or teach math.
-
-If you're a math nerd try it! The time limit is 100 minutes.
+Suneung math is quite an assortment of carefully crafted problems.
+It would generally be a helpful resource if you study or teach math.
+Try it if you're a math nerd like me!
