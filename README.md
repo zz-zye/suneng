@@ -18,11 +18,11 @@ The institute in charge, [KICE](https://www.kice.re.kr/sub/info.do?m=0205&s=engl
 introduces the exam as a *'reliable data for college admissions,'*
 as well as a benchmark that *'impacts teaching and learning practices in high schools.'*
 
-## What is SUN-ENG?
+## What is Sun-Eng?
 
 **SUN**eung math exams translated in **ENG**lish.
 
-View the project online [Here.](https://zz-zye.github.io/suneng)
+[View the project online](https://zz-zye.github.io/suneng)
 
 This is a personal passion project. I cannot guarantee that all exams will be translated.
 
