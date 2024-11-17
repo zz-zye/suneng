@@ -68,6 +68,7 @@
 @media print {
     :root {
         --color-paper: white;
+        --color-gray: #ccc;
         --color-black: black;
     }
     html, body {

@@ -1,6 +1,4 @@
 html {
-    margin: 0;
-    padding: 0;
     font-family:'PT Serif', Times, serif;
     background-color: var(--color-bg);
     overflow: hidden;
@@ -66,8 +64,6 @@ main {
     display: flex;
     justify-content: center;
 }
-
-/* Flex element */
 main > div {
     position: relative;
     width: 720px;
@@ -79,10 +75,10 @@ main > div > .title-space {
     height: 6.25rem;
 }
 
+/* Zye Presents */
 main > div > small {
     position: absolute;
     left: 0.125rem;
-    content:"Zye presents";
     font-family: 'Asap Condensed', sans-serif;
     margin-top: -1.125rem;
 }
@@ -100,9 +96,9 @@ main > div > small {
 }
 
 /* Links */
+a { text-decoration: none; }
 /* Usual */
 .exam-container a {
-    text-decoration: none;
     display: block;
     margin: 1rem 1rem 3rem;
     border: none;
@@ -113,7 +109,9 @@ main > div > small {
     font-weight: bold;
     text-align: center;
     color: var(--color-beige);
-    background-color: black;
+    background-color: var(--color-black);
+
+    transition: transform 0.2s;
 }
 
 .exam-container a:hover {
@@ -124,14 +122,14 @@ main > div > small {
 /* Small screen */
 .small-screen-link {
     display: none;
-    text-decoration: none;
-    margin: 1rem;
+    margin: 1.5rem 3rem 0;
     border: 1px solid var(--color-beige);
     border-radius: 50rem;
-    padding: 0.25rem;
+    padding: 0;
+    box-shadow: var(--color-black) 4px 4px 3px;
 
-    font-size: 1.5rem;
-    font-family:'PT Serif', Times, serif;
+    font-size: 2rem;
+    font-family: 'Catamaran', sans-serif;
     font-weight: bold;
     text-align: center;
     color: var(--color-bg);
@@ -194,17 +192,16 @@ main::after {
 }
 
 @media screen and (max-width: 720px) {
-    main::after { height: 0; }
-    .small-screen-link { display: block; }
-    .exam-container a { display: none; }
-    .exam-container { z-index: -1; opacity: 0.8; }
-    .exam-container2 { transform: translate(-50%, -15rem) scale(0.5) skew(357deg, 3deg); }
-}
-
-@media screen and (max-width: 560px) {
-    main > div > small { display: none; }
-    .exam-container { display: none; }
-    main::after { height: 0; }
+    /* main::after { height: 0; } */
     main, #title { top: 0; }
     main > div { max-width: 100%; border: none; }
+    main > div > small { display: none; }
+
+    .small-screen-link { display: block; }
+    .exam-container a { display: none; }
+    .exam-container2 { transform: translate(-50%, -15rem) scale(0.45) skew(357deg, 3deg); }
+}
+
+@media screen and (max-width: 480px) {
+    .exam-container2 { transform: translate(-50%, -23rem) scale(0.3) skew(357deg, 3deg); }
 }
