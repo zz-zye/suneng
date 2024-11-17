@@ -1,20 +1,17 @@
-main {
+article {
     display: grid;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: 6.25rem 1fr;
     grid-template-columns: minmax(80px, 20%) 1fr;
     grid-template-areas:
-        "flavor-text flavor-text"
+        "header header"
         "aside details";
 }
 
-/* Flavor text */
-.flavor-text {
-    grid-area: flavor-text;
-    background-color: var(--color-beige);
-    font-size: 20px;
-    line-height: 40px;
+/* Header */
+h1 {
+    grid-area: header;
+    line-height: 6.25rem;
     font-weight: bold;
-    font-style: italic;
     color: var(--color-bg);
     text-align: center;
 }
@@ -60,7 +57,7 @@ aside a {
     text-align: center;
 }
 aside a:hover {
-    background-color: var(--color-select);
+    background-color: var(--color-bg);
     box-shadow: var(--color-shadow) 3px 3px 5px;
 }
 aside::after {
@@ -141,6 +138,7 @@ section > h3 {
     justify-content: space-around;
     align-items: center;
     gap: 1em;
+    font-size: 0.8rem;
 }
 
 .links > a {
