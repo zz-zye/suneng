@@ -1,10 +1,8 @@
 # `zz-zye/suneng`
 
-## What is Su-neung?
+## What is the Korean SAT?
 
-**Su-neung**(**수능**, abbreviation of 대학**수**학**능**력시험) is a college entrance exam in South Korea.
-
-In English, it is officially recognized as **CSAT**(College Scholastic Ability Test).
+**Su-neung**(**수능**, abbreviation of 대학**수**학**능**력시험) is the college entrance exam of South Korea, officially recognized as **CSAT**(College Scholastic Ability Test) in English.
 
 Suneung lasts 8-9 hours, consisting of the following subjects.
  - Language Arts (80 min.)
@@ -18,11 +16,11 @@ The institute in charge, [KICE](https://www.kice.re.kr/sub/info.do?m=0205&s=engl
 introduces the exam as a *'reliable data for college admissions,'*
 as well as a benchmark that *'impacts teaching and learning practices in high schools.'*
 
-## What is SUN-ENG?
+## What is Sun-Eng?
 
 **SUN**eung math exams translated in **ENG**lish.
 
-View the project online [Here.](https://zz-zye.github.io/suneng)
+[View the project online](https://zz-zye.github.io/suneng)
 
 This is a personal passion project. I cannot guarantee that all exams will be translated.
 
