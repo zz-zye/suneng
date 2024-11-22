@@ -253,11 +253,11 @@
                 for all positive integers \(n\),
                 there are \(n\) elements
                 <div class="center">
-                    \(\left[\dfrac{n}{1}\right],\left[\dfrac{n}{2}\right],
-                    \left[\dfrac{n}{3}\right],\cdots,\left[\dfrac{n}{n}\right]\)
+                    \(\left\lfloor\dfrac{n}{1}\right\rfloor,\left\lfloor\dfrac{n}{2}\right\rfloor,
+                    \left\lfloor\dfrac{n}{3}\right\rfloor,\cdots,\left\lfloor\dfrac{n}{n}\right\rfloor\)
                 </div>
                 listed in row \(n\), from column \(1\) to column \(n\) in order.
-                (※ \([x]\) is the greatest integer less than or equal to \(x\).)
+                (※ \(\lfloor x \rfloor\) is the greatest integer less than or equal to \(x\).)
                 <div class="center">
                     <table class="question-11">
                         <style>
@@ -316,13 +316,13 @@
                         </tr>
                         <tr>
                             <td style="border: none;">Row \(n\)</td>
-                            <td>\(\left[\dfrac{n}{1}\right]\)</td>
-                            <td>\(\left[\dfrac{n}{2}\right]\)</td>
-                            <td>\(\left[\dfrac{n}{3}\right]\)</td>
+                            <td>\(\left\lfloor\dfrac{n}{1}\right\rfloor\)</td>
+                            <td>\(\left\lfloor\dfrac{n}{2}\right\rfloor\)</td>
+                            <td>\(\left\lfloor\dfrac{n}{3}\right\rfloor\)</td>
                             <td></td>
                             <td>\(\cdots\)</td>
                             <td></td>
-                            <td>\(\left[\dfrac{n}{n}\right]\)</td>
+                            <td>\(\left\lfloor\dfrac{n}{n}\right\rfloor\)</td>
                         </tr>
                         <tr>
                             <td style="border: none;">\(\vdots\)</td>
@@ -334,7 +334,7 @@
                 <small>[4 points]</small>
                 <div class="box-list">
                     <ol class="alpha">
-                        <li>In row \(n\), \(\left[\dfrac{n+1}{2}\right]\) elements have a value of \(1\).</li>
+                        <li>In row \(n\), \(\left\lfloor\dfrac{n+1}{2}\right\rfloor\) elements have a value of \(1\).</li>
                         <li>In row \(100\), \(8\) elements have a value of \(3\).</li>
                         <li>In column \(3\), \(5\) elements have a value of \(5\).</li>
                     </ol>
