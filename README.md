@@ -37,7 +37,7 @@ So I'm making one myself.
 **Why is it specifically the math exams?**
 Well, the Language Arts exams are simply impossible to translate
 *(how would I translate Korean poems while maintaining rhyme structures?)*
-and the English exams are, well, in English.
+and the English exams are, of course, in English.
 Science exams are translatable but requires a lot of work, since they always contain loads of diagrams with Korean text.
 
 Suneung math is quite an assortment of carefully crafted problems.

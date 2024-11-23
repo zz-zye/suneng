@@ -19,7 +19,7 @@ main {
 }
 main > div {
     position: relative;
-    width: 720px;
+    width: 794px;
     max-width: 90%;
     background-color: var(--color-beige);
 }
@@ -34,7 +34,7 @@ p, main > div div {
 }
 h1, h2 { color: var(--color-bg); }
 h1 {
-    margin: 1rem;
+    margin: 1em;
     text-align: center;
     font-size: 3rem;
 }
@@ -68,7 +68,7 @@ main a:hover {
     font-family: 'Catamaran', sans-serif;
     color: var(--color-bg);
     border: 3px solid var(--color-bg);
-    border-radius: 10rem;
+    border-radius: 3rem;
     background-color: var(--color-beige);
 
     transition: transform 0.2s;
