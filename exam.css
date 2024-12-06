@@ -360,6 +360,12 @@
     mix-blend-mode: multiply; /* remove white background */
 }
 
+/* Other */
+.u {
+    text-decoration: underline;
+}
+
+
 /* letter spacing */
 .exam .shrink-1 {
     letter-spacing: -0.2px;
